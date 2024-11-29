@@ -38,6 +38,8 @@ We overlay these datasets on the OSM base map to create a comprehensive, consoli
 
 ### Conversion to GeoPandas DataFrame:
 We convert the .osm file, which contains the mapped data, into a GeoPandas DataFrame. This transformation enables us to leverage geospatial operations and analyses within the GeoPandas framework.
+### Sample GDF for model
+![Sample GDF](/assets/GDF.jpeg "Sammple GDF")
 
 ### Tag Standardization:
 We standardize the existing OSM tags into a uniform format. This ensures that the data is compatible with our model and can be accurately interpreted during subsequent analysis.
