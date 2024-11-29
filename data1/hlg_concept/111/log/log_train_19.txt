@@ -1,0 +1,8 @@
+[2024-11-28 12:28:40,314] 'population'
+[2024-11-28 12:28:40,345] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1042)]
+[2024-11-28 12:28:52,536] 'population'
+[2024-11-28 12:28:52,537] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 964)]
+[2024-11-28 12:29:04,056] 'population'
+[2024-11-28 12:29:04,056] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1069)]
+[2024-11-28 12:34:44,043] 'population'
+[2024-11-28 12:34:44,043] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1042)]

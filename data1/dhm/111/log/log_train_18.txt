@@ -1,0 +1,15 @@
+[2024-11-03 21:34:52,421] 'population'
+[2024-11-03 21:34:52,428] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1198)]
+[2024-11-03 21:35:52,650] 'population'
+[2024-11-03 21:35:52,650] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1192)]
+[2024-11-03 21:36:37,544] 'population'
+[2024-11-03 21:36:37,547] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1323)]
+[2024-11-03 21:37:12,803] 'population'
+[2024-11-03 21:37:12,807] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1198)]
+[2024-11-03 21:37:46,480] 'population'
+[2024-11-03 21:37:46,497] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1295)]
+[2024-11-03 21:38:21,112] 'population'
+[2024-11-03 21:38:21,112] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1318)]
+[2024-11-03 21:39:14,428] 'population'
+[2024-11-03 21:39:14,446] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1202)]
+[2024-11-03 21:49:55,592] worker 18 finished episode 1.

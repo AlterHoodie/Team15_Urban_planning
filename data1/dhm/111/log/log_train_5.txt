@@ -1,0 +1,22 @@
+[2024-11-03 21:34:51,406] 'population'
+[2024-11-03 21:34:51,407] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1223)]
+[2024-11-03 21:35:53,609] 'population'
+[2024-11-03 21:35:53,612] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1112)]
+[2024-11-03 21:36:38,286] 'population'
+[2024-11-03 21:36:38,309] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1256)]
+[2024-11-03 21:37:15,131] 'population'
+[2024-11-03 21:37:15,155] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1136)]
+[2024-11-03 21:37:49,556] 'population'
+[2024-11-03 21:37:49,577] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1159)]
+[2024-11-03 21:38:25,901] 'population'
+[2024-11-03 21:38:25,914] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1229)]
+[2024-11-03 21:39:21,013] 'population'
+[2024-11-03 21:39:21,013] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1229)]
+[2024-11-03 21:48:04,909] polygon: POLYGON ((423 873, 573 873, 504.24193979374706 695.4969225881131, 423 695.4969225881131, 423 873))
+new intersection: POINT (423 873)
+road or boundary to split:
+LINESTRING (0 873, 573 873)
+LINESTRING (573 873, 0 873)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-11-03 21:48:04,949] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1223), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1106), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1266), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1116), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1132), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1234), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1249), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1121), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1097), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1325), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1110), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1700), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1095)]
+[2024-11-03 21:50:56,870] worker 5 finished episode 1.

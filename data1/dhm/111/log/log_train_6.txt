@@ -1,0 +1,17 @@
+[2024-11-03 21:34:47,115] 'population'
+[2024-11-03 21:34:47,148] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1229)]
+[2024-11-03 21:35:35,852] 'population'
+[2024-11-03 21:35:35,852] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1269)]
+[2024-11-03 21:36:21,129] 'population'
+[2024-11-03 21:36:21,133] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1335)]
+[2024-11-03 21:37:01,994] 'population'
+[2024-11-03 21:37:02,000] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1179)]
+[2024-11-03 21:37:36,511] 'population'
+[2024-11-03 21:37:36,514] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1349)]
+[2024-11-03 21:38:10,842] 'population'
+[2024-11-03 21:38:10,853] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1243)]
+[2024-11-03 21:38:53,889] 'population'
+[2024-11-03 21:38:53,935] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1178)]
+[2024-11-03 21:39:41,546] 'population'
+[2024-11-03 21:39:41,559] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1348)]
+[2024-11-03 21:49:50,131] worker 6 finished episode 1.

@@ -1,0 +1,22 @@
+[2024-11-03 21:34:49,671] 'population'
+[2024-11-03 21:34:49,671] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1287)]
+[2024-11-03 21:35:51,197] 'population'
+[2024-11-03 21:35:51,213] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1287)]
+[2024-11-03 21:36:33,328] 'population'
+[2024-11-03 21:36:33,335] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1272)]
+[2024-11-03 21:37:13,429] 'population'
+[2024-11-03 21:37:13,450] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1195)]
+[2024-11-03 21:37:47,850] 'population'
+[2024-11-03 21:37:47,851] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1276)]
+[2024-11-03 21:38:23,941] 'population'
+[2024-11-03 21:38:23,958] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1161)]
+[2024-11-03 21:39:14,001] 'population'
+[2024-11-03 21:39:14,006] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1348)]
+[2024-11-03 21:48:09,753] polygon: POLYGON ((1463 1122, 1613 1122, 1613 942, 1535 942, 1463 942, 1463 1122))
+new intersection: POINT (1613 942)
+road or boundary to split:
+LINESTRING (1535 942, 1735 942)
+LINESTRING (1735 942, 1535 942)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-11-03 21:48:09,784] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1287), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1293), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1266), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1186), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1270), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1145), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1616), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1345), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1170), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1086), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1142), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1062), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1066), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1233)]
+[2024-11-03 21:50:56,017] worker 12 finished episode 1.

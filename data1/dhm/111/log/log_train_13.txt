@@ -1,0 +1,24 @@
+[2024-11-03 21:34:52,488] 'population'
+[2024-11-03 21:34:52,488] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1114)]
+[2024-11-03 21:35:39,855] 'population'
+[2024-11-03 21:35:39,856] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1141)]
+[2024-11-03 21:36:24,946] 'population'
+[2024-11-03 21:36:24,947] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1124)]
+[2024-11-03 21:37:04,581] 'population'
+[2024-11-03 21:37:04,591] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1228)]
+[2024-11-03 21:37:39,184] 'population'
+[2024-11-03 21:37:39,187] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1301)]
+[2024-11-03 21:38:14,786] 'population'
+[2024-11-03 21:38:14,790] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1276)]
+[2024-11-03 21:38:56,108] 'population'
+[2024-11-03 21:38:56,122] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1295)]
+[2024-11-03 21:39:44,845] 'population'
+[2024-11-03 21:39:44,846] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1142)]
+[2024-11-03 21:47:30,675] polygon: POLYGON ((373 873, 573 873, 500.7580602062529 686.5030774118869, 373 686.5030774118869, 373 873))
+new intersection: POINT (373 873)
+road or boundary to split:
+LINESTRING (573 873, 200 873)
+LINESTRING (100 873, 386.5 873)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-11-03 21:47:30,703] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1114), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1133), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1107), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1215), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1295), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1266), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1281), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1119)]
+[2024-11-03 21:50:38,062] worker 13 finished episode 1.

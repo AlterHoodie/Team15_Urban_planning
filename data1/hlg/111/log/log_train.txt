@@ -1,0 +1,2888 @@
+[2024-09-16 14:57:14,550] id: hlg
+[2024-09-16 14:57:14,550] seed: 111
+[2024-09-16 14:57:14,550] objectives_plan: objectives_hlg
+[2024-09-16 14:57:14,550] init_plan: init_plan_hlg
+[2024-09-16 14:57:14,550] env_specs: {}
+[2024-09-16 14:57:14,551] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-09-16 14:57:14,551] obs_specs: {}
+[2024-09-16 14:57:14,551] agent_specs: {'batch_stage': False}
+[2024-09-16 14:57:14,551] skip_land_use: False
+[2024-09-16 14:57:14,551] skip_road: True
+[2024-09-16 14:57:14,551] road_ratio: 0.0
+[2024-09-16 14:57:14,551] gamma: 2.0
+[2024-09-16 14:57:14,551] tau: 0.0
+[2024-09-16 14:57:14,551] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-09-16 14:57:14,551] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-09-16 14:57:14,551] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-09-16 14:57:14,551] lr: 0.004
+[2024-09-16 14:57:14,551] weightdecay: 0.1
+[2024-09-16 14:57:14,551] eps: 0.0001
+[2024-09-16 14:57:14,551] value_pred_coef: 0.1
+[2024-09-16 14:57:14,551] entropy_coef: 0.1
+[2024-09-16 14:57:14,551] clip_epsilon: 0.2
+[2024-09-16 14:57:14,551] max_num_iterations: 1
+[2024-09-16 14:57:14,551] num_episodes_per_iteration: 1
+[2024-09-16 14:57:14,551] max_sequence_length: 30
+[2024-09-16 14:57:14,551] num_optim_epoch: 4
+[2024-09-16 14:57:14,551] mini_batch_size: 256
+[2024-09-16 14:57:14,551] save_model_interval: 1
+[2024-09-16 14:58:27,940] 0	T_sample 4.69	T_update 66.67	T_eval 1.28	ETA 0:00:00	train_R_eps 4.95	eval_R_eps 4.32	hlg
+[2024-09-16 14:58:27,946] save best checkpoint with rewards 4.32!
+[2024-09-16 14:58:27,952] training done!
+[2024-09-16 15:31:02,314] id: hlg
+[2024-09-16 15:31:02,314] seed: 111
+[2024-09-16 15:31:02,314] objectives_plan: objectives_hlg
+[2024-09-16 15:31:02,314] init_plan: init_plan_hlg
+[2024-09-16 15:31:02,314] env_specs: {}
+[2024-09-16 15:31:02,314] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-09-16 15:31:02,315] obs_specs: {}
+[2024-09-16 15:31:02,315] agent_specs: {'batch_stage': False}
+[2024-09-16 15:31:02,315] skip_land_use: False
+[2024-09-16 15:31:02,315] skip_road: True
+[2024-09-16 15:31:02,315] road_ratio: 0.0
+[2024-09-16 15:31:02,315] gamma: 2.0
+[2024-09-16 15:31:02,315] tau: 0.0
+[2024-09-16 15:31:02,315] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-09-16 15:31:02,315] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-09-16 15:31:02,315] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-09-16 15:31:02,315] lr: 0.004
+[2024-09-16 15:31:02,315] weightdecay: 0.1
+[2024-09-16 15:31:02,315] eps: 0.0001
+[2024-09-16 15:31:02,315] value_pred_coef: 0.1
+[2024-09-16 15:31:02,315] entropy_coef: 0.1
+[2024-09-16 15:31:02,315] clip_epsilon: 0.2
+[2024-09-16 15:31:02,315] max_num_iterations: 20
+[2024-09-16 15:31:02,315] num_episodes_per_iteration: 5
+[2024-09-16 15:31:02,315] max_sequence_length: 30
+[2024-09-16 15:31:02,315] num_optim_epoch: 4
+[2024-09-16 15:31:02,315] mini_batch_size: 256
+[2024-09-16 15:31:02,315] save_model_interval: 1
+[2024-09-16 15:32:17,675] 0	T_sample 4.51	T_update 68.85	T_eval 1.30	ETA 0:23:39	train_R_eps 4.95	eval_R_eps 4.32	hlg
+[2024-09-16 15:32:17,682] save best checkpoint with rewards 4.32!
+[2024-09-16 15:34:56,361] 1	T_sample 4.35	T_update 152.71	T_eval 1.57	ETA 0:47:35	train_R_eps 4.78	eval_R_eps 3.86	hlg
+[2024-09-16 15:36:09,811] 2	T_sample 4.68	T_update 67.27	T_eval 1.46	ETA 0:20:48	train_R_eps 4.88	eval_R_eps 3.98	hlg
+[2024-09-16 15:37:21,910] 3	T_sample 4.55	T_update 66.18	T_eval 1.33	ETA 0:19:13	train_R_eps 4.93	eval_R_eps 3.78	hlg
+[2024-09-16 15:38:33,664] 4	T_sample 6.44	T_update 64.03	T_eval 1.22	ETA 0:17:56	train_R_eps 4.95	eval_R_eps 3.64	hlg
+[2024-09-16 15:39:43,661] 5	T_sample 4.41	T_update 64.23	T_eval 1.32	ETA 0:16:19	train_R_eps 4.95	eval_R_eps 3.84	hlg
+[2024-09-16 15:40:53,780] 6	T_sample 5.77	T_update 62.93	T_eval 1.37	ETA 0:15:11	train_R_eps 4.97	eval_R_eps 4.57	hlg
+[2024-09-16 15:40:53,786] save best checkpoint with rewards 4.57!
+[2024-09-16 15:42:04,266] 7	T_sample 4.42	T_update 64.60	T_eval 1.41	ETA 0:14:05	train_R_eps 4.95	eval_R_eps 3.78	hlg
+[2024-09-16 15:43:15,153] 8	T_sample 4.74	T_update 64.73	T_eval 1.38	ETA 0:12:59	train_R_eps 4.98	eval_R_eps 3.64	hlg
+[2024-09-16 15:44:25,424] 9	T_sample 4.39	T_update 64.54	T_eval 1.30	ETA 0:11:42	train_R_eps 4.90	eval_R_eps 3.64	hlg
+[2024-09-16 15:45:36,085] 10	T_sample 4.48	T_update 64.61	T_eval 1.51	ETA 0:10:35	train_R_eps 4.97	eval_R_eps 3.64	hlg
+[2024-09-16 15:46:46,035] 11	T_sample 4.36	T_update 64.16	T_eval 1.39	ETA 0:09:19	train_R_eps 4.89	eval_R_eps 3.64	hlg
+[2024-09-16 15:47:56,423] 12	T_sample 4.47	T_update 64.50	T_eval 1.38	ETA 0:08:12	train_R_eps 4.84	eval_R_eps 3.64	hlg
+[2024-09-16 15:49:07,368] 13	T_sample 5.92	T_update 63.60	T_eval 1.39	ETA 0:07:05	train_R_eps 4.93	eval_R_eps 3.64	hlg
+[2024-09-16 15:50:17,899] 14	T_sample 4.35	T_update 64.74	T_eval 1.40	ETA 0:05:52	train_R_eps 4.86	eval_R_eps 3.64	hlg
+[2024-09-16 15:51:29,272] 15	T_sample 4.55	T_update 65.40	T_eval 1.38	ETA 0:04:45	train_R_eps 4.93	eval_R_eps 3.64	hlg
+[2024-09-16 15:52:39,986] 16	T_sample 4.42	T_update 64.86	T_eval 1.39	ETA 0:03:32	train_R_eps 4.90	eval_R_eps 3.64	hlg
+[2024-09-16 15:53:50,963] 17	T_sample 4.46	T_update 64.83	T_eval 1.64	ETA 0:02:22	train_R_eps 4.91	eval_R_eps 3.64	hlg
+[2024-09-16 15:55:01,633] 18	T_sample 4.69	T_update 64.57	T_eval 1.38	ETA 0:01:11	train_R_eps 4.76	eval_R_eps 3.64	hlg
+[2024-09-16 15:56:12,137] 19	T_sample 4.25	T_update 64.81	T_eval 1.39	ETA 0:00:00	train_R_eps 4.88	eval_R_eps 3.64	hlg
+[2024-09-16 15:56:12,146] training done!
+[2024-10-09 19:55:29,992] id: hlg
+[2024-10-09 19:55:29,992] seed: 111
+[2024-10-09 19:55:29,992] objectives_plan: objectives_hlg
+[2024-10-09 19:55:29,992] init_plan: init_plan_hlg
+[2024-10-09 19:55:29,992] env_specs: {}
+[2024-10-09 19:55:29,992] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-09 19:55:29,992] obs_specs: {}
+[2024-10-09 19:55:29,992] agent_specs: {'batch_stage': False}
+[2024-10-09 19:55:29,992] skip_land_use: False
+[2024-10-09 19:55:29,993] skip_road: True
+[2024-10-09 19:55:29,993] road_ratio: 0.0
+[2024-10-09 19:55:29,993] gamma: 2.0
+[2024-10-09 19:55:29,993] tau: 0.0
+[2024-10-09 19:55:29,993] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-09 19:55:29,993] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-09 19:55:29,993] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-09 19:55:29,993] lr: 0.004
+[2024-10-09 19:55:29,993] weightdecay: 0.1
+[2024-10-09 19:55:29,993] eps: 0.0001
+[2024-10-09 19:55:29,993] value_pred_coef: 0.1
+[2024-10-09 19:55:29,993] entropy_coef: 0.1
+[2024-10-09 19:55:29,993] clip_epsilon: 0.2
+[2024-10-09 19:55:29,993] max_num_iterations: 20
+[2024-10-09 19:55:29,993] num_episodes_per_iteration: 5
+[2024-10-09 19:55:29,993] max_sequence_length: 30
+[2024-10-09 19:55:29,993] num_optim_epoch: 4
+[2024-10-09 19:55:29,993] mini_batch_size: 256
+[2024-10-09 19:55:29,993] save_model_interval: 1
+[2024-10-09 19:59:21,382] id: hlg
+[2024-10-09 19:59:21,382] seed: 111
+[2024-10-09 19:59:21,382] objectives_plan: objectives_hlg
+[2024-10-09 19:59:21,382] init_plan: init_plan_hlg
+[2024-10-09 19:59:21,382] env_specs: {}
+[2024-10-09 19:59:21,382] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-09 19:59:21,382] obs_specs: {}
+[2024-10-09 19:59:21,382] agent_specs: {'batch_stage': False}
+[2024-10-09 19:59:21,382] skip_land_use: False
+[2024-10-09 19:59:21,382] skip_road: True
+[2024-10-09 19:59:21,382] road_ratio: 0.0
+[2024-10-09 19:59:21,382] gamma: 2.0
+[2024-10-09 19:59:21,382] tau: 0.0
+[2024-10-09 19:59:21,382] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-09 19:59:21,382] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-09 19:59:21,382] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-09 19:59:21,382] lr: 0.004
+[2024-10-09 19:59:21,382] weightdecay: 0.1
+[2024-10-09 19:59:21,382] eps: 0.0001
+[2024-10-09 19:59:21,382] value_pred_coef: 0.1
+[2024-10-09 19:59:21,382] entropy_coef: 0.1
+[2024-10-09 19:59:21,382] clip_epsilon: 0.2
+[2024-10-09 19:59:21,383] max_num_iterations: 20
+[2024-10-09 19:59:21,383] num_episodes_per_iteration: 5
+[2024-10-09 19:59:21,383] max_sequence_length: 30
+[2024-10-09 19:59:21,383] num_optim_epoch: 4
+[2024-10-09 19:59:21,383] mini_batch_size: 256
+[2024-10-09 19:59:21,383] save_model_interval: 1
+[2024-10-21 16:33:50,667] id: hlg
+[2024-10-21 16:33:50,669] seed: 111
+[2024-10-21 16:33:50,669] objectives_plan: objectives_hlg
+[2024-10-21 16:33:50,669] init_plan: init_plan_hlg
+[2024-10-21 16:33:50,669] env_specs: {}
+[2024-10-21 16:33:50,669] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-21 16:33:50,669] obs_specs: {}
+[2024-10-21 16:33:50,669] agent_specs: {'batch_stage': False}
+[2024-10-21 16:33:50,669] skip_land_use: False
+[2024-10-21 16:33:50,669] skip_road: True
+[2024-10-21 16:33:50,669] road_ratio: 0.0
+[2024-10-21 16:33:50,669] gamma: 2.0
+[2024-10-21 16:33:50,669] tau: 0.0
+[2024-10-21 16:33:50,669] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-21 16:33:50,669] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-21 16:33:50,669] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-21 16:33:50,669] lr: 0.004
+[2024-10-21 16:33:50,669] weightdecay: 0.1
+[2024-10-21 16:33:50,669] eps: 0.0001
+[2024-10-21 16:33:50,669] value_pred_coef: 0.1
+[2024-10-21 16:33:50,669] entropy_coef: 0.1
+[2024-10-21 16:33:50,669] clip_epsilon: 0.2
+[2024-10-21 16:33:50,669] max_num_iterations: 4
+[2024-10-21 16:33:50,669] num_episodes_per_iteration: 3
+[2024-10-21 16:33:50,669] max_sequence_length: 30
+[2024-10-21 16:33:50,669] num_optim_epoch: 4
+[2024-10-21 16:33:50,669] mini_batch_size: 256
+[2024-10-21 16:33:50,669] save_model_interval: 1
+[2024-10-21 16:35:05,332] 0	T_sample 4.70	T_update 67.88	T_eval 1.33	ETA 0:03:42	train_R_eps 9.35	eval_R_eps 8.44	hlg
+[2024-10-21 16:35:05,339] save best checkpoint with rewards 8.44!
+[2024-10-21 16:36:18,293] 1	T_sample 4.49	T_update 66.87	T_eval 1.55	ETA 0:02:26	train_R_eps 9.16	eval_R_eps 8.06	hlg
+[2024-10-21 16:37:30,606] 2	T_sample 4.79	T_update 66.26	T_eval 1.22	ETA 0:01:12	train_R_eps 9.30	eval_R_eps 8.28	hlg
+[2024-10-21 16:38:42,371] 3	T_sample 4.63	T_update 65.64	T_eval 1.45	ETA 0:00:00	train_R_eps 9.28	eval_R_eps 8.71	hlg
+[2024-10-21 16:38:42,378] save best checkpoint with rewards 8.71!
+[2024-10-21 16:38:42,384] training done!
+[2024-10-23 19:35:46,016] id: hlg
+[2024-10-23 19:35:46,016] seed: 111
+[2024-10-23 19:35:46,016] objectives_plan: objectives_hlg
+[2024-10-23 19:35:46,016] init_plan: init_plan_hlg
+[2024-10-23 19:35:46,016] env_specs: {}
+[2024-10-23 19:35:46,016] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-23 19:35:46,017] obs_specs: {}
+[2024-10-23 19:35:46,017] agent_specs: {'batch_stage': False}
+[2024-10-23 19:35:46,017] skip_land_use: False
+[2024-10-23 19:35:46,017] skip_road: True
+[2024-10-23 19:35:46,017] road_ratio: 0.0
+[2024-10-23 19:35:46,017] gamma: 2.0
+[2024-10-23 19:35:46,017] tau: 0.0
+[2024-10-23 19:35:46,017] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-23 19:35:46,017] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-23 19:35:46,017] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-23 19:35:46,017] lr: 0.004
+[2024-10-23 19:35:46,017] weightdecay: 0.1
+[2024-10-23 19:35:46,017] eps: 0.0001
+[2024-10-23 19:35:46,017] value_pred_coef: 0.1
+[2024-10-23 19:35:46,017] entropy_coef: 0.1
+[2024-10-23 19:35:46,017] clip_epsilon: 0.2
+[2024-10-23 19:35:46,017] max_num_iterations: 2
+[2024-10-23 19:35:46,017] num_episodes_per_iteration: 2
+[2024-10-23 19:35:46,017] max_sequence_length: 30
+[2024-10-23 19:35:46,017] num_optim_epoch: 4
+[2024-10-23 19:35:46,017] mini_batch_size: 256
+[2024-10-23 19:35:46,017] save_model_interval: 1
+[2024-10-23 19:37:02,514] 0	T_sample 8.30	T_update 64.93	T_eval 2.64	ETA 0:01:16	train_R_eps 9.35	eval_R_eps 8.44	hlg
+[2024-10-23 19:37:02,522] save best checkpoint with rewards 8.44!
+[2024-10-23 19:38:18,371] 1	T_sample 8.48	T_update 64.43	T_eval 2.89	ETA 0:00:00	train_R_eps 9.16	eval_R_eps 8.06	hlg
+[2024-10-23 19:38:18,380] training done!
+[2024-10-23 19:47:22,932] id: hlg
+[2024-10-23 19:47:22,932] seed: 111
+[2024-10-23 19:47:22,932] objectives_plan: objectives_hlg
+[2024-10-23 19:47:22,932] init_plan: init_plan_hlg
+[2024-10-23 19:47:22,932] env_specs: {}
+[2024-10-23 19:47:22,932] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-23 19:47:22,932] obs_specs: {}
+[2024-10-23 19:47:22,932] agent_specs: {'batch_stage': False}
+[2024-10-23 19:47:22,932] skip_land_use: False
+[2024-10-23 19:47:22,932] skip_road: True
+[2024-10-23 19:47:22,932] road_ratio: 0.0
+[2024-10-23 19:47:22,932] gamma: 2.0
+[2024-10-23 19:47:22,932] tau: 0.0
+[2024-10-23 19:47:22,932] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-23 19:47:22,932] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-23 19:47:22,932] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-23 19:47:22,932] lr: 0.004
+[2024-10-23 19:47:22,932] weightdecay: 0.1
+[2024-10-23 19:47:22,932] eps: 0.0001
+[2024-10-23 19:47:22,932] value_pred_coef: 0.1
+[2024-10-23 19:47:22,932] entropy_coef: 0.1
+[2024-10-23 19:47:22,932] clip_epsilon: 0.2
+[2024-10-23 19:47:22,932] max_num_iterations: 2
+[2024-10-23 19:47:22,932] num_episodes_per_iteration: 2
+[2024-10-23 19:47:22,932] max_sequence_length: 30
+[2024-10-23 19:47:22,932] num_optim_epoch: 4
+[2024-10-23 19:47:22,932] mini_batch_size: 256
+[2024-10-23 19:47:22,932] save_model_interval: 1
+[2024-10-23 19:48:37,307] 0	T_sample 11.56	T_update 59.43	T_eval 2.71	ETA 0:01:14	train_R_eps 9.35	eval_R_eps 8.44	hlg
+[2024-10-23 19:48:37,315] save best checkpoint with rewards 8.44!
+[2024-10-23 19:49:48,870] 1	T_sample 12.47	T_update 55.84	T_eval 3.20	ETA 0:00:00	train_R_eps 9.16	eval_R_eps 8.06	hlg
+[2024-10-23 19:49:48,876] training done!
+[2024-10-23 19:50:11,950] id: hlg
+[2024-10-23 19:50:11,950] seed: 111
+[2024-10-23 19:50:11,950] objectives_plan: objectives_hlg
+[2024-10-23 19:50:11,950] init_plan: init_plan_hlg
+[2024-10-23 19:50:11,950] env_specs: {}
+[2024-10-23 19:50:11,950] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-23 19:50:11,950] obs_specs: {}
+[2024-10-23 19:50:11,950] agent_specs: {'batch_stage': False}
+[2024-10-23 19:50:11,950] skip_land_use: False
+[2024-10-23 19:50:11,950] skip_road: True
+[2024-10-23 19:50:11,950] road_ratio: 0.0
+[2024-10-23 19:50:11,950] gamma: 2.0
+[2024-10-23 19:50:11,950] tau: 0.0
+[2024-10-23 19:50:11,950] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-23 19:50:11,950] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-23 19:50:11,950] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-23 19:50:11,950] lr: 0.004
+[2024-10-23 19:50:11,950] weightdecay: 0.1
+[2024-10-23 19:50:11,950] eps: 0.0001
+[2024-10-23 19:50:11,950] value_pred_coef: 0.1
+[2024-10-23 19:50:11,950] entropy_coef: 0.1
+[2024-10-23 19:50:11,950] clip_epsilon: 0.2
+[2024-10-23 19:50:11,950] max_num_iterations: 2
+[2024-10-23 19:50:11,951] num_episodes_per_iteration: 2
+[2024-10-23 19:50:11,951] max_sequence_length: 30
+[2024-10-23 19:50:11,951] num_optim_epoch: 4
+[2024-10-23 19:50:11,951] mini_batch_size: 256
+[2024-10-23 19:50:11,951] save_model_interval: 1
+[2024-10-23 19:51:25,478] 0	T_sample 11.59	T_update 58.50	T_eval 2.73	ETA 0:01:13	train_R_eps 9.35	eval_R_eps 8.44	hlg
+[2024-10-23 19:51:25,489] save best checkpoint with rewards 8.44!
+[2024-10-23 19:52:40,069] 1	T_sample 10.99	T_update 60.55	T_eval 2.99	ETA 0:00:00	train_R_eps 9.16	eval_R_eps 8.06	hlg
+[2024-10-23 19:52:40,077] training done!
+[2024-10-24 07:52:47,915] id: hlg
+[2024-10-24 07:52:47,916] seed: 111
+[2024-10-24 07:52:47,916] objectives_plan: objectives_hlg
+[2024-10-24 07:52:47,916] init_plan: init_plan_hlg
+[2024-10-24 07:52:47,916] env_specs: {}
+[2024-10-24 07:52:47,916] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 07:52:47,916] obs_specs: {}
+[2024-10-24 07:52:47,916] agent_specs: {'batch_stage': False}
+[2024-10-24 07:52:47,916] skip_land_use: False
+[2024-10-24 07:52:47,916] skip_road: True
+[2024-10-24 07:52:47,916] road_ratio: 0.0
+[2024-10-24 07:52:47,916] gamma: 2.0
+[2024-10-24 07:52:47,916] tau: 0.0
+[2024-10-24 07:52:47,916] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-24 07:52:47,916] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 07:52:47,916] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 07:52:47,916] lr: 0.004
+[2024-10-24 07:52:47,916] weightdecay: 0.1
+[2024-10-24 07:52:47,916] eps: 0.0001
+[2024-10-24 07:52:47,916] value_pred_coef: 0.1
+[2024-10-24 07:52:47,916] entropy_coef: 0.1
+[2024-10-24 07:52:47,916] clip_epsilon: 0.2
+[2024-10-24 07:52:47,916] max_num_iterations: 2
+[2024-10-24 07:52:47,916] num_episodes_per_iteration: 2
+[2024-10-24 07:52:47,916] max_sequence_length: 30
+[2024-10-24 07:52:47,916] num_optim_epoch: 4
+[2024-10-24 07:52:47,916] mini_batch_size: 256
+[2024-10-24 07:52:47,916] save_model_interval: 1
+[2024-10-24 07:54:08,153] 0	T_sample 8.92	T_update 67.72	T_eval 2.85	ETA 0:01:19	train_R_eps 9.35	eval_R_eps 8.44	hlg
+[2024-10-24 07:54:08,160] save best checkpoint with rewards 8.44!
+[2024-10-24 07:55:25,857] 1	T_sample 9.02	T_update 65.58	T_eval 3.05	ETA 0:00:00	train_R_eps 9.16	eval_R_eps 8.06	hlg
+[2024-10-24 07:55:25,866] training done!
+[2024-10-24 08:03:17,209] id: hlg
+[2024-10-24 08:03:17,209] seed: 111
+[2024-10-24 08:03:17,209] objectives_plan: objectives_hlg
+[2024-10-24 08:03:17,209] init_plan: init_plan_hlg
+[2024-10-24 08:03:17,209] env_specs: {}
+[2024-10-24 08:03:17,209] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 08:03:17,209] obs_specs: {}
+[2024-10-24 08:03:17,209] agent_specs: {'batch_stage': False}
+[2024-10-24 08:03:17,209] skip_land_use: False
+[2024-10-24 08:03:17,209] skip_road: True
+[2024-10-24 08:03:17,209] road_ratio: 0.0
+[2024-10-24 08:03:17,209] gamma: 2.0
+[2024-10-24 08:03:17,209] tau: 0.0
+[2024-10-24 08:03:17,209] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-24 08:03:17,209] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 08:03:17,209] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 08:03:17,210] lr: 0.004
+[2024-10-24 08:03:17,210] weightdecay: 0.1
+[2024-10-24 08:03:17,210] eps: 0.0001
+[2024-10-24 08:03:17,210] value_pred_coef: 0.1
+[2024-10-24 08:03:17,210] entropy_coef: 0.1
+[2024-10-24 08:03:17,210] clip_epsilon: 0.2
+[2024-10-24 08:03:17,210] max_num_iterations: 2
+[2024-10-24 08:03:17,210] num_episodes_per_iteration: 2
+[2024-10-24 08:03:17,210] max_sequence_length: 30
+[2024-10-24 08:03:17,210] num_optim_epoch: 4
+[2024-10-24 08:03:17,210] mini_batch_size: 256
+[2024-10-24 08:03:17,210] save_model_interval: 1
+[2024-10-24 08:04:36,819] 0	T_sample 8.62	T_update 67.49	T_eval 2.79	ETA 0:01:19	train_R_eps 9.35	eval_R_eps 8.44	hlg
+[2024-10-24 08:04:36,828] save best checkpoint with rewards 8.44!
+[2024-10-24 08:05:54,964] 1	T_sample 8.38	T_update 66.67	T_eval 3.06	ETA 0:00:00	train_R_eps 9.16	eval_R_eps 8.06	hlg
+[2024-10-24 08:05:54,973] training done!
+[2024-10-24 08:06:11,707] id: hlg
+[2024-10-24 08:06:11,707] seed: 111
+[2024-10-24 08:06:11,707] objectives_plan: objectives_hlg
+[2024-10-24 08:06:11,708] init_plan: init_plan_hlg
+[2024-10-24 08:06:11,708] env_specs: {}
+[2024-10-24 08:06:11,708] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 08:06:11,708] obs_specs: {}
+[2024-10-24 08:06:11,708] agent_specs: {'batch_stage': False}
+[2024-10-24 08:06:11,708] skip_land_use: False
+[2024-10-24 08:06:11,708] skip_road: True
+[2024-10-24 08:06:11,708] road_ratio: 0.0
+[2024-10-24 08:06:11,708] gamma: 2.0
+[2024-10-24 08:06:11,708] tau: 0.0
+[2024-10-24 08:06:11,708] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-10-24 08:06:11,708] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 08:06:11,708] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 08:06:11,708] lr: 0.004
+[2024-10-24 08:06:11,708] weightdecay: 0.1
+[2024-10-24 08:06:11,708] eps: 0.0001
+[2024-10-24 08:06:11,708] value_pred_coef: 0.1
+[2024-10-24 08:06:11,708] entropy_coef: 0.1
+[2024-10-24 08:06:11,708] clip_epsilon: 0.2
+[2024-10-24 08:06:11,708] max_num_iterations: 2
+[2024-10-24 08:06:11,708] num_episodes_per_iteration: 2
+[2024-10-24 08:06:11,708] max_sequence_length: 30
+[2024-10-24 08:06:11,708] num_optim_epoch: 4
+[2024-10-24 08:06:11,708] mini_batch_size: 256
+[2024-10-24 08:06:11,708] save_model_interval: 1
+[2024-10-24 08:07:05,751] id: hlg
+[2024-10-24 08:07:05,751] seed: 111
+[2024-10-24 08:07:05,751] objectives_plan: objectives_hlg
+[2024-10-24 08:07:05,751] init_plan: init_plan_hlg
+[2024-10-24 08:07:05,751] env_specs: {}
+[2024-10-24 08:07:05,751] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 08:07:05,751] obs_specs: {}
+[2024-10-24 08:07:05,751] agent_specs: {'batch_stage': False}
+[2024-10-24 08:07:05,751] skip_land_use: False
+[2024-10-24 08:07:05,751] skip_road: True
+[2024-10-24 08:07:05,751] road_ratio: 0.0
+[2024-10-24 08:07:05,751] gamma: 2.0
+[2024-10-24 08:07:05,751] tau: 0.0
+[2024-10-24 08:07:05,751] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 10000, 'num_attention_heads': 2}
+[2024-10-24 08:07:05,751] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 08:07:05,751] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 08:07:05,751] lr: 0.004
+[2024-10-24 08:07:05,751] weightdecay: 0.1
+[2024-10-24 08:07:05,751] eps: 0.0001
+[2024-10-24 08:07:05,751] value_pred_coef: 0.1
+[2024-10-24 08:07:05,751] entropy_coef: 0.1
+[2024-10-24 08:07:05,751] clip_epsilon: 0.2
+[2024-10-24 08:07:05,751] max_num_iterations: 2
+[2024-10-24 08:07:05,751] num_episodes_per_iteration: 2
+[2024-10-24 08:07:05,751] max_sequence_length: 30
+[2024-10-24 08:07:05,751] num_optim_epoch: 4
+[2024-10-24 08:07:05,751] mini_batch_size: 256
+[2024-10-24 08:07:05,751] save_model_interval: 1
+[2024-10-24 08:07:34,848] id: hlg
+[2024-10-24 08:07:34,848] seed: 111
+[2024-10-24 08:07:34,848] objectives_plan: objectives_hlg
+[2024-10-24 08:07:34,848] init_plan: init_plan_hlg
+[2024-10-24 08:07:34,848] env_specs: {}
+[2024-10-24 08:07:34,848] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 08:07:34,848] obs_specs: {}
+[2024-10-24 08:07:34,848] agent_specs: {'batch_stage': False}
+[2024-10-24 08:07:34,848] skip_land_use: False
+[2024-10-24 08:07:34,848] skip_road: True
+[2024-10-24 08:07:34,848] road_ratio: 0.0
+[2024-10-24 08:07:34,848] gamma: 2.0
+[2024-10-24 08:07:34,848] tau: 0.0
+[2024-10-24 08:07:34,848] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-24 08:07:34,848] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 08:07:34,848] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 08:07:34,848] lr: 0.004
+[2024-10-24 08:07:34,848] weightdecay: 0.1
+[2024-10-24 08:07:34,848] eps: 0.0001
+[2024-10-24 08:07:34,848] value_pred_coef: 0.1
+[2024-10-24 08:07:34,848] entropy_coef: 0.1
+[2024-10-24 08:07:34,848] clip_epsilon: 0.2
+[2024-10-24 08:07:34,848] max_num_iterations: 2
+[2024-10-24 08:07:34,848] num_episodes_per_iteration: 2
+[2024-10-24 08:07:34,848] max_sequence_length: 30
+[2024-10-24 08:07:34,848] num_optim_epoch: 4
+[2024-10-24 08:07:34,848] mini_batch_size: 256
+[2024-10-24 08:07:34,848] save_model_interval: 1
+[2024-10-24 08:28:24,379] id: hlg
+[2024-10-24 08:28:24,379] seed: 111
+[2024-10-24 08:28:24,379] objectives_plan: objectives_hlg
+[2024-10-24 08:28:24,379] init_plan: init_plan_hlg
+[2024-10-24 08:28:24,379] env_specs: {}
+[2024-10-24 08:28:24,380] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 08:28:24,380] obs_specs: {}
+[2024-10-24 08:28:24,380] agent_specs: {'batch_stage': False}
+[2024-10-24 08:28:24,380] skip_land_use: False
+[2024-10-24 08:28:24,380] skip_road: True
+[2024-10-24 08:28:24,380] road_ratio: 0.0
+[2024-10-24 08:28:24,380] gamma: 2.0
+[2024-10-24 08:28:24,380] tau: 0.0
+[2024-10-24 08:28:24,380] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-24 08:28:24,380] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 08:28:24,380] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 08:28:24,380] lr: 0.004
+[2024-10-24 08:28:24,380] weightdecay: 0.1
+[2024-10-24 08:28:24,380] eps: 0.0001
+[2024-10-24 08:28:24,380] value_pred_coef: 0.1
+[2024-10-24 08:28:24,380] entropy_coef: 0.1
+[2024-10-24 08:28:24,380] clip_epsilon: 0.2
+[2024-10-24 08:28:24,380] max_num_iterations: 2
+[2024-10-24 08:28:24,380] num_episodes_per_iteration: 1
+[2024-10-24 08:28:24,380] max_sequence_length: 30
+[2024-10-24 08:28:24,380] num_optim_epoch: 4
+[2024-10-24 08:28:24,380] mini_batch_size: 256
+[2024-10-24 08:28:24,380] save_model_interval: 1
+[2024-10-24 20:33:16,276] id: hlg
+[2024-10-24 20:33:16,276] seed: 111
+[2024-10-24 20:33:16,276] objectives_plan: objectives_hlg
+[2024-10-24 20:33:16,276] init_plan: init_plan_hlg
+[2024-10-24 20:33:16,276] env_specs: {}
+[2024-10-24 20:33:16,276] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 20:33:16,276] obs_specs: {}
+[2024-10-24 20:33:16,276] agent_specs: {'batch_stage': False}
+[2024-10-24 20:33:16,276] skip_land_use: False
+[2024-10-24 20:33:16,276] skip_road: True
+[2024-10-24 20:33:16,276] road_ratio: 0.0
+[2024-10-24 20:33:16,276] gamma: 2.0
+[2024-10-24 20:33:16,276] tau: 0.0
+[2024-10-24 20:33:16,276] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-24 20:33:16,276] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 20:33:16,276] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 20:33:16,276] lr: 0.004
+[2024-10-24 20:33:16,276] weightdecay: 0.1
+[2024-10-24 20:33:16,276] eps: 0.0001
+[2024-10-24 20:33:16,276] value_pred_coef: 0.1
+[2024-10-24 20:33:16,276] entropy_coef: 0.1
+[2024-10-24 20:33:16,276] clip_epsilon: 0.2
+[2024-10-24 20:33:16,276] max_num_iterations: 1
+[2024-10-24 20:33:16,276] num_episodes_per_iteration: 1
+[2024-10-24 20:33:16,276] max_sequence_length: 30
+[2024-10-24 20:33:16,276] num_optim_epoch: 4
+[2024-10-24 20:33:16,276] mini_batch_size: 256
+[2024-10-24 20:33:16,276] save_model_interval: 1
+[2024-10-24 20:46:07,621] id: hlg
+[2024-10-24 20:46:07,621] seed: 111
+[2024-10-24 20:46:07,621] objectives_plan: objectives_hlg
+[2024-10-24 20:46:07,621] init_plan: init_plan_hlg
+[2024-10-24 20:46:07,621] env_specs: {}
+[2024-10-24 20:46:07,621] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 20:46:07,622] obs_specs: {}
+[2024-10-24 20:46:07,622] agent_specs: {'batch_stage': False}
+[2024-10-24 20:46:07,622] skip_land_use: False
+[2024-10-24 20:46:07,622] skip_road: True
+[2024-10-24 20:46:07,622] road_ratio: 0.0
+[2024-10-24 20:46:07,622] gamma: 2.0
+[2024-10-24 20:46:07,622] tau: 0.0
+[2024-10-24 20:46:07,622] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-24 20:46:07,622] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 20:46:07,622] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 20:46:07,622] lr: 0.004
+[2024-10-24 20:46:07,622] weightdecay: 0.1
+[2024-10-24 20:46:07,622] eps: 0.0001
+[2024-10-24 20:46:07,622] value_pred_coef: 0.1
+[2024-10-24 20:46:07,622] entropy_coef: 0.1
+[2024-10-24 20:46:07,622] clip_epsilon: 0.2
+[2024-10-24 20:46:07,622] max_num_iterations: 1
+[2024-10-24 20:46:07,622] num_episodes_per_iteration: 1
+[2024-10-24 20:46:07,622] max_sequence_length: 30
+[2024-10-24 20:46:07,622] num_optim_epoch: 4
+[2024-10-24 20:46:07,622] mini_batch_size: 256
+[2024-10-24 20:46:07,622] save_model_interval: 1
+[2024-10-24 20:48:51,046] id: hlg
+[2024-10-24 20:48:51,046] seed: 111
+[2024-10-24 20:48:51,046] objectives_plan: objectives_hlg
+[2024-10-24 20:48:51,046] init_plan: init_plan_hlg
+[2024-10-24 20:48:51,046] env_specs: {}
+[2024-10-24 20:48:51,046] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-24 20:48:51,046] obs_specs: {}
+[2024-10-24 20:48:51,046] agent_specs: {'batch_stage': False}
+[2024-10-24 20:48:51,046] skip_land_use: False
+[2024-10-24 20:48:51,047] skip_road: True
+[2024-10-24 20:48:51,047] road_ratio: 0.0
+[2024-10-24 20:48:51,047] gamma: 2.0
+[2024-10-24 20:48:51,047] tau: 0.0
+[2024-10-24 20:48:51,047] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-24 20:48:51,047] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-24 20:48:51,047] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-24 20:48:51,047] lr: 0.004
+[2024-10-24 20:48:51,047] weightdecay: 0.1
+[2024-10-24 20:48:51,047] eps: 0.0001
+[2024-10-24 20:48:51,047] value_pred_coef: 0.1
+[2024-10-24 20:48:51,047] entropy_coef: 0.1
+[2024-10-24 20:48:51,047] clip_epsilon: 0.2
+[2024-10-24 20:48:51,047] max_num_iterations: 1
+[2024-10-24 20:48:51,047] num_episodes_per_iteration: 1
+[2024-10-24 20:48:51,047] max_sequence_length: 30
+[2024-10-24 20:48:51,047] num_optim_epoch: 4
+[2024-10-24 20:48:51,047] mini_batch_size: 256
+[2024-10-24 20:48:51,047] save_model_interval: 1
+[2024-10-24 21:02:06,107] polygon: POLYGON ((1500 400, 1700 400, 1700 250, 1500 250, 1500 400))
+new intersection: POINT (1700 400)
+road or boundary to split:
+LINESTRING (1700 500, 1700 250)
+LINESTRING (1700 0, 1700 500)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-10-24 21:02:06,109] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 926), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1022), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1070), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1179), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1232), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 2034), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1716), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 2413), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1336), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 2939), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 3498), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 3773), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4226), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4580), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 5015), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4140), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1965), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 2071)]
+[2024-10-24 21:02:06,113] Plan fails during eval.
+[2024-10-24 21:02:06,314] 0	T_sample 30.42	T_update 761.93	T_eval 2.06	ETA 0:00:00	train_R_eps 9.26	eval_R_eps -1.00	hlg
+[2024-10-24 21:02:06,339] save best checkpoint with rewards -1.00!
+[2024-10-24 21:02:06,346] training done!
+[2024-10-25 08:33:39,277] id: hlg
+[2024-10-25 08:33:39,277] seed: 111
+[2024-10-25 08:33:39,277] objectives_plan: objectives_hlg
+[2024-10-25 08:33:39,277] init_plan: init_plan_hlg
+[2024-10-25 08:33:39,278] env_specs: {}
+[2024-10-25 08:33:39,278] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-25 08:33:39,278] obs_specs: {}
+[2024-10-25 08:33:39,278] agent_specs: {'batch_stage': False}
+[2024-10-25 08:33:39,278] skip_land_use: False
+[2024-10-25 08:33:39,278] skip_road: True
+[2024-10-25 08:33:39,278] road_ratio: 0.0
+[2024-10-25 08:33:39,278] gamma: 2.0
+[2024-10-25 08:33:39,278] tau: 0.0
+[2024-10-25 08:33:39,278] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-25 08:33:39,278] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-25 08:33:39,278] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-25 08:33:39,278] lr: 0.004
+[2024-10-25 08:33:39,278] weightdecay: 0.1
+[2024-10-25 08:33:39,278] eps: 0.0001
+[2024-10-25 08:33:39,278] value_pred_coef: 0.1
+[2024-10-25 08:33:39,278] entropy_coef: 0.1
+[2024-10-25 08:33:39,278] clip_epsilon: 0.2
+[2024-10-25 08:33:39,278] max_num_iterations: 1
+[2024-10-25 08:33:39,278] num_episodes_per_iteration: 1
+[2024-10-25 08:33:39,278] max_sequence_length: 30
+[2024-10-25 08:33:39,278] num_optim_epoch: 4
+[2024-10-25 08:33:39,278] mini_batch_size: 256
+[2024-10-25 08:33:39,278] save_model_interval: 1
+[2024-10-25 08:47:00,947] 0	T_sample 10.67	T_update 787.05	T_eval 2.99	ETA 0:00:00	train_R_eps 9.30	eval_R_eps 8.15	hlg
+[2024-10-25 08:47:00,990] save best checkpoint with rewards 8.15!
+[2024-10-25 08:47:01,004] training done!
+[2024-10-25 12:22:10,703] id: hlg
+[2024-10-25 12:22:10,703] seed: 111
+[2024-10-25 12:22:10,703] objectives_plan: objectives_hlg
+[2024-10-25 12:22:10,703] init_plan: init_plan_hlg
+[2024-10-25 12:22:10,703] env_specs: {}
+[2024-10-25 12:22:10,703] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-25 12:22:10,703] obs_specs: {}
+[2024-10-25 12:22:10,703] agent_specs: {'batch_stage': False}
+[2024-10-25 12:22:10,703] skip_land_use: False
+[2024-10-25 12:22:10,704] skip_road: True
+[2024-10-25 12:22:10,704] road_ratio: 0.0
+[2024-10-25 12:22:10,704] gamma: 2.0
+[2024-10-25 12:22:10,704] tau: 0.0
+[2024-10-25 12:22:10,704] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-25 12:22:10,704] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-25 12:22:10,704] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-25 12:22:10,704] lr: 0.004
+[2024-10-25 12:22:10,704] weightdecay: 0.1
+[2024-10-25 12:22:10,704] eps: 0.0001
+[2024-10-25 12:22:10,704] value_pred_coef: 0.1
+[2024-10-25 12:22:10,704] entropy_coef: 0.1
+[2024-10-25 12:22:10,704] clip_epsilon: 0.2
+[2024-10-25 12:22:10,704] max_num_iterations: 1
+[2024-10-25 12:22:10,704] num_episodes_per_iteration: 1
+[2024-10-25 12:22:10,704] max_sequence_length: 30
+[2024-10-25 12:22:10,704] num_optim_epoch: 4
+[2024-10-25 12:22:10,704] mini_batch_size: 256
+[2024-10-25 12:22:10,704] save_model_interval: 1
+[2024-10-25 12:34:46,856] 0	T_sample 15.14	T_update 736.82	T_eval 3.30	ETA 0:00:00	train_R_eps 9.33	eval_R_eps 8.28	hlg
+[2024-10-25 12:34:46,880] save best checkpoint with rewards 8.28!
+[2024-10-25 12:34:46,888] training done!
+[2024-10-25 15:27:31,957] id: hlg
+[2024-10-25 15:27:31,957] seed: 111
+[2024-10-25 15:27:31,957] objectives_plan: objectives_hlg
+[2024-10-25 15:27:31,957] init_plan: init_plan_hlg
+[2024-10-25 15:27:31,957] env_specs: {}
+[2024-10-25 15:27:31,957] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-25 15:27:31,957] obs_specs: {}
+[2024-10-25 15:27:31,957] agent_specs: {'batch_stage': False}
+[2024-10-25 15:27:31,957] skip_land_use: False
+[2024-10-25 15:27:31,957] skip_road: True
+[2024-10-25 15:27:31,957] road_ratio: 0.0
+[2024-10-25 15:27:31,957] gamma: 2.0
+[2024-10-25 15:27:31,957] tau: 0.0
+[2024-10-25 15:27:31,957] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-25 15:27:31,957] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-25 15:27:31,957] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-25 15:27:31,957] lr: 0.004
+[2024-10-25 15:27:31,957] weightdecay: 0.1
+[2024-10-25 15:27:31,957] eps: 0.0001
+[2024-10-25 15:27:31,957] value_pred_coef: 0.1
+[2024-10-25 15:27:31,957] entropy_coef: 0.1
+[2024-10-25 15:27:31,957] clip_epsilon: 0.2
+[2024-10-25 15:27:31,957] max_num_iterations: 1
+[2024-10-25 15:27:31,957] num_episodes_per_iteration: 1
+[2024-10-25 15:27:31,957] max_sequence_length: 30
+[2024-10-25 15:27:31,957] num_optim_epoch: 4
+[2024-10-25 15:27:31,957] mini_batch_size: 256
+[2024-10-25 15:27:31,957] save_model_interval: 1
+[2024-10-25 15:40:48,290] 0	T_sample 9.63	T_update 782.72	T_eval 3.04	ETA 0:00:00	train_R_eps 9.32	eval_R_eps 8.37	hlg
+[2024-10-25 15:40:48,311] save best checkpoint with rewards 8.37!
+[2024-10-25 15:40:48,322] training done!
+[2024-10-25 20:15:51,772] id: hlg
+[2024-10-25 20:15:51,773] seed: 111
+[2024-10-25 20:15:51,773] objectives_plan: objectives_hlg
+[2024-10-25 20:15:51,773] init_plan: init_plan_hlg
+[2024-10-25 20:15:51,773] env_specs: {}
+[2024-10-25 20:15:51,773] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-25 20:15:51,773] obs_specs: {}
+[2024-10-25 20:15:51,773] agent_specs: {'batch_stage': False}
+[2024-10-25 20:15:51,773] skip_land_use: False
+[2024-10-25 20:15:51,773] skip_road: True
+[2024-10-25 20:15:51,773] road_ratio: 0.0
+[2024-10-25 20:15:51,773] gamma: 2.0
+[2024-10-25 20:15:51,773] tau: 0.0
+[2024-10-25 20:15:51,773] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-25 20:15:51,773] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-25 20:15:51,773] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-25 20:15:51,773] lr: 0.004
+[2024-10-25 20:15:51,773] weightdecay: 0.1
+[2024-10-25 20:15:51,773] eps: 0.0001
+[2024-10-25 20:15:51,773] value_pred_coef: 0.1
+[2024-10-25 20:15:51,773] entropy_coef: 0.1
+[2024-10-25 20:15:51,773] clip_epsilon: 0.2
+[2024-10-25 20:15:51,773] max_num_iterations: 1
+[2024-10-25 20:15:51,773] num_episodes_per_iteration: 1
+[2024-10-25 20:15:51,773] max_sequence_length: 30
+[2024-10-25 20:15:51,773] num_optim_epoch: 4
+[2024-10-25 20:15:51,773] mini_batch_size: 256
+[2024-10-25 20:15:51,773] save_model_interval: 1
+[2024-10-25 20:19:34,872] id: hlg
+[2024-10-25 20:19:34,873] seed: 111
+[2024-10-25 20:19:34,873] objectives_plan: objectives_hlg
+[2024-10-25 20:19:34,873] init_plan: init_plan_hlg
+[2024-10-25 20:19:34,873] env_specs: {}
+[2024-10-25 20:19:34,873] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-25 20:19:34,873] obs_specs: {}
+[2024-10-25 20:19:34,873] agent_specs: {'batch_stage': False}
+[2024-10-25 20:19:34,873] skip_land_use: False
+[2024-10-25 20:19:34,873] skip_road: True
+[2024-10-25 20:19:34,873] road_ratio: 0.0
+[2024-10-25 20:19:34,873] gamma: 2.0
+[2024-10-25 20:19:34,873] tau: 0.0
+[2024-10-25 20:19:34,873] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-25 20:19:34,873] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-25 20:19:34,873] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-25 20:19:34,873] lr: 0.004
+[2024-10-25 20:19:34,873] weightdecay: 0.1
+[2024-10-25 20:19:34,873] eps: 0.0001
+[2024-10-25 20:19:34,873] value_pred_coef: 0.1
+[2024-10-25 20:19:34,873] entropy_coef: 0.1
+[2024-10-25 20:19:34,873] clip_epsilon: 0.2
+[2024-10-25 20:19:34,873] max_num_iterations: 1
+[2024-10-25 20:19:34,873] num_episodes_per_iteration: 1
+[2024-10-25 20:19:34,873] max_sequence_length: 30
+[2024-10-25 20:19:34,873] num_optim_epoch: 4
+[2024-10-25 20:19:34,873] mini_batch_size: 256
+[2024-10-25 20:19:34,873] save_model_interval: 1
+[2024-10-25 20:49:56,237] polygon: POLYGON ((1083.8764884130508 1240.344151850034, 1107.654007111765 1091.9603959200842, 959.5 1068.5, 935.7662741469076 1216.6104663996784, 1083.8764884130508 1240.344151850034))
+new intersection: POINT (1107.654007111765 1091.9603959200842)
+road or boundary to split:
+LINESTRING (959.5 1068.5, 1124.980739405597 1094.7041084091293)
+LINESTRING (963.6875337167867 1069.163101868385, 1117.2183229603572 1093.4749188201868)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-10-25 20:49:56,239] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 926), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 955), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 995), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1071), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1010), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 953), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1021), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1369), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1289), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1468), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1488), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1463), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1638), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1086)]
+[2024-10-25 20:49:56,241] Plan fails during eval.
+[2024-10-25 20:49:56,437] 0	T_sample 12.83	T_update 1806.49	T_eval 1.32	ETA 0:00:00	train_R_eps 9.15	eval_R_eps -1.00	hlg
+[2024-10-25 20:49:56,457] save best checkpoint with rewards -1.00!
+[2024-10-25 20:49:56,467] training done!
+[2024-10-25 20:51:50,480] id: hlg
+[2024-10-25 20:51:50,481] seed: 111
+[2024-10-25 20:51:50,481] objectives_plan: objectives_hlg
+[2024-10-25 20:51:50,481] init_plan: init_plan_hlg
+[2024-10-25 20:51:50,481] env_specs: {}
+[2024-10-25 20:51:50,481] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-25 20:51:50,481] obs_specs: {}
+[2024-10-25 20:51:50,481] agent_specs: {'batch_stage': False}
+[2024-10-25 20:51:50,481] skip_land_use: False
+[2024-10-25 20:51:50,481] skip_road: True
+[2024-10-25 20:51:50,481] road_ratio: 0.0
+[2024-10-25 20:51:50,481] gamma: 2.0
+[2024-10-25 20:51:50,481] tau: 0.0
+[2024-10-25 20:51:50,481] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-25 20:51:50,481] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-25 20:51:50,481] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-25 20:51:50,481] lr: 0.004
+[2024-10-25 20:51:50,481] weightdecay: 0.1
+[2024-10-25 20:51:50,481] eps: 0.0001
+[2024-10-25 20:51:50,481] value_pred_coef: 0.1
+[2024-10-25 20:51:50,481] entropy_coef: 0.1
+[2024-10-25 20:51:50,481] clip_epsilon: 0.2
+[2024-10-25 20:51:50,481] max_num_iterations: 1
+[2024-10-25 20:51:50,481] num_episodes_per_iteration: 1
+[2024-10-25 20:51:50,481] max_sequence_length: 30
+[2024-10-25 20:51:50,481] num_optim_epoch: 4
+[2024-10-25 20:51:50,481] mini_batch_size: 256
+[2024-10-25 20:51:50,481] save_model_interval: 1
+[2024-10-25 21:07:16,572] 0	T_sample 12.59	T_update 909.25	T_eval 3.36	ETA 0:00:00	train_R_eps 9.34	eval_R_eps 8.78	hlg
+[2024-10-25 21:07:16,592] save best checkpoint with rewards 8.78!
+[2024-10-25 21:07:16,600] training done!
+[2024-10-26 12:01:39,271] id: hlg
+[2024-10-26 12:01:39,271] seed: 111
+[2024-10-26 12:01:39,271] objectives_plan: objectives_hlg
+[2024-10-26 12:01:39,271] init_plan: init_plan_hlg
+[2024-10-26 12:01:39,271] env_specs: {}
+[2024-10-26 12:01:39,271] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 12:01:39,271] obs_specs: {}
+[2024-10-26 12:01:39,271] agent_specs: {'batch_stage': False}
+[2024-10-26 12:01:39,271] skip_land_use: False
+[2024-10-26 12:01:39,271] skip_road: True
+[2024-10-26 12:01:39,271] road_ratio: 0.0
+[2024-10-26 12:01:39,271] gamma: 2.0
+[2024-10-26 12:01:39,271] tau: 0.0
+[2024-10-26 12:01:39,271] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 12:01:39,271] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 12:01:39,271] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 12:01:39,271] lr: 0.004
+[2024-10-26 12:01:39,271] weightdecay: 0.1
+[2024-10-26 12:01:39,271] eps: 0.0001
+[2024-10-26 12:01:39,271] value_pred_coef: 0.1
+[2024-10-26 12:01:39,271] entropy_coef: 0.1
+[2024-10-26 12:01:39,271] clip_epsilon: 0.2
+[2024-10-26 12:01:39,271] max_num_iterations: 1
+[2024-10-26 12:01:39,271] num_episodes_per_iteration: 1
+[2024-10-26 12:01:39,271] max_sequence_length: 30
+[2024-10-26 12:01:39,271] num_optim_epoch: 4
+[2024-10-26 12:01:39,271] mini_batch_size: 256
+[2024-10-26 12:01:39,271] save_model_interval: 1
+[2024-10-26 14:38:27,304] id: hlg
+[2024-10-26 14:38:27,305] seed: 111
+[2024-10-26 14:38:27,305] objectives_plan: objectives_hlg
+[2024-10-26 14:38:27,305] init_plan: init_plan_hlg
+[2024-10-26 14:38:27,305] env_specs: {}
+[2024-10-26 14:38:27,305] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 14:38:27,305] obs_specs: {}
+[2024-10-26 14:38:27,305] agent_specs: {'batch_stage': False}
+[2024-10-26 14:38:27,305] skip_land_use: False
+[2024-10-26 14:38:27,305] skip_road: True
+[2024-10-26 14:38:27,305] road_ratio: 0.0
+[2024-10-26 14:38:27,305] gamma: 2.0
+[2024-10-26 14:38:27,305] tau: 0.0
+[2024-10-26 14:38:27,305] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 14:38:27,305] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 14:38:27,305] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 14:38:27,305] lr: 0.004
+[2024-10-26 14:38:27,305] weightdecay: 0.1
+[2024-10-26 14:38:27,305] eps: 0.0001
+[2024-10-26 14:38:27,305] value_pred_coef: 0.1
+[2024-10-26 14:38:27,305] entropy_coef: 0.1
+[2024-10-26 14:38:27,305] clip_epsilon: 0.2
+[2024-10-26 14:38:27,305] max_num_iterations: 1
+[2024-10-26 14:38:27,305] num_episodes_per_iteration: 1
+[2024-10-26 14:38:27,305] max_sequence_length: 30
+[2024-10-26 14:38:27,305] num_optim_epoch: 4
+[2024-10-26 14:38:27,305] mini_batch_size: 256
+[2024-10-26 14:38:27,305] save_model_interval: 1
+[2024-10-26 14:40:41,224] id: hlg
+[2024-10-26 14:40:41,224] seed: 111
+[2024-10-26 14:40:41,224] objectives_plan: objectives_hlg
+[2024-10-26 14:40:41,224] init_plan: init_plan_hlg
+[2024-10-26 14:40:41,224] env_specs: {}
+[2024-10-26 14:40:41,224] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 14:40:41,224] obs_specs: {}
+[2024-10-26 14:40:41,224] agent_specs: {'batch_stage': False}
+[2024-10-26 14:40:41,224] skip_land_use: False
+[2024-10-26 14:40:41,224] skip_road: True
+[2024-10-26 14:40:41,224] road_ratio: 0.0
+[2024-10-26 14:40:41,224] gamma: 2.0
+[2024-10-26 14:40:41,225] tau: 0.0
+[2024-10-26 14:40:41,225] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 14:40:41,225] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 14:40:41,225] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 14:40:41,225] lr: 0.004
+[2024-10-26 14:40:41,225] weightdecay: 0.1
+[2024-10-26 14:40:41,225] eps: 0.0001
+[2024-10-26 14:40:41,225] value_pred_coef: 0.1
+[2024-10-26 14:40:41,225] entropy_coef: 0.1
+[2024-10-26 14:40:41,225] clip_epsilon: 0.2
+[2024-10-26 14:40:41,225] max_num_iterations: 1
+[2024-10-26 14:40:41,225] num_episodes_per_iteration: 1
+[2024-10-26 14:40:41,225] max_sequence_length: 30
+[2024-10-26 14:40:41,225] num_optim_epoch: 4
+[2024-10-26 14:40:41,225] mini_batch_size: 256
+[2024-10-26 14:40:41,225] save_model_interval: 1
+[2024-10-26 14:44:14,420] id: hlg
+[2024-10-26 14:44:14,420] seed: 111
+[2024-10-26 14:44:14,420] objectives_plan: objectives_hlg
+[2024-10-26 14:44:14,420] init_plan: init_plan_hlg
+[2024-10-26 14:44:14,421] env_specs: {}
+[2024-10-26 14:44:14,421] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 14:44:14,421] obs_specs: {}
+[2024-10-26 14:44:14,421] agent_specs: {'batch_stage': False}
+[2024-10-26 14:44:14,421] skip_land_use: False
+[2024-10-26 14:44:14,421] skip_road: True
+[2024-10-26 14:44:14,421] road_ratio: 0.0
+[2024-10-26 14:44:14,421] gamma: 2.0
+[2024-10-26 14:44:14,421] tau: 0.0
+[2024-10-26 14:44:14,421] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 14:44:14,421] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 14:44:14,421] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 14:44:14,421] lr: 0.004
+[2024-10-26 14:44:14,421] weightdecay: 0.1
+[2024-10-26 14:44:14,421] eps: 0.0001
+[2024-10-26 14:44:14,421] value_pred_coef: 0.1
+[2024-10-26 14:44:14,421] entropy_coef: 0.1
+[2024-10-26 14:44:14,421] clip_epsilon: 0.2
+[2024-10-26 14:44:14,421] max_num_iterations: 1
+[2024-10-26 14:44:14,421] num_episodes_per_iteration: 1
+[2024-10-26 14:44:14,421] max_sequence_length: 30
+[2024-10-26 14:44:14,421] num_optim_epoch: 4
+[2024-10-26 14:44:14,421] mini_batch_size: 256
+[2024-10-26 14:44:14,421] save_model_interval: 1
+[2024-10-26 15:09:00,823] polygon: POLYGON ((1485 1445, 1635 1445, 1640 1360, 1485 1360, 1485 1445))
+new intersection: POINT (1485 1360)
+road or boundary to split:
+LINESTRING (1160 1360, 1640 1360)
+LINESTRING (160 1360, 1640 1360)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-10-26 15:09:00,827] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1037), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1089), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 970), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1129), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1131), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1326), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1125), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1033), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1031), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1128), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1195), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1530), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1588), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1155)]
+[2024-10-26 15:09:00,829] Plan fails during eval.
+[2024-10-26 15:09:01,013] 0	T_sample 13.29	T_update 1471.17	T_eval 1.25	ETA 0:00:00	train_R_eps 9.27	eval_R_eps -1.00	hlg
+[2024-10-26 15:09:01,033] save best checkpoint with rewards -1.00!
+[2024-10-26 15:09:01,043] training done!
+[2024-10-26 15:10:06,197] id: hlg
+[2024-10-26 15:10:06,197] seed: 111
+[2024-10-26 15:10:06,197] objectives_plan: objectives_hlg
+[2024-10-26 15:10:06,197] init_plan: init_plan_hlg
+[2024-10-26 15:10:06,197] env_specs: {}
+[2024-10-26 15:10:06,197] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 15:10:06,197] obs_specs: {}
+[2024-10-26 15:10:06,197] agent_specs: {'batch_stage': False}
+[2024-10-26 15:10:06,197] skip_land_use: False
+[2024-10-26 15:10:06,197] skip_road: True
+[2024-10-26 15:10:06,197] road_ratio: 0.0
+[2024-10-26 15:10:06,197] gamma: 2.0
+[2024-10-26 15:10:06,198] tau: 0.0
+[2024-10-26 15:10:06,198] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 15:10:06,198] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 15:10:06,198] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 15:10:06,198] lr: 0.004
+[2024-10-26 15:10:06,198] weightdecay: 0.1
+[2024-10-26 15:10:06,198] eps: 0.0001
+[2024-10-26 15:10:06,198] value_pred_coef: 0.1
+[2024-10-26 15:10:06,198] entropy_coef: 0.1
+[2024-10-26 15:10:06,198] clip_epsilon: 0.2
+[2024-10-26 15:10:06,198] max_num_iterations: 1
+[2024-10-26 15:10:06,198] num_episodes_per_iteration: 1
+[2024-10-26 15:10:06,198] max_sequence_length: 30
+[2024-10-26 15:10:06,198] num_optim_epoch: 4
+[2024-10-26 15:10:06,198] mini_batch_size: 256
+[2024-10-26 15:10:06,198] save_model_interval: 1
+[2024-10-26 15:11:58,882] id: hlg
+[2024-10-26 15:11:58,882] seed: 111
+[2024-10-26 15:11:58,882] objectives_plan: objectives_hlg
+[2024-10-26 15:11:58,882] init_plan: init_plan_hlg
+[2024-10-26 15:11:58,882] env_specs: {}
+[2024-10-26 15:11:58,882] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 15:11:58,882] obs_specs: {}
+[2024-10-26 15:11:58,882] agent_specs: {'batch_stage': False}
+[2024-10-26 15:11:58,882] skip_land_use: False
+[2024-10-26 15:11:58,882] skip_road: True
+[2024-10-26 15:11:58,882] road_ratio: 0.0
+[2024-10-26 15:11:58,882] gamma: 2.0
+[2024-10-26 15:11:58,882] tau: 0.0
+[2024-10-26 15:11:58,882] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 15:11:58,882] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 15:11:58,882] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 15:11:58,882] lr: 0.004
+[2024-10-26 15:11:58,882] weightdecay: 0.1
+[2024-10-26 15:11:58,882] eps: 0.0001
+[2024-10-26 15:11:58,882] value_pred_coef: 0.1
+[2024-10-26 15:11:58,882] entropy_coef: 0.1
+[2024-10-26 15:11:58,882] clip_epsilon: 0.2
+[2024-10-26 15:11:58,882] max_num_iterations: 1
+[2024-10-26 15:11:58,882] num_episodes_per_iteration: 1
+[2024-10-26 15:11:58,882] max_sequence_length: 30
+[2024-10-26 15:11:58,882] num_optim_epoch: 4
+[2024-10-26 15:11:58,882] mini_batch_size: 256
+[2024-10-26 15:11:58,882] save_model_interval: 1
+[2024-10-26 15:26:05,366] 0	T_sample 17.04	T_update 825.38	T_eval 3.30	ETA 0:00:00	train_R_eps 9.39	eval_R_eps 7.95	hlg
+[2024-10-26 15:26:05,388] save best checkpoint with rewards 7.95!
+[2024-10-26 15:26:05,396] training done!
+[2024-10-26 15:52:09,257] id: hlg
+[2024-10-26 15:52:09,257] seed: 111
+[2024-10-26 15:52:09,257] objectives_plan: objectives_hlg
+[2024-10-26 15:52:09,257] init_plan: init_plan_hlg
+[2024-10-26 15:52:09,257] env_specs: {}
+[2024-10-26 15:52:09,257] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 15:52:09,257] obs_specs: {}
+[2024-10-26 15:52:09,257] agent_specs: {'batch_stage': False}
+[2024-10-26 15:52:09,257] skip_land_use: False
+[2024-10-26 15:52:09,257] skip_road: True
+[2024-10-26 15:52:09,257] road_ratio: 0.0
+[2024-10-26 15:52:09,257] gamma: 2.0
+[2024-10-26 15:52:09,257] tau: 0.0
+[2024-10-26 15:52:09,257] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 15:52:09,258] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 15:52:09,258] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 15:52:09,258] lr: 0.004
+[2024-10-26 15:52:09,258] weightdecay: 0.1
+[2024-10-26 15:52:09,258] eps: 0.0001
+[2024-10-26 15:52:09,258] value_pred_coef: 0.1
+[2024-10-26 15:52:09,258] entropy_coef: 0.1
+[2024-10-26 15:52:09,258] clip_epsilon: 0.2
+[2024-10-26 15:52:09,258] max_num_iterations: 1
+[2024-10-26 15:52:09,258] num_episodes_per_iteration: 1
+[2024-10-26 15:52:09,258] max_sequence_length: 30
+[2024-10-26 15:52:09,258] num_optim_epoch: 4
+[2024-10-26 15:52:09,258] mini_batch_size: 256
+[2024-10-26 15:52:09,258] save_model_interval: 1
+[2024-10-26 16:05:44,850] 0	T_sample 9.93	T_update 801.66	T_eval 3.10	ETA 0:00:00	train_R_eps 9.32	eval_R_eps 8.37	hlg
+[2024-10-26 16:05:44,869] save best checkpoint with rewards 8.37!
+[2024-10-26 16:05:44,881] training done!
+[2024-10-26 16:08:43,724] id: hlg
+[2024-10-26 16:08:43,724] seed: 111
+[2024-10-26 16:08:43,724] objectives_plan: objectives_hlg
+[2024-10-26 16:08:43,724] init_plan: init_plan_hlg
+[2024-10-26 16:08:43,724] env_specs: {}
+[2024-10-26 16:08:43,724] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-26 16:08:43,724] obs_specs: {}
+[2024-10-26 16:08:43,724] agent_specs: {'batch_stage': False}
+[2024-10-26 16:08:43,724] skip_land_use: False
+[2024-10-26 16:08:43,724] skip_road: True
+[2024-10-26 16:08:43,724] road_ratio: 0.0
+[2024-10-26 16:08:43,725] gamma: 2.0
+[2024-10-26 16:08:43,725] tau: 0.0
+[2024-10-26 16:08:43,725] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-26 16:08:43,725] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-26 16:08:43,725] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-26 16:08:43,725] lr: 0.004
+[2024-10-26 16:08:43,725] weightdecay: 0.1
+[2024-10-26 16:08:43,725] eps: 0.0001
+[2024-10-26 16:08:43,725] value_pred_coef: 0.1
+[2024-10-26 16:08:43,725] entropy_coef: 0.1
+[2024-10-26 16:08:43,725] clip_epsilon: 0.2
+[2024-10-26 16:08:43,725] max_num_iterations: 1
+[2024-10-26 16:08:43,725] num_episodes_per_iteration: 1
+[2024-10-26 16:08:43,725] max_sequence_length: 30
+[2024-10-26 16:08:43,725] num_optim_epoch: 4
+[2024-10-26 16:08:43,725] mini_batch_size: 256
+[2024-10-26 16:08:43,725] save_model_interval: 1
+[2024-10-26 16:39:38,913] 0	T_sample 9.01	T_update 1842.20	T_eval 3.08	ETA 0:00:00	train_R_eps 9.32	eval_R_eps 8.37	hlg
+[2024-10-26 16:39:38,933] save best checkpoint with rewards 8.37!
+[2024-10-26 16:39:38,942] training done!
+[2024-10-27 11:00:19,337] id: hlg
+[2024-10-27 11:00:19,337] seed: 111
+[2024-10-27 11:00:19,337] objectives_plan: objectives_hlg
+[2024-10-27 11:00:19,337] init_plan: init_plan_hlg
+[2024-10-27 11:00:19,337] env_specs: {}
+[2024-10-27 11:00:19,337] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-27 11:00:19,337] obs_specs: {}
+[2024-10-27 11:00:19,337] agent_specs: {'batch_stage': False}
+[2024-10-27 11:00:19,337] skip_land_use: False
+[2024-10-27 11:00:19,337] skip_road: True
+[2024-10-27 11:00:19,337] road_ratio: 0.0
+[2024-10-27 11:00:19,337] gamma: 2.0
+[2024-10-27 11:00:19,337] tau: 0.0
+[2024-10-27 11:00:19,337] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-27 11:00:19,337] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-27 11:00:19,337] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-27 11:00:19,337] lr: 0.004
+[2024-10-27 11:00:19,337] weightdecay: 0.1
+[2024-10-27 11:00:19,337] eps: 0.0001
+[2024-10-27 11:00:19,337] value_pred_coef: 0.1
+[2024-10-27 11:00:19,337] entropy_coef: 0.1
+[2024-10-27 11:00:19,337] clip_epsilon: 0.2
+[2024-10-27 11:00:19,337] max_num_iterations: 1
+[2024-10-27 11:00:19,337] num_episodes_per_iteration: 1
+[2024-10-27 11:00:19,338] max_sequence_length: 30
+[2024-10-27 11:00:19,338] num_optim_epoch: 4
+[2024-10-27 11:00:19,338] mini_batch_size: 256
+[2024-10-27 11:00:19,338] save_model_interval: 1
+[2024-10-27 11:13:44,899] 0	T_sample 14.21	T_update 787.37	T_eval 3.01	ETA 0:00:00	train_R_eps 9.21	eval_R_eps 8.49	hlg
+[2024-10-27 11:13:44,920] save best checkpoint with rewards 8.49!
+[2024-10-27 11:13:44,931] training done!
+[2024-10-27 12:52:58,611] id: hlg
+[2024-10-27 12:52:58,611] seed: 111
+[2024-10-27 12:52:58,611] objectives_plan: objectives_hlg
+[2024-10-27 12:52:58,611] init_plan: init_plan_hlg
+[2024-10-27 12:52:58,611] env_specs: {}
+[2024-10-27 12:52:58,611] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-27 12:52:58,611] obs_specs: {}
+[2024-10-27 12:52:58,612] agent_specs: {'batch_stage': False}
+[2024-10-27 12:52:58,612] skip_land_use: False
+[2024-10-27 12:52:58,612] skip_road: True
+[2024-10-27 12:52:58,612] road_ratio: 0.0
+[2024-10-27 12:52:58,612] gamma: 2.0
+[2024-10-27 12:52:58,612] tau: 0.0
+[2024-10-27 12:52:58,612] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-27 12:52:58,612] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-27 12:52:58,612] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-27 12:52:58,612] lr: 0.004
+[2024-10-27 12:52:58,612] weightdecay: 0.1
+[2024-10-27 12:52:58,612] eps: 0.0001
+[2024-10-27 12:52:58,612] value_pred_coef: 0.1
+[2024-10-27 12:52:58,612] entropy_coef: 0.1
+[2024-10-27 12:52:58,612] clip_epsilon: 0.2
+[2024-10-27 12:52:58,612] max_num_iterations: 1
+[2024-10-27 12:52:58,612] num_episodes_per_iteration: 1
+[2024-10-27 12:52:58,612] max_sequence_length: 30
+[2024-10-27 12:52:58,612] num_optim_epoch: 4
+[2024-10-27 12:52:58,612] mini_batch_size: 256
+[2024-10-27 12:52:58,612] save_model_interval: 1
+[2024-10-27 18:07:37,643] id: hlg
+[2024-10-27 18:07:37,643] seed: 111
+[2024-10-27 18:07:37,643] objectives_plan: objectives_hlg
+[2024-10-27 18:07:37,643] init_plan: init_plan_hlg
+[2024-10-27 18:07:37,643] env_specs: {}
+[2024-10-27 18:07:37,644] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-27 18:07:37,644] obs_specs: {}
+[2024-10-27 18:07:37,644] agent_specs: {'batch_stage': False}
+[2024-10-27 18:07:37,644] skip_land_use: False
+[2024-10-27 18:07:37,644] skip_road: True
+[2024-10-27 18:07:37,644] road_ratio: 0.0
+[2024-10-27 18:07:37,644] gamma: 2.0
+[2024-10-27 18:07:37,644] tau: 0.0
+[2024-10-27 18:07:37,644] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-27 18:07:37,644] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-27 18:07:37,644] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-27 18:07:37,644] lr: 0.004
+[2024-10-27 18:07:37,644] weightdecay: 0.1
+[2024-10-27 18:07:37,644] eps: 0.0001
+[2024-10-27 18:07:37,644] value_pred_coef: 0.1
+[2024-10-27 18:07:37,644] entropy_coef: 0.1
+[2024-10-27 18:07:37,644] clip_epsilon: 0.2
+[2024-10-27 18:07:37,644] max_num_iterations: 1
+[2024-10-27 18:07:37,644] num_episodes_per_iteration: 1
+[2024-10-27 18:07:37,644] max_sequence_length: 30
+[2024-10-27 18:07:37,644] num_optim_epoch: 4
+[2024-10-27 18:07:37,644] mini_batch_size: 256
+[2024-10-27 18:07:37,644] save_model_interval: 1
+[2024-10-27 18:20:48,041] 0	T_sample 12.14	T_update 774.20	T_eval 3.19	ETA 0:00:00	train_R_eps 8.13	eval_R_eps 7.27	hlg
+[2024-10-27 18:20:48,062] save best checkpoint with rewards 7.27!
+[2024-10-27 18:20:48,070] training done!
+[2024-10-27 18:41:02,968] id: hlg
+[2024-10-27 18:41:02,968] seed: 111
+[2024-10-27 18:41:02,968] objectives_plan: objectives_hlg
+[2024-10-27 18:41:02,968] init_plan: init_plan_hlg
+[2024-10-27 18:41:02,968] env_specs: {}
+[2024-10-27 18:41:02,968] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-27 18:41:02,968] obs_specs: {}
+[2024-10-27 18:41:02,969] agent_specs: {'batch_stage': False}
+[2024-10-27 18:41:02,969] skip_land_use: False
+[2024-10-27 18:41:02,969] skip_road: True
+[2024-10-27 18:41:02,969] road_ratio: 0.0
+[2024-10-27 18:41:02,969] gamma: 2.0
+[2024-10-27 18:41:02,969] tau: 0.0
+[2024-10-27 18:41:02,969] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-27 18:41:02,969] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-27 18:41:02,969] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-27 18:41:02,969] lr: 0.004
+[2024-10-27 18:41:02,969] weightdecay: 0.1
+[2024-10-27 18:41:02,969] eps: 0.0001
+[2024-10-27 18:41:02,969] value_pred_coef: 0.1
+[2024-10-27 18:41:02,969] entropy_coef: 0.1
+[2024-10-27 18:41:02,969] clip_epsilon: 0.2
+[2024-10-27 18:41:02,969] max_num_iterations: 1
+[2024-10-27 18:41:02,969] num_episodes_per_iteration: 1
+[2024-10-27 18:41:02,969] max_sequence_length: 30
+[2024-10-27 18:41:02,969] num_optim_epoch: 4
+[2024-10-27 18:41:02,969] mini_batch_size: 256
+[2024-10-27 18:41:02,969] save_model_interval: 1
+[2024-10-27 18:53:40,912] 0	T_sample 9.98	T_update 743.95	T_eval 3.14	ETA 0:00:00	train_R_eps 12.55	eval_R_eps 11.59	hlg
+[2024-10-27 18:53:40,934] save best checkpoint with rewards 11.59!
+[2024-10-27 18:53:40,943] training done!
+[2024-10-27 18:55:43,890] id: hlg
+[2024-10-27 18:55:43,890] seed: 111
+[2024-10-27 18:55:43,890] objectives_plan: objectives_hlg
+[2024-10-27 18:55:43,890] init_plan: init_plan_hlg
+[2024-10-27 18:55:43,890] env_specs: {}
+[2024-10-27 18:55:43,890] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-27 18:55:43,890] obs_specs: {}
+[2024-10-27 18:55:43,890] agent_specs: {'batch_stage': False}
+[2024-10-27 18:55:43,890] skip_land_use: False
+[2024-10-27 18:55:43,890] skip_road: True
+[2024-10-27 18:55:43,890] road_ratio: 0.0
+[2024-10-27 18:55:43,890] gamma: 2.0
+[2024-10-27 18:55:43,890] tau: 0.0
+[2024-10-27 18:55:43,890] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-27 18:55:43,890] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-27 18:55:43,890] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-27 18:55:43,890] lr: 0.004
+[2024-10-27 18:55:43,890] weightdecay: 0.1
+[2024-10-27 18:55:43,890] eps: 0.0001
+[2024-10-27 18:55:43,891] value_pred_coef: 0.1
+[2024-10-27 18:55:43,891] entropy_coef: 0.1
+[2024-10-27 18:55:43,891] clip_epsilon: 0.2
+[2024-10-27 18:55:43,891] max_num_iterations: 1
+[2024-10-27 18:55:43,891] num_episodes_per_iteration: 1
+[2024-10-27 18:55:43,891] max_sequence_length: 30
+[2024-10-27 18:55:43,891] num_optim_epoch: 4
+[2024-10-27 18:55:43,891] mini_batch_size: 256
+[2024-10-27 18:55:43,891] save_model_interval: 1
+[2024-10-27 19:10:35,067] 0	T_sample 10.48	T_update 876.80	T_eval 2.97	ETA 0:00:00	train_R_eps 12.95	eval_R_eps 19.12	hlg
+[2024-10-27 19:10:35,086] save best checkpoint with rewards 19.12!
+[2024-10-27 19:10:35,098] training done!
+[2024-10-29 16:02:20,558] id: hlg
+[2024-10-29 16:02:20,558] seed: 111
+[2024-10-29 16:02:20,558] objectives_plan: objectives_hlg
+[2024-10-29 16:02:20,558] init_plan: init_plan_hlg
+[2024-10-29 16:02:20,558] env_specs: {}
+[2024-10-29 16:02:20,558] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 16:02:20,558] obs_specs: {}
+[2024-10-29 16:02:20,558] agent_specs: {'batch_stage': False}
+[2024-10-29 16:02:20,558] skip_land_use: False
+[2024-10-29 16:02:20,558] skip_road: True
+[2024-10-29 16:02:20,558] road_ratio: 0.0
+[2024-10-29 16:02:20,558] gamma: 2.0
+[2024-10-29 16:02:20,558] tau: 0.0
+[2024-10-29 16:02:20,558] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 16:02:20,558] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 16:02:20,558] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 16:02:20,558] lr: 0.004
+[2024-10-29 16:02:20,558] weightdecay: 0.1
+[2024-10-29 16:02:20,558] eps: 0.0001
+[2024-10-29 16:02:20,558] value_pred_coef: 0.1
+[2024-10-29 16:02:20,558] entropy_coef: 0.1
+[2024-10-29 16:02:20,558] clip_epsilon: 0.2
+[2024-10-29 16:02:20,558] max_num_iterations: 1
+[2024-10-29 16:02:20,558] num_episodes_per_iteration: 1
+[2024-10-29 16:02:20,559] max_sequence_length: 30
+[2024-10-29 16:02:20,559] num_optim_epoch: 4
+[2024-10-29 16:02:20,559] mini_batch_size: 256
+[2024-10-29 16:02:20,559] save_model_interval: 1
+[2024-10-29 16:06:41,614] id: hlg
+[2024-10-29 16:06:41,614] seed: 111
+[2024-10-29 16:06:41,614] objectives_plan: objectives_hlg
+[2024-10-29 16:06:41,614] init_plan: init_plan_hlg
+[2024-10-29 16:06:41,615] env_specs: {}
+[2024-10-29 16:06:41,615] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 16:06:41,615] obs_specs: {}
+[2024-10-29 16:06:41,615] agent_specs: {'batch_stage': False}
+[2024-10-29 16:06:41,615] skip_land_use: False
+[2024-10-29 16:06:41,615] skip_road: True
+[2024-10-29 16:06:41,615] road_ratio: 0.0
+[2024-10-29 16:06:41,615] gamma: 2.0
+[2024-10-29 16:06:41,615] tau: 0.0
+[2024-10-29 16:06:41,615] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 16:06:41,615] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 16:06:41,615] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 16:06:41,615] lr: 0.004
+[2024-10-29 16:06:41,615] weightdecay: 0.1
+[2024-10-29 16:06:41,615] eps: 0.0001
+[2024-10-29 16:06:41,615] value_pred_coef: 0.1
+[2024-10-29 16:06:41,615] entropy_coef: 0.1
+[2024-10-29 16:06:41,615] clip_epsilon: 0.2
+[2024-10-29 16:06:41,615] max_num_iterations: 1
+[2024-10-29 16:06:41,615] num_episodes_per_iteration: 1
+[2024-10-29 16:06:41,615] max_sequence_length: 30
+[2024-10-29 16:06:41,615] num_optim_epoch: 4
+[2024-10-29 16:06:41,615] mini_batch_size: 256
+[2024-10-29 16:06:41,615] save_model_interval: 1
+[2024-10-29 16:18:00,314] id: hlg
+[2024-10-29 16:18:00,314] seed: 111
+[2024-10-29 16:18:00,314] objectives_plan: objectives_hlg
+[2024-10-29 16:18:00,314] init_plan: init_plan_hlg
+[2024-10-29 16:18:00,314] env_specs: {}
+[2024-10-29 16:18:00,315] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 16:18:00,315] obs_specs: {}
+[2024-10-29 16:18:00,315] agent_specs: {'batch_stage': False}
+[2024-10-29 16:18:00,315] skip_land_use: False
+[2024-10-29 16:18:00,315] skip_road: True
+[2024-10-29 16:18:00,315] road_ratio: 0.0
+[2024-10-29 16:18:00,315] gamma: 2.0
+[2024-10-29 16:18:00,315] tau: 0.0
+[2024-10-29 16:18:00,315] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 16:18:00,315] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 16:18:00,315] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 16:18:00,315] lr: 0.004
+[2024-10-29 16:18:00,315] weightdecay: 0.1
+[2024-10-29 16:18:00,315] eps: 0.0001
+[2024-10-29 16:18:00,315] value_pred_coef: 0.1
+[2024-10-29 16:18:00,315] entropy_coef: 0.1
+[2024-10-29 16:18:00,315] clip_epsilon: 0.2
+[2024-10-29 16:18:00,315] max_num_iterations: 1
+[2024-10-29 16:18:00,315] num_episodes_per_iteration: 1
+[2024-10-29 16:18:00,315] max_sequence_length: 30
+[2024-10-29 16:18:00,315] num_optim_epoch: 4
+[2024-10-29 16:18:00,315] mini_batch_size: 256
+[2024-10-29 16:18:00,315] save_model_interval: 1
+[2024-10-29 17:40:56,041] id: hlg
+[2024-10-29 17:40:56,041] seed: 111
+[2024-10-29 17:40:56,041] objectives_plan: objectives_hlg
+[2024-10-29 17:40:56,041] init_plan: init_plan_hlg
+[2024-10-29 17:40:56,041] env_specs: {}
+[2024-10-29 17:40:56,041] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 17:40:56,041] obs_specs: {}
+[2024-10-29 17:40:56,042] agent_specs: {'batch_stage': False}
+[2024-10-29 17:40:56,042] skip_land_use: False
+[2024-10-29 17:40:56,042] skip_road: True
+[2024-10-29 17:40:56,042] road_ratio: 0.0
+[2024-10-29 17:40:56,042] gamma: 2.0
+[2024-10-29 17:40:56,042] tau: 0.0
+[2024-10-29 17:40:56,042] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 17:40:56,042] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 17:40:56,042] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 17:40:56,042] lr: 0.004
+[2024-10-29 17:40:56,042] weightdecay: 0.1
+[2024-10-29 17:40:56,042] eps: 0.0001
+[2024-10-29 17:40:56,042] value_pred_coef: 0.1
+[2024-10-29 17:40:56,042] entropy_coef: 0.1
+[2024-10-29 17:40:56,042] clip_epsilon: 0.2
+[2024-10-29 17:40:56,042] max_num_iterations: 1
+[2024-10-29 17:40:56,042] num_episodes_per_iteration: 1
+[2024-10-29 17:40:56,042] max_sequence_length: 30
+[2024-10-29 17:40:56,042] num_optim_epoch: 4
+[2024-10-29 17:40:56,042] mini_batch_size: 256
+[2024-10-29 17:40:56,042] save_model_interval: 1
+[2024-10-29 18:21:36,745] id: hlg
+[2024-10-29 18:21:36,745] seed: 111
+[2024-10-29 18:21:36,745] objectives_plan: objectives_hlg
+[2024-10-29 18:21:36,745] init_plan: init_plan_hlg
+[2024-10-29 18:21:36,746] env_specs: {}
+[2024-10-29 18:21:36,746] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:21:36,746] obs_specs: {}
+[2024-10-29 18:21:36,746] agent_specs: {'batch_stage': False}
+[2024-10-29 18:21:36,746] skip_land_use: False
+[2024-10-29 18:21:36,746] skip_road: True
+[2024-10-29 18:21:36,746] road_ratio: 0.0
+[2024-10-29 18:21:36,746] gamma: 2.0
+[2024-10-29 18:21:36,746] tau: 0.0
+[2024-10-29 18:21:36,746] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:21:36,746] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:21:36,746] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:21:36,746] lr: 0.004
+[2024-10-29 18:21:36,746] weightdecay: 0.1
+[2024-10-29 18:21:36,746] eps: 0.0001
+[2024-10-29 18:21:36,746] value_pred_coef: 0.1
+[2024-10-29 18:21:36,746] entropy_coef: 0.1
+[2024-10-29 18:21:36,746] clip_epsilon: 0.2
+[2024-10-29 18:21:36,746] max_num_iterations: 1
+[2024-10-29 18:21:36,746] num_episodes_per_iteration: 1
+[2024-10-29 18:21:36,746] max_sequence_length: 30
+[2024-10-29 18:21:36,746] num_optim_epoch: 4
+[2024-10-29 18:21:36,746] mini_batch_size: 256
+[2024-10-29 18:21:36,746] save_model_interval: 1
+[2024-10-29 18:22:06,757] id: hlg
+[2024-10-29 18:22:06,757] seed: 111
+[2024-10-29 18:22:06,757] objectives_plan: objectives_hlg
+[2024-10-29 18:22:06,757] init_plan: init_plan_hlg
+[2024-10-29 18:22:06,757] env_specs: {}
+[2024-10-29 18:22:06,758] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:22:06,758] obs_specs: {}
+[2024-10-29 18:22:06,758] agent_specs: {'batch_stage': False}
+[2024-10-29 18:22:06,758] skip_land_use: False
+[2024-10-29 18:22:06,758] skip_road: True
+[2024-10-29 18:22:06,758] road_ratio: 0.0
+[2024-10-29 18:22:06,758] gamma: 2.0
+[2024-10-29 18:22:06,758] tau: 0.0
+[2024-10-29 18:22:06,758] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:22:06,758] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:22:06,758] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:22:06,758] lr: 0.004
+[2024-10-29 18:22:06,758] weightdecay: 0.1
+[2024-10-29 18:22:06,758] eps: 0.0001
+[2024-10-29 18:22:06,758] value_pred_coef: 0.1
+[2024-10-29 18:22:06,758] entropy_coef: 0.1
+[2024-10-29 18:22:06,758] clip_epsilon: 0.2
+[2024-10-29 18:22:06,758] max_num_iterations: 1
+[2024-10-29 18:22:06,758] num_episodes_per_iteration: 1
+[2024-10-29 18:22:06,758] max_sequence_length: 30
+[2024-10-29 18:22:06,758] num_optim_epoch: 4
+[2024-10-29 18:22:06,758] mini_batch_size: 256
+[2024-10-29 18:22:06,758] save_model_interval: 1
+[2024-10-29 18:25:22,167] id: hlg
+[2024-10-29 18:25:22,168] seed: 111
+[2024-10-29 18:25:22,168] objectives_plan: objectives_hlg
+[2024-10-29 18:25:22,168] init_plan: init_plan_hlg
+[2024-10-29 18:25:22,168] env_specs: {}
+[2024-10-29 18:25:22,168] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:25:22,168] obs_specs: {}
+[2024-10-29 18:25:22,168] agent_specs: {'batch_stage': False}
+[2024-10-29 18:25:22,168] skip_land_use: False
+[2024-10-29 18:25:22,168] skip_road: True
+[2024-10-29 18:25:22,168] road_ratio: 0.0
+[2024-10-29 18:25:22,168] gamma: 2.0
+[2024-10-29 18:25:22,168] tau: 0.0
+[2024-10-29 18:25:22,168] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:25:22,168] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:25:22,168] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:25:22,168] lr: 0.004
+[2024-10-29 18:25:22,168] weightdecay: 0.1
+[2024-10-29 18:25:22,168] eps: 0.0001
+[2024-10-29 18:25:22,168] value_pred_coef: 0.1
+[2024-10-29 18:25:22,168] entropy_coef: 0.1
+[2024-10-29 18:25:22,168] clip_epsilon: 0.2
+[2024-10-29 18:25:22,168] max_num_iterations: 1
+[2024-10-29 18:25:22,168] num_episodes_per_iteration: 1
+[2024-10-29 18:25:22,168] max_sequence_length: 30
+[2024-10-29 18:25:22,168] num_optim_epoch: 4
+[2024-10-29 18:25:22,168] mini_batch_size: 256
+[2024-10-29 18:25:22,168] save_model_interval: 1
+[2024-10-29 18:27:13,824] id: hlg
+[2024-10-29 18:27:13,824] seed: 111
+[2024-10-29 18:27:13,824] objectives_plan: objectives_hlg
+[2024-10-29 18:27:13,824] init_plan: init_plan_hlg
+[2024-10-29 18:27:13,824] env_specs: {}
+[2024-10-29 18:27:13,824] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:27:13,824] obs_specs: {}
+[2024-10-29 18:27:13,824] agent_specs: {'batch_stage': False}
+[2024-10-29 18:27:13,824] skip_land_use: False
+[2024-10-29 18:27:13,824] skip_road: True
+[2024-10-29 18:27:13,824] road_ratio: 0.0
+[2024-10-29 18:27:13,824] gamma: 2.0
+[2024-10-29 18:27:13,824] tau: 0.0
+[2024-10-29 18:27:13,824] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:27:13,824] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:27:13,825] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:27:13,825] lr: 0.004
+[2024-10-29 18:27:13,825] weightdecay: 0.1
+[2024-10-29 18:27:13,825] eps: 0.0001
+[2024-10-29 18:27:13,825] value_pred_coef: 0.1
+[2024-10-29 18:27:13,825] entropy_coef: 0.1
+[2024-10-29 18:27:13,825] clip_epsilon: 0.2
+[2024-10-29 18:27:13,825] max_num_iterations: 1
+[2024-10-29 18:27:13,825] num_episodes_per_iteration: 1
+[2024-10-29 18:27:13,825] max_sequence_length: 30
+[2024-10-29 18:27:13,825] num_optim_epoch: 4
+[2024-10-29 18:27:13,825] mini_batch_size: 256
+[2024-10-29 18:27:13,825] save_model_interval: 1
+[2024-10-29 18:29:02,836] id: hlg
+[2024-10-29 18:29:02,836] seed: 111
+[2024-10-29 18:29:02,836] objectives_plan: objectives_hlg
+[2024-10-29 18:29:02,836] init_plan: init_plan_hlg
+[2024-10-29 18:29:02,836] env_specs: {}
+[2024-10-29 18:29:02,836] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:29:02,836] obs_specs: {}
+[2024-10-29 18:29:02,836] agent_specs: {'batch_stage': False}
+[2024-10-29 18:29:02,836] skip_land_use: False
+[2024-10-29 18:29:02,836] skip_road: True
+[2024-10-29 18:29:02,836] road_ratio: 0.0
+[2024-10-29 18:29:02,836] gamma: 2.0
+[2024-10-29 18:29:02,836] tau: 0.0
+[2024-10-29 18:29:02,836] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:29:02,836] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:29:02,836] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:29:02,836] lr: 0.004
+[2024-10-29 18:29:02,836] weightdecay: 0.1
+[2024-10-29 18:29:02,836] eps: 0.0001
+[2024-10-29 18:29:02,837] value_pred_coef: 0.1
+[2024-10-29 18:29:02,837] entropy_coef: 0.1
+[2024-10-29 18:29:02,837] clip_epsilon: 0.2
+[2024-10-29 18:29:02,837] max_num_iterations: 1
+[2024-10-29 18:29:02,837] num_episodes_per_iteration: 1
+[2024-10-29 18:29:02,837] max_sequence_length: 30
+[2024-10-29 18:29:02,837] num_optim_epoch: 4
+[2024-10-29 18:29:02,837] mini_batch_size: 256
+[2024-10-29 18:29:02,837] save_model_interval: 1
+[2024-10-29 18:31:54,805] id: hlg
+[2024-10-29 18:31:54,805] seed: 111
+[2024-10-29 18:31:54,805] objectives_plan: objectives_hlg
+[2024-10-29 18:31:54,806] init_plan: init_plan_hlg
+[2024-10-29 18:31:54,806] env_specs: {}
+[2024-10-29 18:31:54,806] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:31:54,806] obs_specs: {}
+[2024-10-29 18:31:54,806] agent_specs: {'batch_stage': False}
+[2024-10-29 18:31:54,806] skip_land_use: False
+[2024-10-29 18:31:54,806] skip_road: True
+[2024-10-29 18:31:54,806] road_ratio: 0.0
+[2024-10-29 18:31:54,806] gamma: 2.0
+[2024-10-29 18:31:54,806] tau: 0.0
+[2024-10-29 18:31:54,806] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:31:54,806] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:31:54,806] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:31:54,806] lr: 0.004
+[2024-10-29 18:31:54,806] weightdecay: 0.1
+[2024-10-29 18:31:54,806] eps: 0.0001
+[2024-10-29 18:31:54,806] value_pred_coef: 0.1
+[2024-10-29 18:31:54,806] entropy_coef: 0.1
+[2024-10-29 18:31:54,806] clip_epsilon: 0.2
+[2024-10-29 18:31:54,806] max_num_iterations: 1
+[2024-10-29 18:31:54,806] num_episodes_per_iteration: 1
+[2024-10-29 18:31:54,806] max_sequence_length: 30
+[2024-10-29 18:31:54,806] num_optim_epoch: 4
+[2024-10-29 18:31:54,806] mini_batch_size: 256
+[2024-10-29 18:31:54,806] save_model_interval: 1
+[2024-10-29 18:36:51,489] id: hlg
+[2024-10-29 18:36:51,489] seed: 111
+[2024-10-29 18:36:51,489] objectives_plan: objectives_hlg
+[2024-10-29 18:36:51,489] init_plan: init_plan_hlg
+[2024-10-29 18:36:51,489] env_specs: {}
+[2024-10-29 18:36:51,489] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:36:51,489] obs_specs: {}
+[2024-10-29 18:36:51,489] agent_specs: {'batch_stage': False}
+[2024-10-29 18:36:51,489] skip_land_use: False
+[2024-10-29 18:36:51,489] skip_road: True
+[2024-10-29 18:36:51,489] road_ratio: 0.0
+[2024-10-29 18:36:51,489] gamma: 2.0
+[2024-10-29 18:36:51,489] tau: 0.0
+[2024-10-29 18:36:51,489] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:36:51,489] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:36:51,489] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:36:51,489] lr: 0.004
+[2024-10-29 18:36:51,489] weightdecay: 0.1
+[2024-10-29 18:36:51,489] eps: 0.0001
+[2024-10-29 18:36:51,489] value_pred_coef: 0.1
+[2024-10-29 18:36:51,489] entropy_coef: 0.1
+[2024-10-29 18:36:51,489] clip_epsilon: 0.2
+[2024-10-29 18:36:51,489] max_num_iterations: 1
+[2024-10-29 18:36:51,489] num_episodes_per_iteration: 1
+[2024-10-29 18:36:51,489] max_sequence_length: 30
+[2024-10-29 18:36:51,489] num_optim_epoch: 4
+[2024-10-29 18:36:51,489] mini_batch_size: 256
+[2024-10-29 18:36:51,489] save_model_interval: 1
+[2024-10-29 18:38:26,986] id: hlg
+[2024-10-29 18:38:26,986] seed: 111
+[2024-10-29 18:38:26,986] objectives_plan: objectives_hlg
+[2024-10-29 18:38:26,986] init_plan: init_plan_hlg
+[2024-10-29 18:38:26,986] env_specs: {}
+[2024-10-29 18:38:26,986] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:38:26,986] obs_specs: {}
+[2024-10-29 18:38:26,986] agent_specs: {'batch_stage': False}
+[2024-10-29 18:38:26,986] skip_land_use: False
+[2024-10-29 18:38:26,986] skip_road: True
+[2024-10-29 18:38:26,986] road_ratio: 0.0
+[2024-10-29 18:38:26,986] gamma: 2.0
+[2024-10-29 18:38:26,986] tau: 0.0
+[2024-10-29 18:38:26,986] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:38:26,986] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:38:26,986] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:38:26,986] lr: 0.004
+[2024-10-29 18:38:26,986] weightdecay: 0.1
+[2024-10-29 18:38:26,986] eps: 0.0001
+[2024-10-29 18:38:26,986] value_pred_coef: 0.1
+[2024-10-29 18:38:26,986] entropy_coef: 0.1
+[2024-10-29 18:38:26,986] clip_epsilon: 0.2
+[2024-10-29 18:38:26,986] max_num_iterations: 1
+[2024-10-29 18:38:26,986] num_episodes_per_iteration: 1
+[2024-10-29 18:38:26,986] max_sequence_length: 30
+[2024-10-29 18:38:26,986] num_optim_epoch: 4
+[2024-10-29 18:38:26,986] mini_batch_size: 256
+[2024-10-29 18:38:26,986] save_model_interval: 1
+[2024-10-29 18:41:28,855] id: hlg
+[2024-10-29 18:41:28,856] seed: 111
+[2024-10-29 18:41:28,856] objectives_plan: objectives_hlg
+[2024-10-29 18:41:28,856] init_plan: init_plan_hlg
+[2024-10-29 18:41:28,856] env_specs: {}
+[2024-10-29 18:41:28,856] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:41:28,856] obs_specs: {}
+[2024-10-29 18:41:28,856] agent_specs: {'batch_stage': False}
+[2024-10-29 18:41:28,856] skip_land_use: False
+[2024-10-29 18:41:28,856] skip_road: True
+[2024-10-29 18:41:28,856] road_ratio: 0.0
+[2024-10-29 18:41:28,856] gamma: 2.0
+[2024-10-29 18:41:28,856] tau: 0.0
+[2024-10-29 18:41:28,856] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:41:28,856] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:41:28,856] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:41:28,856] lr: 0.004
+[2024-10-29 18:41:28,856] weightdecay: 0.1
+[2024-10-29 18:41:28,856] eps: 0.0001
+[2024-10-29 18:41:28,856] value_pred_coef: 0.1
+[2024-10-29 18:41:28,856] entropy_coef: 0.1
+[2024-10-29 18:41:28,856] clip_epsilon: 0.2
+[2024-10-29 18:41:28,856] max_num_iterations: 1
+[2024-10-29 18:41:28,856] num_episodes_per_iteration: 1
+[2024-10-29 18:41:28,856] max_sequence_length: 30
+[2024-10-29 18:41:28,856] num_optim_epoch: 4
+[2024-10-29 18:41:28,856] mini_batch_size: 256
+[2024-10-29 18:41:28,856] save_model_interval: 1
+[2024-10-29 18:43:49,374] id: hlg
+[2024-10-29 18:43:49,374] seed: 111
+[2024-10-29 18:43:49,374] objectives_plan: objectives_hlg
+[2024-10-29 18:43:49,374] init_plan: init_plan_hlg
+[2024-10-29 18:43:49,374] env_specs: {}
+[2024-10-29 18:43:49,374] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:43:49,374] obs_specs: {}
+[2024-10-29 18:43:49,374] agent_specs: {'batch_stage': False}
+[2024-10-29 18:43:49,374] skip_land_use: False
+[2024-10-29 18:43:49,374] skip_road: True
+[2024-10-29 18:43:49,374] road_ratio: 0.0
+[2024-10-29 18:43:49,374] gamma: 2.0
+[2024-10-29 18:43:49,374] tau: 0.0
+[2024-10-29 18:43:49,374] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:43:49,375] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:43:49,375] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:43:49,375] lr: 0.004
+[2024-10-29 18:43:49,375] weightdecay: 0.1
+[2024-10-29 18:43:49,375] eps: 0.0001
+[2024-10-29 18:43:49,375] value_pred_coef: 0.1
+[2024-10-29 18:43:49,375] entropy_coef: 0.1
+[2024-10-29 18:43:49,375] clip_epsilon: 0.2
+[2024-10-29 18:43:49,375] max_num_iterations: 1
+[2024-10-29 18:43:49,375] num_episodes_per_iteration: 1
+[2024-10-29 18:43:49,375] max_sequence_length: 30
+[2024-10-29 18:43:49,375] num_optim_epoch: 4
+[2024-10-29 18:43:49,375] mini_batch_size: 256
+[2024-10-29 18:43:49,375] save_model_interval: 1
+[2024-10-29 18:45:50,932] id: hlg
+[2024-10-29 18:45:50,932] seed: 111
+[2024-10-29 18:45:50,932] objectives_plan: objectives_hlg
+[2024-10-29 18:45:50,932] init_plan: init_plan_hlg
+[2024-10-29 18:45:50,932] env_specs: {}
+[2024-10-29 18:45:50,932] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:45:50,932] obs_specs: {}
+[2024-10-29 18:45:50,932] agent_specs: {'batch_stage': False}
+[2024-10-29 18:45:50,932] skip_land_use: False
+[2024-10-29 18:45:50,932] skip_road: True
+[2024-10-29 18:45:50,932] road_ratio: 0.0
+[2024-10-29 18:45:50,932] gamma: 2.0
+[2024-10-29 18:45:50,932] tau: 0.0
+[2024-10-29 18:45:50,932] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:45:50,932] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:45:50,932] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:45:50,932] lr: 0.004
+[2024-10-29 18:45:50,932] weightdecay: 0.1
+[2024-10-29 18:45:50,932] eps: 0.0001
+[2024-10-29 18:45:50,932] value_pred_coef: 0.1
+[2024-10-29 18:45:50,932] entropy_coef: 0.1
+[2024-10-29 18:45:50,932] clip_epsilon: 0.2
+[2024-10-29 18:45:50,932] max_num_iterations: 1
+[2024-10-29 18:45:50,932] num_episodes_per_iteration: 1
+[2024-10-29 18:45:50,932] max_sequence_length: 30
+[2024-10-29 18:45:50,932] num_optim_epoch: 4
+[2024-10-29 18:45:50,932] mini_batch_size: 256
+[2024-10-29 18:45:50,932] save_model_interval: 1
+[2024-10-29 18:48:06,150] id: hlg
+[2024-10-29 18:48:06,150] seed: 111
+[2024-10-29 18:48:06,150] objectives_plan: objectives_hlg
+[2024-10-29 18:48:06,150] init_plan: init_plan_hlg
+[2024-10-29 18:48:06,150] env_specs: {}
+[2024-10-29 18:48:06,150] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:48:06,150] obs_specs: {}
+[2024-10-29 18:48:06,150] agent_specs: {'batch_stage': False}
+[2024-10-29 18:48:06,150] skip_land_use: False
+[2024-10-29 18:48:06,150] skip_road: True
+[2024-10-29 18:48:06,150] road_ratio: 0.0
+[2024-10-29 18:48:06,150] gamma: 2.0
+[2024-10-29 18:48:06,150] tau: 0.0
+[2024-10-29 18:48:06,150] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:48:06,150] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:48:06,150] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:48:06,151] lr: 0.004
+[2024-10-29 18:48:06,151] weightdecay: 0.1
+[2024-10-29 18:48:06,151] eps: 0.0001
+[2024-10-29 18:48:06,151] value_pred_coef: 0.1
+[2024-10-29 18:48:06,151] entropy_coef: 0.1
+[2024-10-29 18:48:06,151] clip_epsilon: 0.2
+[2024-10-29 18:48:06,151] max_num_iterations: 1
+[2024-10-29 18:48:06,151] num_episodes_per_iteration: 1
+[2024-10-29 18:48:06,151] max_sequence_length: 30
+[2024-10-29 18:48:06,151] num_optim_epoch: 4
+[2024-10-29 18:48:06,151] mini_batch_size: 256
+[2024-10-29 18:48:06,151] save_model_interval: 1
+[2024-10-29 18:50:27,755] id: hlg
+[2024-10-29 18:50:27,755] seed: 111
+[2024-10-29 18:50:27,755] objectives_plan: objectives_hlg
+[2024-10-29 18:50:27,755] init_plan: init_plan_hlg
+[2024-10-29 18:50:27,755] env_specs: {}
+[2024-10-29 18:50:27,755] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:50:27,755] obs_specs: {}
+[2024-10-29 18:50:27,755] agent_specs: {'batch_stage': False}
+[2024-10-29 18:50:27,755] skip_land_use: False
+[2024-10-29 18:50:27,755] skip_road: True
+[2024-10-29 18:50:27,755] road_ratio: 0.0
+[2024-10-29 18:50:27,755] gamma: 2.0
+[2024-10-29 18:50:27,755] tau: 0.0
+[2024-10-29 18:50:27,755] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:50:27,755] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:50:27,755] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:50:27,755] lr: 0.004
+[2024-10-29 18:50:27,755] weightdecay: 0.1
+[2024-10-29 18:50:27,755] eps: 0.0001
+[2024-10-29 18:50:27,755] value_pred_coef: 0.1
+[2024-10-29 18:50:27,755] entropy_coef: 0.1
+[2024-10-29 18:50:27,755] clip_epsilon: 0.2
+[2024-10-29 18:50:27,755] max_num_iterations: 1
+[2024-10-29 18:50:27,755] num_episodes_per_iteration: 1
+[2024-10-29 18:50:27,755] max_sequence_length: 30
+[2024-10-29 18:50:27,755] num_optim_epoch: 4
+[2024-10-29 18:50:27,755] mini_batch_size: 256
+[2024-10-29 18:50:27,756] save_model_interval: 1
+[2024-10-29 18:56:51,720] id: hlg
+[2024-10-29 18:56:51,720] seed: 111
+[2024-10-29 18:56:51,720] objectives_plan: objectives_hlg
+[2024-10-29 18:56:51,720] init_plan: init_plan_hlg
+[2024-10-29 18:56:51,720] env_specs: {}
+[2024-10-29 18:56:51,720] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:56:51,720] obs_specs: {}
+[2024-10-29 18:56:51,720] agent_specs: {'batch_stage': False}
+[2024-10-29 18:56:51,720] skip_land_use: False
+[2024-10-29 18:56:51,720] skip_road: True
+[2024-10-29 18:56:51,720] road_ratio: 0.0
+[2024-10-29 18:56:51,720] gamma: 2.0
+[2024-10-29 18:56:51,720] tau: 0.0
+[2024-10-29 18:56:51,720] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:56:51,720] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:56:51,721] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:56:51,721] lr: 0.004
+[2024-10-29 18:56:51,721] weightdecay: 0.1
+[2024-10-29 18:56:51,721] eps: 0.0001
+[2024-10-29 18:56:51,721] value_pred_coef: 0.1
+[2024-10-29 18:56:51,721] entropy_coef: 0.1
+[2024-10-29 18:56:51,721] clip_epsilon: 0.2
+[2024-10-29 18:56:51,721] max_num_iterations: 1
+[2024-10-29 18:56:51,721] num_episodes_per_iteration: 1
+[2024-10-29 18:56:51,721] max_sequence_length: 30
+[2024-10-29 18:56:51,721] num_optim_epoch: 4
+[2024-10-29 18:56:51,721] mini_batch_size: 256
+[2024-10-29 18:56:51,721] save_model_interval: 1
+[2024-10-29 18:57:44,314] id: hlg
+[2024-10-29 18:57:44,314] seed: 111
+[2024-10-29 18:57:44,314] objectives_plan: objectives_hlg
+[2024-10-29 18:57:44,314] init_plan: init_plan_hlg
+[2024-10-29 18:57:44,314] env_specs: {}
+[2024-10-29 18:57:44,314] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 18:57:44,314] obs_specs: {}
+[2024-10-29 18:57:44,314] agent_specs: {'batch_stage': False}
+[2024-10-29 18:57:44,314] skip_land_use: False
+[2024-10-29 18:57:44,314] skip_road: True
+[2024-10-29 18:57:44,314] road_ratio: 0.0
+[2024-10-29 18:57:44,314] gamma: 2.0
+[2024-10-29 18:57:44,314] tau: 0.0
+[2024-10-29 18:57:44,314] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 18:57:44,314] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 18:57:44,314] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 18:57:44,314] lr: 0.004
+[2024-10-29 18:57:44,314] weightdecay: 0.1
+[2024-10-29 18:57:44,314] eps: 0.0001
+[2024-10-29 18:57:44,314] value_pred_coef: 0.1
+[2024-10-29 18:57:44,314] entropy_coef: 0.1
+[2024-10-29 18:57:44,314] clip_epsilon: 0.2
+[2024-10-29 18:57:44,314] max_num_iterations: 1
+[2024-10-29 18:57:44,314] num_episodes_per_iteration: 1
+[2024-10-29 18:57:44,314] max_sequence_length: 30
+[2024-10-29 18:57:44,314] num_optim_epoch: 4
+[2024-10-29 18:57:44,314] mini_batch_size: 256
+[2024-10-29 18:57:44,314] save_model_interval: 1
+[2024-10-29 21:11:08,371] id: hlg
+[2024-10-29 21:11:08,371] seed: 111
+[2024-10-29 21:11:08,371] objectives_plan: objectives_hlg
+[2024-10-29 21:11:08,371] init_plan: init_plan_hlg
+[2024-10-29 21:11:08,371] env_specs: {}
+[2024-10-29 21:11:08,371] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 21:11:08,371] obs_specs: {}
+[2024-10-29 21:11:08,371] agent_specs: {'batch_stage': False}
+[2024-10-29 21:11:08,371] skip_land_use: False
+[2024-10-29 21:11:08,371] skip_road: True
+[2024-10-29 21:11:08,371] road_ratio: 0.0
+[2024-10-29 21:11:08,371] gamma: 2.0
+[2024-10-29 21:11:08,371] tau: 0.0
+[2024-10-29 21:11:08,371] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 21:11:08,371] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 21:11:08,371] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 21:11:08,371] lr: 0.004
+[2024-10-29 21:11:08,371] weightdecay: 0.1
+[2024-10-29 21:11:08,371] eps: 0.0001
+[2024-10-29 21:11:08,371] value_pred_coef: 0.1
+[2024-10-29 21:11:08,371] entropy_coef: 0.1
+[2024-10-29 21:11:08,371] clip_epsilon: 0.2
+[2024-10-29 21:11:08,371] max_num_iterations: 1
+[2024-10-29 21:11:08,371] num_episodes_per_iteration: 1
+[2024-10-29 21:11:08,371] max_sequence_length: 30
+[2024-10-29 21:11:08,371] num_optim_epoch: 4
+[2024-10-29 21:11:08,371] mini_batch_size: 256
+[2024-10-29 21:11:08,371] save_model_interval: 1
+[2024-10-29 21:12:32,784] id: hlg
+[2024-10-29 21:12:32,784] seed: 111
+[2024-10-29 21:12:32,784] objectives_plan: objectives_hlg
+[2024-10-29 21:12:32,784] init_plan: init_plan_hlg
+[2024-10-29 21:12:32,784] env_specs: {}
+[2024-10-29 21:12:32,784] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 21:12:32,784] obs_specs: {}
+[2024-10-29 21:12:32,784] agent_specs: {'batch_stage': False}
+[2024-10-29 21:12:32,784] skip_land_use: False
+[2024-10-29 21:12:32,784] skip_road: True
+[2024-10-29 21:12:32,784] road_ratio: 0.0
+[2024-10-29 21:12:32,784] gamma: 2.0
+[2024-10-29 21:12:32,784] tau: 0.0
+[2024-10-29 21:12:32,784] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 21:12:32,784] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 21:12:32,784] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 21:12:32,784] lr: 0.004
+[2024-10-29 21:12:32,785] weightdecay: 0.1
+[2024-10-29 21:12:32,785] eps: 0.0001
+[2024-10-29 21:12:32,785] value_pred_coef: 0.1
+[2024-10-29 21:12:32,785] entropy_coef: 0.1
+[2024-10-29 21:12:32,785] clip_epsilon: 0.2
+[2024-10-29 21:12:32,785] max_num_iterations: 1
+[2024-10-29 21:12:32,785] num_episodes_per_iteration: 1
+[2024-10-29 21:12:32,785] max_sequence_length: 30
+[2024-10-29 21:12:32,785] num_optim_epoch: 4
+[2024-10-29 21:12:32,785] mini_batch_size: 256
+[2024-10-29 21:12:32,785] save_model_interval: 1
+[2024-10-29 21:13:38,918] id: hlg
+[2024-10-29 21:13:38,918] seed: 111
+[2024-10-29 21:13:38,918] objectives_plan: objectives_hlg
+[2024-10-29 21:13:38,918] init_plan: init_plan_hlg
+[2024-10-29 21:13:38,918] env_specs: {}
+[2024-10-29 21:13:38,918] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 21:13:38,918] obs_specs: {}
+[2024-10-29 21:13:38,918] agent_specs: {'batch_stage': False}
+[2024-10-29 21:13:38,919] skip_land_use: False
+[2024-10-29 21:13:38,919] skip_road: True
+[2024-10-29 21:13:38,919] road_ratio: 0.0
+[2024-10-29 21:13:38,919] gamma: 2.0
+[2024-10-29 21:13:38,919] tau: 0.0
+[2024-10-29 21:13:38,919] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 21:13:38,919] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 21:13:38,919] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 21:13:38,919] lr: 0.004
+[2024-10-29 21:13:38,919] weightdecay: 0.1
+[2024-10-29 21:13:38,919] eps: 0.0001
+[2024-10-29 21:13:38,919] value_pred_coef: 0.1
+[2024-10-29 21:13:38,919] entropy_coef: 0.1
+[2024-10-29 21:13:38,919] clip_epsilon: 0.2
+[2024-10-29 21:13:38,919] max_num_iterations: 1
+[2024-10-29 21:13:38,919] num_episodes_per_iteration: 1
+[2024-10-29 21:13:38,919] max_sequence_length: 30
+[2024-10-29 21:13:38,919] num_optim_epoch: 4
+[2024-10-29 21:13:38,919] mini_batch_size: 256
+[2024-10-29 21:13:38,919] save_model_interval: 1
+[2024-10-29 21:15:04,934] id: hlg
+[2024-10-29 21:15:04,934] seed: 111
+[2024-10-29 21:15:04,934] objectives_plan: objectives_hlg
+[2024-10-29 21:15:04,934] init_plan: init_plan_hlg
+[2024-10-29 21:15:04,934] env_specs: {}
+[2024-10-29 21:15:04,934] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 21:15:04,935] obs_specs: {}
+[2024-10-29 21:15:04,935] agent_specs: {'batch_stage': False}
+[2024-10-29 21:15:04,935] skip_land_use: False
+[2024-10-29 21:15:04,935] skip_road: True
+[2024-10-29 21:15:04,935] road_ratio: 0.0
+[2024-10-29 21:15:04,935] gamma: 2.0
+[2024-10-29 21:15:04,935] tau: 0.0
+[2024-10-29 21:15:04,935] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 21:15:04,935] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 21:15:04,935] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 21:15:04,935] lr: 0.004
+[2024-10-29 21:15:04,935] weightdecay: 0.1
+[2024-10-29 21:15:04,935] eps: 0.0001
+[2024-10-29 21:15:04,935] value_pred_coef: 0.1
+[2024-10-29 21:15:04,935] entropy_coef: 0.1
+[2024-10-29 21:15:04,935] clip_epsilon: 0.2
+[2024-10-29 21:15:04,935] max_num_iterations: 1
+[2024-10-29 21:15:04,935] num_episodes_per_iteration: 1
+[2024-10-29 21:15:04,935] max_sequence_length: 30
+[2024-10-29 21:15:04,935] num_optim_epoch: 4
+[2024-10-29 21:15:04,935] mini_batch_size: 256
+[2024-10-29 21:15:04,935] save_model_interval: 1
+[2024-10-29 21:17:43,991] id: hlg
+[2024-10-29 21:17:43,991] seed: 111
+[2024-10-29 21:17:43,991] objectives_plan: objectives_hlg
+[2024-10-29 21:17:43,991] init_plan: init_plan_hlg
+[2024-10-29 21:17:43,991] env_specs: {}
+[2024-10-29 21:17:43,991] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-10-29 21:17:43,991] obs_specs: {}
+[2024-10-29 21:17:43,992] agent_specs: {'batch_stage': False}
+[2024-10-29 21:17:43,992] skip_land_use: False
+[2024-10-29 21:17:43,992] skip_road: True
+[2024-10-29 21:17:43,992] road_ratio: 0.0
+[2024-10-29 21:17:43,992] gamma: 2.0
+[2024-10-29 21:17:43,992] tau: 0.0
+[2024-10-29 21:17:43,992] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-10-29 21:17:43,992] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-10-29 21:17:43,992] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-10-29 21:17:43,992] lr: 0.004
+[2024-10-29 21:17:43,992] weightdecay: 0.1
+[2024-10-29 21:17:43,992] eps: 0.0001
+[2024-10-29 21:17:43,992] value_pred_coef: 0.1
+[2024-10-29 21:17:43,992] entropy_coef: 0.1
+[2024-10-29 21:17:43,992] clip_epsilon: 0.2
+[2024-10-29 21:17:43,992] max_num_iterations: 1
+[2024-10-29 21:17:43,992] num_episodes_per_iteration: 1
+[2024-10-29 21:17:43,992] max_sequence_length: 30
+[2024-10-29 21:17:43,992] num_optim_epoch: 4
+[2024-10-29 21:17:43,992] mini_batch_size: 256
+[2024-10-29 21:17:43,992] save_model_interval: 1
+[2024-11-02 19:59:05,614] id: hlg
+[2024-11-02 19:59:05,614] seed: 111
+[2024-11-02 19:59:05,614] objectives_plan: objectives_hlg
+[2024-11-02 19:59:05,614] init_plan: init_plan_hlg
+[2024-11-02 19:59:05,614] env_specs: {}
+[2024-11-02 19:59:05,614] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-11-02 19:59:05,614] obs_specs: {}
+[2024-11-02 19:59:05,614] agent_specs: {'batch_stage': False}
+[2024-11-02 19:59:05,614] skip_land_use: False
+[2024-11-02 19:59:05,614] skip_road: True
+[2024-11-02 19:59:05,614] road_ratio: 0.0
+[2024-11-02 19:59:05,614] gamma: 2.0
+[2024-11-02 19:59:05,614] tau: 0.0
+[2024-11-02 19:59:05,614] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-02 19:59:05,614] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-02 19:59:05,614] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-02 19:59:05,614] lr: 0.004
+[2024-11-02 19:59:05,614] weightdecay: 0.1
+[2024-11-02 19:59:05,614] eps: 0.0001
+[2024-11-02 19:59:05,614] value_pred_coef: 0.1
+[2024-11-02 19:59:05,614] entropy_coef: 0.1
+[2024-11-02 19:59:05,614] clip_epsilon: 0.2
+[2024-11-02 19:59:05,614] max_num_iterations: 1
+[2024-11-02 19:59:05,614] num_episodes_per_iteration: 1
+[2024-11-02 19:59:05,614] max_sequence_length: 30
+[2024-11-02 19:59:05,615] num_optim_epoch: 4
+[2024-11-02 19:59:05,615] mini_batch_size: 256
+[2024-11-02 19:59:05,615] save_model_interval: 1
+[2024-11-02 20:29:07,610] 0	T_sample 26.31	T_update 1771.31	T_eval 3.38	ETA 0:00:00	train_R_eps 11.13	eval_R_eps 10.70	hlg
+[2024-11-02 20:29:07,635] save best checkpoint with rewards 10.70!
+[2024-11-02 20:29:07,647] training done!
+[2024-11-02 21:00:04,672] id: hlg
+[2024-11-02 21:00:04,673] seed: 111
+[2024-11-02 21:00:04,673] objectives_plan: objectives_hlg
+[2024-11-02 21:00:04,673] init_plan: init_plan_hlg
+[2024-11-02 21:00:04,673] env_specs: {}
+[2024-11-02 21:00:04,673] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-11-02 21:00:04,673] obs_specs: {}
+[2024-11-02 21:00:04,673] agent_specs: {'batch_stage': False}
+[2024-11-02 21:00:04,673] skip_land_use: False
+[2024-11-02 21:00:04,673] skip_road: True
+[2024-11-02 21:00:04,673] road_ratio: 0.0
+[2024-11-02 21:00:04,673] gamma: 2.0
+[2024-11-02 21:00:04,673] tau: 0.0
+[2024-11-02 21:00:04,673] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-02 21:00:04,673] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-02 21:00:04,673] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-02 21:00:04,673] lr: 0.004
+[2024-11-02 21:00:04,673] weightdecay: 0.1
+[2024-11-02 21:00:04,673] eps: 0.0001
+[2024-11-02 21:00:04,673] value_pred_coef: 0.1
+[2024-11-02 21:00:04,673] entropy_coef: 0.1
+[2024-11-02 21:00:04,673] clip_epsilon: 0.2
+[2024-11-02 21:00:04,673] max_num_iterations: 1
+[2024-11-02 21:00:04,673] num_episodes_per_iteration: 1
+[2024-11-02 21:00:04,673] max_sequence_length: 30
+[2024-11-02 21:00:04,673] num_optim_epoch: 4
+[2024-11-02 21:00:04,673] mini_batch_size: 256
+[2024-11-02 21:00:04,673] save_model_interval: 1
+[2024-11-03 17:02:32,334] id: hlg
+[2024-11-03 17:02:32,334] seed: 111
+[2024-11-03 17:02:32,334] objectives_plan: objectives_hlg
+[2024-11-03 17:02:32,335] init_plan: init_plan_hlg
+[2024-11-03 17:02:32,335] env_specs: {}
+[2024-11-03 17:02:32,335] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-11-03 17:02:32,335] obs_specs: {}
+[2024-11-03 17:02:32,335] agent_specs: {'batch_stage': False}
+[2024-11-03 17:02:32,335] skip_land_use: False
+[2024-11-03 17:02:32,335] skip_road: True
+[2024-11-03 17:02:32,335] road_ratio: 0.0
+[2024-11-03 17:02:32,335] gamma: 2.0
+[2024-11-03 17:02:32,335] tau: 0.0
+[2024-11-03 17:02:32,335] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-03 17:02:32,335] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-03 17:02:32,335] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-03 17:02:32,335] lr: 0.004
+[2024-11-03 17:02:32,336] weightdecay: 0.1
+[2024-11-03 17:02:32,336] eps: 0.0001
+[2024-11-03 17:02:32,336] value_pred_coef: 0.1
+[2024-11-03 17:02:32,336] entropy_coef: 0.1
+[2024-11-03 17:02:32,336] clip_epsilon: 0.2
+[2024-11-03 17:02:32,336] max_num_iterations: 1
+[2024-11-03 17:02:32,336] num_episodes_per_iteration: 1
+[2024-11-03 17:02:32,336] max_sequence_length: 30
+[2024-11-03 17:02:32,336] num_optim_epoch: 4
+[2024-11-03 17:02:32,336] mini_batch_size: 256
+[2024-11-03 17:02:32,336] save_model_interval: 1
+[2024-11-03 20:50:53,543] id: hlg
+[2024-11-03 20:50:53,544] seed: 111
+[2024-11-03 20:50:53,544] objectives_plan: objectives_hlg
+[2024-11-03 20:50:53,545] init_plan: init_plan_hlg
+[2024-11-03 20:50:53,545] env_specs: {}
+[2024-11-03 20:50:53,545] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-11-03 20:50:53,545] obs_specs: {}
+[2024-11-03 20:50:53,545] agent_specs: {'batch_stage': False}
+[2024-11-03 20:50:53,545] skip_land_use: False
+[2024-11-03 20:50:53,545] skip_road: True
+[2024-11-03 20:50:53,545] road_ratio: 0.0
+[2024-11-03 20:50:53,545] gamma: 2.0
+[2024-11-03 20:50:53,545] tau: 0.0
+[2024-11-03 20:50:53,546] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-03 20:50:53,546] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-03 20:50:53,546] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-03 20:50:53,546] lr: 0.004
+[2024-11-03 20:50:53,546] weightdecay: 0.1
+[2024-11-03 20:50:53,547] eps: 0.0001
+[2024-11-03 20:50:53,547] value_pred_coef: 0.1
+[2024-11-03 20:50:53,547] entropy_coef: 0.1
+[2024-11-03 20:50:53,547] clip_epsilon: 0.2
+[2024-11-03 20:50:53,547] max_num_iterations: 1
+[2024-11-03 20:50:53,547] num_episodes_per_iteration: 1
+[2024-11-03 20:50:53,547] max_sequence_length: 30
+[2024-11-03 20:50:53,547] num_optim_epoch: 4
+[2024-11-03 20:50:53,548] mini_batch_size: 256
+[2024-11-03 20:50:53,548] save_model_interval: 1
+[2024-11-03 21:12:02,403] id: hlg
+[2024-11-03 21:12:02,403] seed: 111
+[2024-11-03 21:12:02,403] objectives_plan: objectives_hlg
+[2024-11-03 21:12:02,404] init_plan: init_plan_hlg
+[2024-11-03 21:12:02,404] env_specs: {}
+[2024-11-03 21:12:02,404] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0}
+[2024-11-03 21:12:02,404] obs_specs: {}
+[2024-11-03 21:12:02,404] agent_specs: {'batch_stage': False}
+[2024-11-03 21:12:02,404] skip_land_use: False
+[2024-11-03 21:12:02,404] skip_road: True
+[2024-11-03 21:12:02,404] road_ratio: 0.0
+[2024-11-03 21:12:02,404] gamma: 2.0
+[2024-11-03 21:12:02,404] tau: 0.0
+[2024-11-03 21:12:02,405] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-03 21:12:02,405] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-03 21:12:02,405] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-03 21:12:02,405] lr: 0.004
+[2024-11-03 21:12:02,405] weightdecay: 0.1
+[2024-11-03 21:12:02,405] eps: 0.0001
+[2024-11-03 21:12:02,405] value_pred_coef: 0.1
+[2024-11-03 21:12:02,405] entropy_coef: 0.1
+[2024-11-03 21:12:02,405] clip_epsilon: 0.2
+[2024-11-03 21:12:02,405] max_num_iterations: 1
+[2024-11-03 21:12:02,405] num_episodes_per_iteration: 1
+[2024-11-03 21:12:02,405] max_sequence_length: 30
+[2024-11-03 21:12:02,405] num_optim_epoch: 4
+[2024-11-03 21:12:02,405] mini_batch_size: 256
+[2024-11-03 21:12:02,405] save_model_interval: 1
+[2024-11-04 13:23:24,854] id: hlg
+[2024-11-04 13:23:24,854] seed: 111
+[2024-11-04 13:23:24,854] objectives_plan: objectives_hlg
+[2024-11-04 13:23:24,854] init_plan: init_plan_hlg
+[2024-11-04 13:23:24,855] env_specs: {}
+[2024-11-04 13:23:24,855] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 13:23:24,855] obs_specs: {}
+[2024-11-04 13:23:24,855] agent_specs: {'batch_stage': False}
+[2024-11-04 13:23:24,855] skip_land_use: False
+[2024-11-04 13:23:24,855] skip_road: True
+[2024-11-04 13:23:24,855] road_ratio: 0.0
+[2024-11-04 13:23:24,855] gamma: 2.0
+[2024-11-04 13:23:24,855] tau: 0.0
+[2024-11-04 13:23:24,855] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 13:23:24,855] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 13:23:24,855] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 13:23:24,855] lr: 0.004
+[2024-11-04 13:23:24,855] weightdecay: 0.1
+[2024-11-04 13:23:24,855] eps: 0.0001
+[2024-11-04 13:23:24,855] value_pred_coef: 0.1
+[2024-11-04 13:23:24,855] entropy_coef: 0.1
+[2024-11-04 13:23:24,855] clip_epsilon: 0.2
+[2024-11-04 13:23:24,855] max_num_iterations: 1
+[2024-11-04 13:23:24,855] num_episodes_per_iteration: 1
+[2024-11-04 13:23:24,855] max_sequence_length: 30
+[2024-11-04 13:23:24,855] num_optim_epoch: 4
+[2024-11-04 13:23:24,855] mini_batch_size: 256
+[2024-11-04 13:23:24,855] save_model_interval: 1
+[2024-11-04 13:24:53,511] polygon: POLYGON ((2010 1105, 2145 1105, 2160 1020, 2010 1020, 2010 1105))
+new intersection: POINT (2010 1105)
+road or boundary to split:
+LINESTRING (1655 1105, 2145 1105)
+LINESTRING (2145 1105, 1655 1105)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-11-04 13:24:53,512] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 942), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1075), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 926), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 966), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 916), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 979), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1043), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1000), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1101), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1313), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1346), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 918), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 955), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1398), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 969), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1239), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1515), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1559), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1241), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1532), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1576), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 996), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1675), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1087), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 2000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1507), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 2000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 954), ({'type': 5, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 976), ({'type': 13, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1708), ({'type': 13, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1753), ({'type': 13, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1090)]
+[2024-11-04 13:24:53,515] Plan fails during eval.
+[2024-11-04 13:24:53,543] 0	T_sample 14.48	T_update 70.32	T_eval 2.13	ETA 0:00:00	train_R_eps 12.15	eval_R_eps -1.00	hlg
+[2024-11-04 13:27:41,165] id: hlg
+[2024-11-04 13:27:41,165] seed: 111
+[2024-11-04 13:27:41,165] objectives_plan: objectives_hlg
+[2024-11-04 13:27:41,165] init_plan: init_plan_hlg
+[2024-11-04 13:27:41,165] env_specs: {}
+[2024-11-04 13:27:41,166] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 13:27:41,166] obs_specs: {}
+[2024-11-04 13:27:41,166] agent_specs: {'batch_stage': False}
+[2024-11-04 13:27:41,166] skip_land_use: False
+[2024-11-04 13:27:41,166] skip_road: True
+[2024-11-04 13:27:41,166] road_ratio: 0.0
+[2024-11-04 13:27:41,166] gamma: 2.0
+[2024-11-04 13:27:41,166] tau: 0.0
+[2024-11-04 13:27:41,166] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 13:27:41,166] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 13:27:41,166] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 13:27:41,166] lr: 0.004
+[2024-11-04 13:27:41,166] weightdecay: 0.1
+[2024-11-04 13:27:41,166] eps: 0.0001
+[2024-11-04 13:27:41,166] value_pred_coef: 0.1
+[2024-11-04 13:27:41,166] entropy_coef: 0.1
+[2024-11-04 13:27:41,167] clip_epsilon: 0.2
+[2024-11-04 13:27:41,167] max_num_iterations: 1
+[2024-11-04 13:27:41,167] num_episodes_per_iteration: 1
+[2024-11-04 13:27:41,167] max_sequence_length: 30
+[2024-11-04 13:27:41,167] num_optim_epoch: 4
+[2024-11-04 13:27:41,167] mini_batch_size: 256
+[2024-11-04 13:27:41,167] save_model_interval: 1
+[2024-11-04 13:31:41,525] id: hlg
+[2024-11-04 13:31:41,525] seed: 111
+[2024-11-04 13:31:41,525] objectives_plan: objectives_hlg
+[2024-11-04 13:31:41,525] init_plan: init_plan_hlg
+[2024-11-04 13:31:41,525] env_specs: {}
+[2024-11-04 13:31:41,525] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 13:31:41,525] obs_specs: {}
+[2024-11-04 13:31:41,525] agent_specs: {'batch_stage': False}
+[2024-11-04 13:31:41,525] skip_land_use: False
+[2024-11-04 13:31:41,525] skip_road: True
+[2024-11-04 13:31:41,525] road_ratio: 0.0
+[2024-11-04 13:31:41,525] gamma: 2.0
+[2024-11-04 13:31:41,525] tau: 0.0
+[2024-11-04 13:31:41,525] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 13:31:41,525] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 13:31:41,525] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 13:31:41,525] lr: 0.004
+[2024-11-04 13:31:41,525] weightdecay: 0.1
+[2024-11-04 13:31:41,525] eps: 0.0001
+[2024-11-04 13:31:41,525] value_pred_coef: 0.1
+[2024-11-04 13:31:41,525] entropy_coef: 0.1
+[2024-11-04 13:31:41,525] clip_epsilon: 0.2
+[2024-11-04 13:31:41,525] max_num_iterations: 1
+[2024-11-04 13:31:41,525] num_episodes_per_iteration: 1
+[2024-11-04 13:31:41,525] max_sequence_length: 30
+[2024-11-04 13:31:41,525] num_optim_epoch: 4
+[2024-11-04 13:31:41,525] mini_batch_size: 256
+[2024-11-04 13:31:41,525] save_model_interval: 1
+[2024-11-04 13:32:26,319] id: hlg
+[2024-11-04 13:32:26,319] seed: 111
+[2024-11-04 13:32:26,320] objectives_plan: objectives_hlg
+[2024-11-04 13:32:26,320] init_plan: init_plan_hlg
+[2024-11-04 13:32:26,320] env_specs: {}
+[2024-11-04 13:32:26,320] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 13:32:26,320] obs_specs: {}
+[2024-11-04 13:32:26,320] agent_specs: {'batch_stage': False}
+[2024-11-04 13:32:26,320] skip_land_use: False
+[2024-11-04 13:32:26,320] skip_road: True
+[2024-11-04 13:32:26,320] road_ratio: 0.0
+[2024-11-04 13:32:26,320] gamma: 2.0
+[2024-11-04 13:32:26,320] tau: 0.0
+[2024-11-04 13:32:26,320] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 13:32:26,320] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 13:32:26,320] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 13:32:26,320] lr: 0.004
+[2024-11-04 13:32:26,320] weightdecay: 0.1
+[2024-11-04 13:32:26,320] eps: 0.0001
+[2024-11-04 13:32:26,320] value_pred_coef: 0.1
+[2024-11-04 13:32:26,320] entropy_coef: 0.1
+[2024-11-04 13:32:26,320] clip_epsilon: 0.2
+[2024-11-04 13:32:26,320] max_num_iterations: 1
+[2024-11-04 13:32:26,320] num_episodes_per_iteration: 1
+[2024-11-04 13:32:26,320] max_sequence_length: 30
+[2024-11-04 13:32:26,320] num_optim_epoch: 4
+[2024-11-04 13:32:26,320] mini_batch_size: 256
+[2024-11-04 13:32:26,320] save_model_interval: 1
+[2024-11-04 13:33:55,490] 0	T_sample 16.10	T_update 69.01	T_eval 2.38	ETA 0:00:00	train_R_eps 12.14	eval_R_eps 11.58	hlg
+[2024-11-04 13:33:55,502] save best checkpoint with rewards 11.58!
+[2024-11-04 13:33:55,510] training done!
+[2024-11-04 15:37:12,150] id: hlg
+[2024-11-04 15:37:12,150] seed: 111
+[2024-11-04 15:37:12,150] objectives_plan: objectives_hlg
+[2024-11-04 15:37:12,150] init_plan: init_plan_hlg
+[2024-11-04 15:37:12,150] env_specs: {}
+[2024-11-04 15:37:12,150] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 15:37:12,150] obs_specs: {}
+[2024-11-04 15:37:12,151] agent_specs: {'batch_stage': False}
+[2024-11-04 15:37:12,151] skip_land_use: False
+[2024-11-04 15:37:12,151] skip_road: True
+[2024-11-04 15:37:12,151] road_ratio: 0.0
+[2024-11-04 15:37:12,151] gamma: 2.0
+[2024-11-04 15:37:12,151] tau: 0.0
+[2024-11-04 15:37:12,151] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 15:37:12,151] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 15:37:12,151] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 15:37:12,151] lr: 0.004
+[2024-11-04 15:37:12,151] weightdecay: 0.1
+[2024-11-04 15:37:12,151] eps: 0.0001
+[2024-11-04 15:37:12,151] value_pred_coef: 0.1
+[2024-11-04 15:37:12,151] entropy_coef: 0.1
+[2024-11-04 15:37:12,151] clip_epsilon: 0.2
+[2024-11-04 15:37:12,151] max_num_iterations: 1
+[2024-11-04 15:37:12,151] num_episodes_per_iteration: 1
+[2024-11-04 15:37:12,151] max_sequence_length: 30
+[2024-11-04 15:37:12,151] num_optim_epoch: 4
+[2024-11-04 15:37:12,151] mini_batch_size: 256
+[2024-11-04 15:37:12,151] save_model_interval: 1
+[2024-11-04 15:38:38,015] 0	T_sample 11.58	T_update 69.95	T_eval 2.60	ETA 0:00:00	train_R_eps 1016169986613.99	eval_R_eps 10.53	hlg
+[2024-11-04 15:38:38,021] save best checkpoint with rewards 10.53!
+[2024-11-04 15:38:38,027] training done!
+[2024-11-04 17:47:49,914] id: hlg
+[2024-11-04 17:47:49,914] seed: 111
+[2024-11-04 17:47:49,914] objectives_plan: objectives_hlg
+[2024-11-04 17:47:49,914] init_plan: init_plan_hlg
+[2024-11-04 17:47:49,914] env_specs: {}
+[2024-11-04 17:47:49,914] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 17:47:49,914] obs_specs: {}
+[2024-11-04 17:47:49,914] agent_specs: {'batch_stage': False}
+[2024-11-04 17:47:49,914] skip_land_use: False
+[2024-11-04 17:47:49,914] skip_road: True
+[2024-11-04 17:47:49,914] road_ratio: 0.0
+[2024-11-04 17:47:49,914] gamma: 2.0
+[2024-11-04 17:47:49,914] tau: 0.0
+[2024-11-04 17:47:49,914] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 17:47:49,914] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 17:47:49,914] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 17:47:49,914] lr: 0.004
+[2024-11-04 17:47:49,914] weightdecay: 0.1
+[2024-11-04 17:47:49,914] eps: 0.0001
+[2024-11-04 17:47:49,914] value_pred_coef: 0.1
+[2024-11-04 17:47:49,914] entropy_coef: 0.1
+[2024-11-04 17:47:49,915] clip_epsilon: 0.2
+[2024-11-04 17:47:49,915] max_num_iterations: 1
+[2024-11-04 17:47:49,915] num_episodes_per_iteration: 1
+[2024-11-04 17:47:49,915] max_sequence_length: 30
+[2024-11-04 17:47:49,915] num_optim_epoch: 4
+[2024-11-04 17:47:49,915] mini_batch_size: 256
+[2024-11-04 17:47:49,915] save_model_interval: 1
+[2024-11-04 17:55:03,855] id: hlg
+[2024-11-04 17:55:03,855] seed: 111
+[2024-11-04 17:55:03,855] objectives_plan: objectives_hlg
+[2024-11-04 17:55:03,855] init_plan: init_plan_hlg
+[2024-11-04 17:55:03,855] env_specs: {}
+[2024-11-04 17:55:03,855] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 17:55:03,855] obs_specs: {}
+[2024-11-04 17:55:03,856] agent_specs: {'batch_stage': False}
+[2024-11-04 17:55:03,856] skip_land_use: False
+[2024-11-04 17:55:03,856] skip_road: True
+[2024-11-04 17:55:03,856] road_ratio: 0.0
+[2024-11-04 17:55:03,856] gamma: 2.0
+[2024-11-04 17:55:03,856] tau: 0.0
+[2024-11-04 17:55:03,856] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 17:55:03,856] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 17:55:03,856] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 17:55:03,856] lr: 0.004
+[2024-11-04 17:55:03,856] weightdecay: 0.1
+[2024-11-04 17:55:03,856] eps: 0.0001
+[2024-11-04 17:55:03,856] value_pred_coef: 0.1
+[2024-11-04 17:55:03,856] entropy_coef: 0.1
+[2024-11-04 17:55:03,856] clip_epsilon: 0.2
+[2024-11-04 17:55:03,856] max_num_iterations: 1
+[2024-11-04 17:55:03,856] num_episodes_per_iteration: 1
+[2024-11-04 17:55:03,856] max_sequence_length: 30
+[2024-11-04 17:55:03,856] num_optim_epoch: 4
+[2024-11-04 17:55:03,856] mini_batch_size: 256
+[2024-11-04 17:55:03,856] save_model_interval: 1
+[2024-11-04 17:56:25,731] id: hlg
+[2024-11-04 17:56:25,731] seed: 111
+[2024-11-04 17:56:25,731] objectives_plan: objectives_hlg
+[2024-11-04 17:56:25,732] init_plan: init_plan_hlg
+[2024-11-04 17:56:25,732] env_specs: {}
+[2024-11-04 17:56:25,732] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 17:56:25,732] obs_specs: {}
+[2024-11-04 17:56:25,732] agent_specs: {'batch_stage': False}
+[2024-11-04 17:56:25,732] skip_land_use: False
+[2024-11-04 17:56:25,732] skip_road: True
+[2024-11-04 17:56:25,732] road_ratio: 0.0
+[2024-11-04 17:56:25,732] gamma: 2.0
+[2024-11-04 17:56:25,732] tau: 0.0
+[2024-11-04 17:56:25,732] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 17:56:25,732] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 17:56:25,732] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 17:56:25,732] lr: 0.004
+[2024-11-04 17:56:25,732] weightdecay: 0.1
+[2024-11-04 17:56:25,732] eps: 0.0001
+[2024-11-04 17:56:25,732] value_pred_coef: 0.1
+[2024-11-04 17:56:25,732] entropy_coef: 0.1
+[2024-11-04 17:56:25,732] clip_epsilon: 0.2
+[2024-11-04 17:56:25,732] max_num_iterations: 1
+[2024-11-04 17:56:25,732] num_episodes_per_iteration: 1
+[2024-11-04 17:56:25,732] max_sequence_length: 30
+[2024-11-04 17:56:25,732] num_optim_epoch: 4
+[2024-11-04 17:56:25,732] mini_batch_size: 256
+[2024-11-04 17:56:25,732] save_model_interval: 1
+[2024-11-04 17:57:50,217] 0	T_sample 12.17	T_update 67.24	T_eval 2.89	ETA 0:00:00	train_R_eps 9.59	eval_R_eps 8.37	hlg
+[2024-11-04 17:57:50,226] save best checkpoint with rewards 8.37!
+[2024-11-04 17:57:50,237] training done!
+[2024-11-04 18:05:37,385] id: hlg
+[2024-11-04 18:05:37,386] seed: 111
+[2024-11-04 18:05:37,386] objectives_plan: objectives_hlg
+[2024-11-04 18:05:37,386] init_plan: init_plan_hlg
+[2024-11-04 18:05:37,386] env_specs: {}
+[2024-11-04 18:05:37,386] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 18:05:37,386] obs_specs: {}
+[2024-11-04 18:05:37,386] agent_specs: {'batch_stage': False}
+[2024-11-04 18:05:37,386] skip_land_use: False
+[2024-11-04 18:05:37,386] skip_road: True
+[2024-11-04 18:05:37,386] road_ratio: 0.0
+[2024-11-04 18:05:37,386] gamma: 2.0
+[2024-11-04 18:05:37,386] tau: 0.0
+[2024-11-04 18:05:37,386] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 18:05:37,386] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 18:05:37,386] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 18:05:37,386] lr: 0.004
+[2024-11-04 18:05:37,386] weightdecay: 0.1
+[2024-11-04 18:05:37,386] eps: 0.0001
+[2024-11-04 18:05:37,386] value_pred_coef: 0.1
+[2024-11-04 18:05:37,386] entropy_coef: 0.1
+[2024-11-04 18:05:37,386] clip_epsilon: 0.2
+[2024-11-04 18:05:37,386] max_num_iterations: 1
+[2024-11-04 18:05:37,386] num_episodes_per_iteration: 1
+[2024-11-04 18:05:37,386] max_sequence_length: 30
+[2024-11-04 18:05:37,386] num_optim_epoch: 4
+[2024-11-04 18:05:37,386] mini_batch_size: 256
+[2024-11-04 18:05:37,386] save_model_interval: 1
+[2024-11-04 18:06:40,243] id: hlg
+[2024-11-04 18:06:40,243] seed: 111
+[2024-11-04 18:06:40,243] objectives_plan: objectives_hlg
+[2024-11-04 18:06:40,243] init_plan: init_plan_hlg
+[2024-11-04 18:06:40,243] env_specs: {}
+[2024-11-04 18:06:40,243] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 18:06:40,243] obs_specs: {}
+[2024-11-04 18:06:40,243] agent_specs: {'batch_stage': False}
+[2024-11-04 18:06:40,243] skip_land_use: False
+[2024-11-04 18:06:40,243] skip_road: True
+[2024-11-04 18:06:40,243] road_ratio: 0.0
+[2024-11-04 18:06:40,243] gamma: 2.0
+[2024-11-04 18:06:40,243] tau: 0.0
+[2024-11-04 18:06:40,243] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 18:06:40,244] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 18:06:40,244] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 18:06:40,244] lr: 0.004
+[2024-11-04 18:06:40,244] weightdecay: 0.1
+[2024-11-04 18:06:40,244] eps: 0.0001
+[2024-11-04 18:06:40,244] value_pred_coef: 0.1
+[2024-11-04 18:06:40,244] entropy_coef: 0.1
+[2024-11-04 18:06:40,244] clip_epsilon: 0.2
+[2024-11-04 18:06:40,244] max_num_iterations: 1
+[2024-11-04 18:06:40,244] num_episodes_per_iteration: 1
+[2024-11-04 18:06:40,244] max_sequence_length: 30
+[2024-11-04 18:06:40,244] num_optim_epoch: 4
+[2024-11-04 18:06:40,244] mini_batch_size: 256
+[2024-11-04 18:06:40,244] save_model_interval: 1
+[2024-11-04 18:08:13,495] polygon: POLYGON ((1360 1445, 1360 1360, 1160 1360, 1150 1445, 1360 1445))
+new intersection: POINT (1360 1445)
+road or boundary to split:
+LINESTRING (1150 1445, 1635 1445)
+LINESTRING (1635 1445, 1150 1445)
+New intersection is located at more than 1 existing roads or boundaries.
+[2024-11-04 18:08:13,497] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 942), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 921), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 915), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 971), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1091), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 986), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1050), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 929), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 965), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1288), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1337), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1359), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1209), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1380), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1418), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1200), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1484), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1502), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1539), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1258), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1512), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1565), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1615), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1009), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 2000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1005)]
+[2024-11-04 18:08:13,499] Plan fails during eval.
+[2024-11-04 18:08:13,530] 0	T_sample 18.90	T_update 70.01	T_eval 2.32	ETA 0:00:00	train_R_eps 11.13	eval_R_eps -1.00	hlg
+[2024-11-04 18:08:13,535] save best checkpoint with rewards -1.00!
+[2024-11-04 18:08:13,542] training done!
+[2024-11-04 18:08:32,781] id: hlg
+[2024-11-04 18:08:32,781] seed: 111
+[2024-11-04 18:08:32,781] objectives_plan: objectives_hlg
+[2024-11-04 18:08:32,782] init_plan: init_plan_hlg
+[2024-11-04 18:08:32,782] env_specs: {}
+[2024-11-04 18:08:32,782] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-04 18:08:32,782] obs_specs: {}
+[2024-11-04 18:08:32,782] agent_specs: {'batch_stage': False}
+[2024-11-04 18:08:32,782] skip_land_use: False
+[2024-11-04 18:08:32,782] skip_road: True
+[2024-11-04 18:08:32,782] road_ratio: 0.0
+[2024-11-04 18:08:32,782] gamma: 2.0
+[2024-11-04 18:08:32,782] tau: 0.0
+[2024-11-04 18:08:32,782] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 5000, 'max_num_edges': 5000, 'num_attention_heads': 2}
+[2024-11-04 18:08:32,782] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-04 18:08:32,782] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-04 18:08:32,782] lr: 0.004
+[2024-11-04 18:08:32,782] weightdecay: 0.1
+[2024-11-04 18:08:32,782] eps: 0.0001
+[2024-11-04 18:08:32,782] value_pred_coef: 0.1
+[2024-11-04 18:08:32,782] entropy_coef: 0.1
+[2024-11-04 18:08:32,782] clip_epsilon: 0.2
+[2024-11-04 18:08:32,782] max_num_iterations: 1
+[2024-11-04 18:08:32,782] num_episodes_per_iteration: 1
+[2024-11-04 18:08:32,782] max_sequence_length: 30
+[2024-11-04 18:08:32,782] num_optim_epoch: 4
+[2024-11-04 18:08:32,782] mini_batch_size: 256
+[2024-11-04 18:08:32,782] save_model_interval: 1
+[2024-11-04 18:10:01,613] 0	T_sample 13.32	T_update 70.11	T_eval 3.31	ETA 0:00:00	train_R_eps 9235385791104.76	eval_R_eps 11.52	hlg
+[2024-11-04 18:10:01,622] save best checkpoint with rewards 11.52!
+[2024-11-04 18:10:01,629] training done!
+[2024-11-13 18:03:51,181] id: hlg
+[2024-11-13 18:03:51,181] seed: 111
+[2024-11-13 18:03:51,181] objectives_plan: objectives_hlg_new
+[2024-11-13 18:03:51,181] init_plan: init_plan_hlg_new
+[2024-11-13 18:03:51,181] env_specs: {}
+[2024-11-13 18:03:51,181] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-13 18:03:51,181] obs_specs: {}
+[2024-11-13 18:03:51,181] agent_specs: {'batch_stage': False}
+[2024-11-13 18:03:51,181] skip_land_use: False
+[2024-11-13 18:03:51,181] skip_road: True
+[2024-11-13 18:03:51,181] road_ratio: 0.0
+[2024-11-13 18:03:51,181] gamma: 2.0
+[2024-11-13 18:03:51,181] tau: 0.0
+[2024-11-13 18:03:51,181] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-13 18:03:51,181] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-13 18:03:51,181] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-13 18:03:51,181] lr: 0.004
+[2024-11-13 18:03:51,181] weightdecay: 0.1
+[2024-11-13 18:03:51,181] eps: 0.0001
+[2024-11-13 18:03:51,181] value_pred_coef: 0.1
+[2024-11-13 18:03:51,181] entropy_coef: 0.1
+[2024-11-13 18:03:51,181] clip_epsilon: 0.2
+[2024-11-13 18:03:51,181] max_num_iterations: 1
+[2024-11-13 18:03:51,181] num_episodes_per_iteration: 1
+[2024-11-13 18:03:51,181] max_sequence_length: 30
+[2024-11-13 18:03:51,181] num_optim_epoch: 4
+[2024-11-13 18:03:51,181] mini_batch_size: 256
+[2024-11-13 18:03:51,181] save_model_interval: 1
+[2024-11-13 21:24:12,555] id: hlg
+[2024-11-13 21:24:12,555] seed: 111
+[2024-11-13 21:24:12,555] objectives_plan: objectives_hlg_new
+[2024-11-13 21:24:12,555] init_plan: init_plan_hlg_new
+[2024-11-13 21:24:12,555] env_specs: {}
+[2024-11-13 21:24:12,555] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-13 21:24:12,555] obs_specs: {}
+[2024-11-13 21:24:12,555] agent_specs: {'batch_stage': False}
+[2024-11-13 21:24:12,555] skip_land_use: False
+[2024-11-13 21:24:12,555] skip_road: True
+[2024-11-13 21:24:12,555] road_ratio: 0.0
+[2024-11-13 21:24:12,555] gamma: 2.0
+[2024-11-13 21:24:12,555] tau: 0.0
+[2024-11-13 21:24:12,555] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-13 21:24:12,555] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-13 21:24:12,555] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-13 21:24:12,555] lr: 0.004
+[2024-11-13 21:24:12,555] weightdecay: 0.1
+[2024-11-13 21:24:12,555] eps: 0.0001
+[2024-11-13 21:24:12,555] value_pred_coef: 0.1
+[2024-11-13 21:24:12,556] entropy_coef: 0.1
+[2024-11-13 21:24:12,556] clip_epsilon: 0.2
+[2024-11-13 21:24:12,556] max_num_iterations: 1
+[2024-11-13 21:24:12,556] num_episodes_per_iteration: 1
+[2024-11-13 21:24:12,556] max_sequence_length: 30
+[2024-11-13 21:24:12,556] num_optim_epoch: 4
+[2024-11-13 21:24:12,556] mini_batch_size: 256
+[2024-11-13 21:24:12,556] save_model_interval: 1
+[2024-11-22 17:38:02,594] id: hlg
+[2024-11-22 17:38:02,594] seed: 111
+[2024-11-22 17:38:02,594] objectives_plan: objectives_hlg_new
+[2024-11-22 17:38:02,594] init_plan: init_plan_hlg_new1
+[2024-11-22 17:38:02,594] env_specs: {}
+[2024-11-22 17:38:02,595] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-22 17:38:02,595] obs_specs: {}
+[2024-11-22 17:38:02,595] agent_specs: {'batch_stage': False}
+[2024-11-22 17:38:02,595] skip_land_use: False
+[2024-11-22 17:38:02,595] skip_road: True
+[2024-11-22 17:38:02,595] road_ratio: 0.0
+[2024-11-22 17:38:02,595] gamma: 2.0
+[2024-11-22 17:38:02,595] tau: 0.0
+[2024-11-22 17:38:02,595] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-22 17:38:02,595] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-22 17:38:02,595] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-22 17:38:02,595] lr: 0.004
+[2024-11-22 17:38:02,595] weightdecay: 0.1
+[2024-11-22 17:38:02,595] eps: 0.0001
+[2024-11-22 17:38:02,595] value_pred_coef: 0.1
+[2024-11-22 17:38:02,595] entropy_coef: 0.1
+[2024-11-22 17:38:02,595] clip_epsilon: 0.2
+[2024-11-22 17:38:02,595] max_num_iterations: 1
+[2024-11-22 17:38:02,595] num_episodes_per_iteration: 1
+[2024-11-22 17:38:02,595] max_sequence_length: 30
+[2024-11-22 17:38:02,595] num_optim_epoch: 4
+[2024-11-22 17:38:02,595] mini_batch_size: 256
+[2024-11-22 17:38:02,595] save_model_interval: 1
+[2024-11-22 17:39:41,818] id: hlg
+[2024-11-22 17:39:41,818] seed: 111
+[2024-11-22 17:39:41,818] objectives_plan: objectives_hlg_new
+[2024-11-22 17:39:41,818] init_plan: init_plan_hlg_new1
+[2024-11-22 17:39:41,818] env_specs: {}
+[2024-11-22 17:39:41,818] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-22 17:39:41,818] obs_specs: {}
+[2024-11-22 17:39:41,818] agent_specs: {'batch_stage': False}
+[2024-11-22 17:39:41,818] skip_land_use: False
+[2024-11-22 17:39:41,818] skip_road: True
+[2024-11-22 17:39:41,818] road_ratio: 0.0
+[2024-11-22 17:39:41,818] gamma: 2.0
+[2024-11-22 17:39:41,818] tau: 0.0
+[2024-11-22 17:39:41,818] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-22 17:39:41,818] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-22 17:39:41,818] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-22 17:39:41,818] lr: 0.004
+[2024-11-22 17:39:41,818] weightdecay: 0.1
+[2024-11-22 17:39:41,818] eps: 0.0001
+[2024-11-22 17:39:41,818] value_pred_coef: 0.1
+[2024-11-22 17:39:41,818] entropy_coef: 0.1
+[2024-11-22 17:39:41,818] clip_epsilon: 0.2
+[2024-11-22 17:39:41,818] max_num_iterations: 1
+[2024-11-22 17:39:41,818] num_episodes_per_iteration: 1
+[2024-11-22 17:39:41,818] max_sequence_length: 30
+[2024-11-22 17:39:41,818] num_optim_epoch: 4
+[2024-11-22 17:39:41,818] mini_batch_size: 256
+[2024-11-22 17:39:41,818] save_model_interval: 1
+[2024-11-22 17:58:40,510] id: hlg
+[2024-11-22 17:58:40,510] seed: 111
+[2024-11-22 17:58:40,510] objectives_plan: objectives_hlg_new
+[2024-11-22 17:58:40,510] init_plan: init_plan_hlg_new1
+[2024-11-22 17:58:40,510] env_specs: {}
+[2024-11-22 17:58:40,510] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-22 17:58:40,510] obs_specs: {}
+[2024-11-22 17:58:40,510] agent_specs: {'batch_stage': False}
+[2024-11-22 17:58:40,510] skip_land_use: False
+[2024-11-22 17:58:40,510] skip_road: True
+[2024-11-22 17:58:40,510] road_ratio: 0.0
+[2024-11-22 17:58:40,510] gamma: 2.0
+[2024-11-22 17:58:40,510] tau: 0.0
+[2024-11-22 17:58:40,510] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-22 17:58:40,510] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-22 17:58:40,510] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-22 17:58:40,510] lr: 0.004
+[2024-11-22 17:58:40,510] weightdecay: 0.1
+[2024-11-22 17:58:40,510] eps: 0.0001
+[2024-11-22 17:58:40,510] value_pred_coef: 0.1
+[2024-11-22 17:58:40,510] entropy_coef: 0.1
+[2024-11-22 17:58:40,510] clip_epsilon: 0.2
+[2024-11-22 17:58:40,510] max_num_iterations: 1
+[2024-11-22 17:58:40,510] num_episodes_per_iteration: 1
+[2024-11-22 17:58:40,510] max_sequence_length: 30
+[2024-11-22 17:58:40,510] num_optim_epoch: 4
+[2024-11-22 17:58:40,510] mini_batch_size: 256
+[2024-11-22 17:58:40,510] save_model_interval: 1
+[2024-11-22 18:20:14,316] 0	T_sample 21.58	T_update 1268.69	T_eval 2.56	ETA 0:00:00	train_R_eps 14.41	eval_R_eps 12.31	hlg
+[2024-11-22 18:20:14,341] save best checkpoint with rewards 12.31!
+[2024-11-22 18:20:14,359] training done!
+[2024-11-23 04:32:56,717] id: hlg
+[2024-11-23 04:32:56,717] seed: 111
+[2024-11-23 04:32:56,717] objectives_plan: objectives_hlg_new
+[2024-11-23 04:32:56,717] init_plan: init_plan_hlg_new1
+[2024-11-23 04:32:56,717] env_specs: {}
+[2024-11-23 04:32:56,717] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 04:32:56,717] obs_specs: {}
+[2024-11-23 04:32:56,717] agent_specs: {'batch_stage': False}
+[2024-11-23 04:32:56,717] skip_land_use: False
+[2024-11-23 04:32:56,717] skip_road: True
+[2024-11-23 04:32:56,717] road_ratio: 0.0
+[2024-11-23 04:32:56,717] gamma: 2.0
+[2024-11-23 04:32:56,717] tau: 0.0
+[2024-11-23 04:32:56,718] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 04:32:56,718] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 04:32:56,718] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 04:32:56,718] lr: 0.004
+[2024-11-23 04:32:56,718] weightdecay: 0.1
+[2024-11-23 04:32:56,718] eps: 0.0001
+[2024-11-23 04:32:56,718] value_pred_coef: 0.1
+[2024-11-23 04:32:56,718] entropy_coef: 0.1
+[2024-11-23 04:32:56,718] clip_epsilon: 0.2
+[2024-11-23 04:32:56,718] max_num_iterations: 1
+[2024-11-23 04:32:56,718] num_episodes_per_iteration: 1
+[2024-11-23 04:32:56,718] max_sequence_length: 30
+[2024-11-23 04:32:56,718] num_optim_epoch: 4
+[2024-11-23 04:32:56,718] mini_batch_size: 256
+[2024-11-23 04:32:56,718] save_model_interval: 1
+[2024-11-23 04:55:32,207] 0	T_sample 15.89	T_update 1336.02	T_eval 2.60	ETA 0:00:00	train_R_eps 16.52	eval_R_eps 14.16	hlg
+[2024-11-23 04:55:32,230] save best checkpoint with rewards 14.16!
+[2024-11-23 04:55:32,237] training done!
+[2024-11-23 07:21:59,264] id: hlg
+[2024-11-23 07:21:59,264] seed: 111
+[2024-11-23 07:21:59,264] objectives_plan: objectives_hlg_new
+[2024-11-23 07:21:59,264] init_plan: init_plan_hlg_new1
+[2024-11-23 07:21:59,265] env_specs: {}
+[2024-11-23 07:21:59,265] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 07:21:59,265] obs_specs: {}
+[2024-11-23 07:21:59,265] agent_specs: {'batch_stage': False}
+[2024-11-23 07:21:59,265] skip_land_use: False
+[2024-11-23 07:21:59,265] skip_road: True
+[2024-11-23 07:21:59,265] road_ratio: 0.0
+[2024-11-23 07:21:59,265] gamma: 2.0
+[2024-11-23 07:21:59,265] tau: 0.0
+[2024-11-23 07:21:59,265] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 07:21:59,265] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 07:21:59,265] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 07:21:59,265] lr: 0.004
+[2024-11-23 07:21:59,265] weightdecay: 0.1
+[2024-11-23 07:21:59,265] eps: 0.0001
+[2024-11-23 07:21:59,265] value_pred_coef: 0.1
+[2024-11-23 07:21:59,265] entropy_coef: 0.1
+[2024-11-23 07:21:59,265] clip_epsilon: 0.2
+[2024-11-23 07:21:59,265] max_num_iterations: 1
+[2024-11-23 07:21:59,265] num_episodes_per_iteration: 1
+[2024-11-23 07:21:59,265] max_sequence_length: 30
+[2024-11-23 07:21:59,265] num_optim_epoch: 4
+[2024-11-23 07:21:59,265] mini_batch_size: 256
+[2024-11-23 07:21:59,265] save_model_interval: 1
+[2024-11-23 07:33:37,221] id: hlg
+[2024-11-23 07:33:37,223] seed: 111
+[2024-11-23 07:33:37,223] objectives_plan: objectives_hlg_new
+[2024-11-23 07:33:37,223] init_plan: init_plan_hlg_new1
+[2024-11-23 07:33:37,223] env_specs: {}
+[2024-11-23 07:33:37,223] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 07:33:37,223] obs_specs: {}
+[2024-11-23 07:33:37,223] agent_specs: {'batch_stage': False}
+[2024-11-23 07:33:37,223] skip_land_use: False
+[2024-11-23 07:33:37,223] skip_road: True
+[2024-11-23 07:33:37,223] road_ratio: 0.0
+[2024-11-23 07:33:37,223] gamma: 2.0
+[2024-11-23 07:33:37,223] tau: 0.0
+[2024-11-23 07:33:37,223] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 07:33:37,223] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 07:33:37,223] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 07:33:37,223] lr: 0.004
+[2024-11-23 07:33:37,223] weightdecay: 0.1
+[2024-11-23 07:33:37,223] eps: 0.0001
+[2024-11-23 07:33:37,223] value_pred_coef: 0.1
+[2024-11-23 07:33:37,223] entropy_coef: 0.1
+[2024-11-23 07:33:37,223] clip_epsilon: 0.2
+[2024-11-23 07:33:37,223] max_num_iterations: 1
+[2024-11-23 07:33:37,223] num_episodes_per_iteration: 1
+[2024-11-23 07:33:37,223] max_sequence_length: 30
+[2024-11-23 07:33:37,223] num_optim_epoch: 4
+[2024-11-23 07:33:37,223] mini_batch_size: 256
+[2024-11-23 07:33:37,223] save_model_interval: 1
+[2024-11-23 08:40:43,304] 0	T_sample 15.20	T_update 4007.11	T_eval 2.84	ETA 0:00:00	train_R_eps 20.12	eval_R_eps 12.30	hlg
+[2024-11-23 08:40:43,329] save best checkpoint with rewards 12.30!
+[2024-11-23 08:40:43,340] training done!
+[2024-11-23 11:42:36,705] id: hlg
+[2024-11-23 11:42:36,705] seed: 111
+[2024-11-23 11:42:36,705] objectives_plan: objectives_hlg_new
+[2024-11-23 11:42:36,705] init_plan: init_plan_hlg_new1
+[2024-11-23 11:42:36,705] env_specs: {}
+[2024-11-23 11:42:36,705] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 11:42:36,705] obs_specs: {}
+[2024-11-23 11:42:36,705] agent_specs: {'batch_stage': False}
+[2024-11-23 11:42:36,705] skip_land_use: False
+[2024-11-23 11:42:36,705] skip_road: True
+[2024-11-23 11:42:36,705] road_ratio: 0.0
+[2024-11-23 11:42:36,705] gamma: 2.0
+[2024-11-23 11:42:36,705] tau: 0.0
+[2024-11-23 11:42:36,705] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 11:42:36,705] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 11:42:36,705] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 11:42:36,705] lr: 0.004
+[2024-11-23 11:42:36,705] weightdecay: 0.1
+[2024-11-23 11:42:36,705] eps: 0.0001
+[2024-11-23 11:42:36,705] value_pred_coef: 0.1
+[2024-11-23 11:42:36,705] entropy_coef: 0.1
+[2024-11-23 11:42:36,705] clip_epsilon: 0.2
+[2024-11-23 11:42:36,705] max_num_iterations: 1
+[2024-11-23 11:42:36,705] num_episodes_per_iteration: 1
+[2024-11-23 11:42:36,705] max_sequence_length: 30
+[2024-11-23 11:42:36,705] num_optim_epoch: 4
+[2024-11-23 11:42:36,705] mini_batch_size: 256
+[2024-11-23 11:42:36,706] save_model_interval: 1
+[2024-11-23 11:44:43,952] id: hlg
+[2024-11-23 11:44:43,952] seed: 111
+[2024-11-23 11:44:43,953] objectives_plan: objectives_hlg_new
+[2024-11-23 11:44:43,953] init_plan: init_plan_hlg_new1
+[2024-11-23 11:44:43,953] env_specs: {}
+[2024-11-23 11:44:43,953] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 11:44:43,953] obs_specs: {}
+[2024-11-23 11:44:43,953] agent_specs: {'batch_stage': False}
+[2024-11-23 11:44:43,953] skip_land_use: False
+[2024-11-23 11:44:43,953] skip_road: True
+[2024-11-23 11:44:43,953] road_ratio: 0.0
+[2024-11-23 11:44:43,953] gamma: 2.0
+[2024-11-23 11:44:43,953] tau: 0.0
+[2024-11-23 11:44:43,953] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 11:44:43,953] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 11:44:43,953] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 11:44:43,953] lr: 0.004
+[2024-11-23 11:44:43,953] weightdecay: 0.1
+[2024-11-23 11:44:43,953] eps: 0.0001
+[2024-11-23 11:44:43,953] value_pred_coef: 0.1
+[2024-11-23 11:44:43,953] entropy_coef: 0.1
+[2024-11-23 11:44:43,953] clip_epsilon: 0.2
+[2024-11-23 11:44:43,953] max_num_iterations: 1
+[2024-11-23 11:44:43,953] num_episodes_per_iteration: 1
+[2024-11-23 11:44:43,953] max_sequence_length: 30
+[2024-11-23 11:44:43,953] num_optim_epoch: 4
+[2024-11-23 11:44:43,953] mini_batch_size: 256
+[2024-11-23 11:44:43,953] save_model_interval: 1
+[2024-11-23 11:45:36,032] id: hlg
+[2024-11-23 11:45:36,032] seed: 111
+[2024-11-23 11:45:36,032] objectives_plan: objectives_hlg_new
+[2024-11-23 11:45:36,032] init_plan: init_plan_hlg_new1
+[2024-11-23 11:45:36,032] env_specs: {}
+[2024-11-23 11:45:36,032] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 11:45:36,032] obs_specs: {}
+[2024-11-23 11:45:36,032] agent_specs: {'batch_stage': False}
+[2024-11-23 11:45:36,032] skip_land_use: False
+[2024-11-23 11:45:36,032] skip_road: True
+[2024-11-23 11:45:36,032] road_ratio: 0.0
+[2024-11-23 11:45:36,032] gamma: 2.0
+[2024-11-23 11:45:36,032] tau: 0.0
+[2024-11-23 11:45:36,032] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 11:45:36,033] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 11:45:36,033] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 11:45:36,033] lr: 0.004
+[2024-11-23 11:45:36,033] weightdecay: 0.1
+[2024-11-23 11:45:36,033] eps: 0.0001
+[2024-11-23 11:45:36,033] value_pred_coef: 0.1
+[2024-11-23 11:45:36,033] entropy_coef: 0.1
+[2024-11-23 11:45:36,033] clip_epsilon: 0.2
+[2024-11-23 11:45:36,033] max_num_iterations: 1
+[2024-11-23 11:45:36,033] num_episodes_per_iteration: 1
+[2024-11-23 11:45:36,033] max_sequence_length: 30
+[2024-11-23 11:45:36,033] num_optim_epoch: 4
+[2024-11-23 11:45:36,033] mini_batch_size: 256
+[2024-11-23 11:45:36,033] save_model_interval: 1
+[2024-11-23 11:46:08,007] id: hlg
+[2024-11-23 11:46:08,008] seed: 111
+[2024-11-23 11:46:08,008] objectives_plan: objectives_hlg_new
+[2024-11-23 11:46:08,008] init_plan: init_plan_hlg_new1
+[2024-11-23 11:46:08,008] env_specs: {}
+[2024-11-23 11:46:08,008] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 11:46:08,008] obs_specs: {}
+[2024-11-23 11:46:08,008] agent_specs: {'batch_stage': False}
+[2024-11-23 11:46:08,008] skip_land_use: False
+[2024-11-23 11:46:08,008] skip_road: True
+[2024-11-23 11:46:08,008] road_ratio: 0.0
+[2024-11-23 11:46:08,008] gamma: 2.0
+[2024-11-23 11:46:08,008] tau: 0.0
+[2024-11-23 11:46:08,008] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 11:46:08,008] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 11:46:08,008] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 11:46:08,008] lr: 0.004
+[2024-11-23 11:46:08,008] weightdecay: 0.1
+[2024-11-23 11:46:08,008] eps: 0.0001
+[2024-11-23 11:46:08,008] value_pred_coef: 0.1
+[2024-11-23 11:46:08,008] entropy_coef: 0.1
+[2024-11-23 11:46:08,008] clip_epsilon: 0.2
+[2024-11-23 11:46:08,008] max_num_iterations: 1
+[2024-11-23 11:46:08,008] num_episodes_per_iteration: 1
+[2024-11-23 11:46:08,008] max_sequence_length: 30
+[2024-11-23 11:46:08,008] num_optim_epoch: 4
+[2024-11-23 11:46:08,008] mini_batch_size: 256
+[2024-11-23 11:46:08,008] save_model_interval: 1
+[2024-11-23 11:47:08,482] id: hlg
+[2024-11-23 11:47:08,482] seed: 111
+[2024-11-23 11:47:08,482] objectives_plan: objectives_hlg_new
+[2024-11-23 11:47:08,482] init_plan: init_plan_hlg_new1
+[2024-11-23 11:47:08,482] env_specs: {}
+[2024-11-23 11:47:08,482] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 11:47:08,482] obs_specs: {}
+[2024-11-23 11:47:08,482] agent_specs: {'batch_stage': False}
+[2024-11-23 11:47:08,482] skip_land_use: False
+[2024-11-23 11:47:08,482] skip_road: True
+[2024-11-23 11:47:08,482] road_ratio: 0.0
+[2024-11-23 11:47:08,482] gamma: 2.0
+[2024-11-23 11:47:08,482] tau: 0.0
+[2024-11-23 11:47:08,482] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 11:47:08,482] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 11:47:08,482] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 11:47:08,482] lr: 0.004
+[2024-11-23 11:47:08,482] weightdecay: 0.1
+[2024-11-23 11:47:08,482] eps: 0.0001
+[2024-11-23 11:47:08,482] value_pred_coef: 0.1
+[2024-11-23 11:47:08,482] entropy_coef: 0.1
+[2024-11-23 11:47:08,482] clip_epsilon: 0.2
+[2024-11-23 11:47:08,482] max_num_iterations: 1
+[2024-11-23 11:47:08,483] num_episodes_per_iteration: 1
+[2024-11-23 11:47:08,483] max_sequence_length: 30
+[2024-11-23 11:47:08,483] num_optim_epoch: 4
+[2024-11-23 11:47:08,483] mini_batch_size: 256
+[2024-11-23 11:47:08,483] save_model_interval: 1
+[2024-11-23 11:48:17,091] id: hlg
+[2024-11-23 11:48:17,091] seed: 111
+[2024-11-23 11:48:17,091] objectives_plan: objectives_hlg_new
+[2024-11-23 11:48:17,091] init_plan: init_plan_hlg_new1
+[2024-11-23 11:48:17,091] env_specs: {}
+[2024-11-23 11:48:17,091] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 11:48:17,091] obs_specs: {}
+[2024-11-23 11:48:17,092] agent_specs: {'batch_stage': False}
+[2024-11-23 11:48:17,092] skip_land_use: False
+[2024-11-23 11:48:17,092] skip_road: True
+[2024-11-23 11:48:17,092] road_ratio: 0.0
+[2024-11-23 11:48:17,092] gamma: 2.0
+[2024-11-23 11:48:17,092] tau: 0.0
+[2024-11-23 11:48:17,092] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 11:48:17,092] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 11:48:17,092] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 11:48:17,092] lr: 0.004
+[2024-11-23 11:48:17,092] weightdecay: 0.1
+[2024-11-23 11:48:17,092] eps: 0.0001
+[2024-11-23 11:48:17,092] value_pred_coef: 0.1
+[2024-11-23 11:48:17,092] entropy_coef: 0.1
+[2024-11-23 11:48:17,092] clip_epsilon: 0.2
+[2024-11-23 11:48:17,092] max_num_iterations: 1
+[2024-11-23 11:48:17,092] num_episodes_per_iteration: 1
+[2024-11-23 11:48:17,092] max_sequence_length: 30
+[2024-11-23 11:48:17,092] num_optim_epoch: 4
+[2024-11-23 11:48:17,092] mini_batch_size: 256
+[2024-11-23 11:48:17,092] save_model_interval: 1
+[2024-11-23 13:22:12,992] 0	T_sample 19.76	T_update 5612.47	T_eval 2.86	ETA 0:00:00	train_R_eps 15.85	eval_R_eps 30.39	hlg
+[2024-11-23 13:22:13,014] save best checkpoint with rewards 30.39!
+[2024-11-23 13:22:13,026] training done!
+[2024-11-23 19:04:54,136] id: hlg
+[2024-11-23 19:04:54,136] seed: 111
+[2024-11-23 19:04:54,136] objectives_plan: objectives_hlg_new
+[2024-11-23 19:04:54,136] init_plan: init_plan_hlg_new1
+[2024-11-23 19:04:54,136] env_specs: {}
+[2024-11-23 19:04:54,136] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 19:04:54,136] obs_specs: {}
+[2024-11-23 19:04:54,136] agent_specs: {'batch_stage': False}
+[2024-11-23 19:04:54,136] skip_land_use: False
+[2024-11-23 19:04:54,136] skip_road: True
+[2024-11-23 19:04:54,136] road_ratio: 0.0
+[2024-11-23 19:04:54,136] gamma: 2.0
+[2024-11-23 19:04:54,136] tau: 0.0
+[2024-11-23 19:04:54,136] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 19:04:54,136] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 19:04:54,136] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 19:04:54,136] lr: 0.004
+[2024-11-23 19:04:54,136] weightdecay: 0.1
+[2024-11-23 19:04:54,136] eps: 0.0001
+[2024-11-23 19:04:54,136] value_pred_coef: 0.1
+[2024-11-23 19:04:54,136] entropy_coef: 0.1
+[2024-11-23 19:04:54,136] clip_epsilon: 0.2
+[2024-11-23 19:04:54,136] max_num_iterations: 1
+[2024-11-23 19:04:54,136] num_episodes_per_iteration: 1
+[2024-11-23 19:04:54,136] max_sequence_length: 30
+[2024-11-23 19:04:54,136] num_optim_epoch: 4
+[2024-11-23 19:04:54,137] mini_batch_size: 256
+[2024-11-23 19:04:54,137] save_model_interval: 1
+[2024-11-23 19:33:22,523] 0	T_sample 16.40	T_update 1687.86	T_eval 3.13	ETA 0:00:00	train_R_eps 15.36	eval_R_eps 12.15	hlg
+[2024-11-23 19:33:22,548] save best checkpoint with rewards 12.15!
+[2024-11-23 19:33:22,557] training done!
+[2024-11-23 21:15:17,190] id: hlg
+[2024-11-23 21:15:17,191] seed: 111
+[2024-11-23 21:15:17,191] objectives_plan: objectives_hlg_new
+[2024-11-23 21:15:17,191] init_plan: init_plan_hlg_new1
+[2024-11-23 21:15:17,191] env_specs: {}
+[2024-11-23 21:15:17,191] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-23 21:15:17,191] obs_specs: {}
+[2024-11-23 21:15:17,191] agent_specs: {'batch_stage': False}
+[2024-11-23 21:15:17,191] skip_land_use: False
+[2024-11-23 21:15:17,191] skip_road: True
+[2024-11-23 21:15:17,191] road_ratio: 0.0
+[2024-11-23 21:15:17,191] gamma: 2.0
+[2024-11-23 21:15:17,191] tau: 0.0
+[2024-11-23 21:15:17,191] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-23 21:15:17,191] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-23 21:15:17,191] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-23 21:15:17,191] lr: 0.004
+[2024-11-23 21:15:17,191] weightdecay: 0.1
+[2024-11-23 21:15:17,191] eps: 0.0001
+[2024-11-23 21:15:17,191] value_pred_coef: 0.1
+[2024-11-23 21:15:17,191] entropy_coef: 0.1
+[2024-11-23 21:15:17,191] clip_epsilon: 0.2
+[2024-11-23 21:15:17,191] max_num_iterations: 1
+[2024-11-23 21:15:17,191] num_episodes_per_iteration: 1
+[2024-11-23 21:15:17,191] max_sequence_length: 30
+[2024-11-23 21:15:17,191] num_optim_epoch: 4
+[2024-11-23 21:15:17,191] mini_batch_size: 256
+[2024-11-23 21:15:17,191] save_model_interval: 1
+[2024-11-23 21:36:14,399] 0	T_sample 79.71	T_update 1173.50	T_eval 3.04	ETA 0:00:00	train_R_eps 4588944418466.31	eval_R_eps 10.39	hlg
+[2024-11-23 21:36:14,421] save best checkpoint with rewards 10.39!
+[2024-11-23 21:36:14,431] training done!
+[2024-11-24 14:54:52,651] id: hlg
+[2024-11-24 14:54:52,651] seed: 111
+[2024-11-24 14:54:52,651] objectives_plan: objectives_hlg_new2
+[2024-11-24 14:54:52,651] init_plan: init_plan_hlg_new2
+[2024-11-24 14:54:52,651] env_specs: {}
+[2024-11-24 14:54:52,651] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-24 14:54:52,651] obs_specs: {}
+[2024-11-24 14:54:52,651] agent_specs: {'batch_stage': False}
+[2024-11-24 14:54:52,651] skip_land_use: False
+[2024-11-24 14:54:52,651] skip_road: True
+[2024-11-24 14:54:52,651] road_ratio: 0.0
+[2024-11-24 14:54:52,651] gamma: 2.0
+[2024-11-24 14:54:52,651] tau: 0.0
+[2024-11-24 14:54:52,651] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-24 14:54:52,651] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-24 14:54:52,651] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-24 14:54:52,651] lr: 0.004
+[2024-11-24 14:54:52,651] weightdecay: 0.1
+[2024-11-24 14:54:52,651] eps: 0.0001
+[2024-11-24 14:54:52,651] value_pred_coef: 0.1
+[2024-11-24 14:54:52,651] entropy_coef: 0.1
+[2024-11-24 14:54:52,651] clip_epsilon: 0.2
+[2024-11-24 14:54:52,651] max_num_iterations: 1
+[2024-11-24 14:54:52,651] num_episodes_per_iteration: 1
+[2024-11-24 14:54:52,651] max_sequence_length: 30
+[2024-11-24 14:54:52,652] num_optim_epoch: 4
+[2024-11-24 14:54:52,652] mini_batch_size: 256
+[2024-11-24 14:54:52,652] save_model_interval: 1
+[2024-11-24 14:57:32,509] id: hlg
+[2024-11-24 14:57:32,509] seed: 111
+[2024-11-24 14:57:32,509] objectives_plan: objectives_hlg_new2
+[2024-11-24 14:57:32,510] init_plan: init_plan_hlg_new2
+[2024-11-24 14:57:32,510] env_specs: {}
+[2024-11-24 14:57:32,510] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-24 14:57:32,510] obs_specs: {}
+[2024-11-24 14:57:32,510] agent_specs: {'batch_stage': False}
+[2024-11-24 14:57:32,510] skip_land_use: False
+[2024-11-24 14:57:32,510] skip_road: True
+[2024-11-24 14:57:32,510] road_ratio: 0.0
+[2024-11-24 14:57:32,510] gamma: 2.0
+[2024-11-24 14:57:32,510] tau: 0.0
+[2024-11-24 14:57:32,510] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-24 14:57:32,510] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-24 14:57:32,510] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-24 14:57:32,510] lr: 0.004
+[2024-11-24 14:57:32,510] weightdecay: 0.1
+[2024-11-24 14:57:32,510] eps: 0.0001
+[2024-11-24 14:57:32,510] value_pred_coef: 0.1
+[2024-11-24 14:57:32,510] entropy_coef: 0.1
+[2024-11-24 14:57:32,510] clip_epsilon: 0.2
+[2024-11-24 14:57:32,510] max_num_iterations: 1
+[2024-11-24 14:57:32,510] num_episodes_per_iteration: 1
+[2024-11-24 14:57:32,510] max_sequence_length: 30
+[2024-11-24 14:57:32,510] num_optim_epoch: 4
+[2024-11-24 14:57:32,510] mini_batch_size: 256
+[2024-11-24 14:57:32,510] save_model_interval: 1
+[2024-11-25 00:05:41,675] id: hlg
+[2024-11-25 00:05:41,675] seed: 111
+[2024-11-25 00:05:41,675] objectives_plan: objectives_hlg_new
+[2024-11-25 00:05:41,675] init_plan: init_plan_hlg_new1
+[2024-11-25 00:05:41,675] env_specs: {}
+[2024-11-25 00:05:41,675] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-25 00:05:41,675] obs_specs: {}
+[2024-11-25 00:05:41,675] agent_specs: {'batch_stage': False}
+[2024-11-25 00:05:41,675] skip_land_use: False
+[2024-11-25 00:05:41,675] skip_road: True
+[2024-11-25 00:05:41,675] road_ratio: 0.0
+[2024-11-25 00:05:41,675] gamma: 2.0
+[2024-11-25 00:05:41,675] tau: 0.0
+[2024-11-25 00:05:41,675] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-25 00:05:41,675] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-25 00:05:41,675] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-25 00:05:41,675] lr: 0.004
+[2024-11-25 00:05:41,675] weightdecay: 0.1
+[2024-11-25 00:05:41,675] eps: 0.0001
+[2024-11-25 00:05:41,675] value_pred_coef: 0.1
+[2024-11-25 00:05:41,675] entropy_coef: 0.1
+[2024-11-25 00:05:41,675] clip_epsilon: 0.2
+[2024-11-25 00:05:41,675] max_num_iterations: 1
+[2024-11-25 00:05:41,675] num_episodes_per_iteration: 1
+[2024-11-25 00:05:41,675] max_sequence_length: 30
+[2024-11-25 00:05:41,675] num_optim_epoch: 4
+[2024-11-25 00:05:41,675] mini_batch_size: 256
+[2024-11-25 00:05:41,675] save_model_interval: 1
+[2024-11-25 00:07:19,593] id: hlg
+[2024-11-25 00:07:19,593] seed: 111
+[2024-11-25 00:07:19,593] objectives_plan: objectives_hlg_new
+[2024-11-25 00:07:19,593] init_plan: init_plan_hlg_new1
+[2024-11-25 00:07:19,593] env_specs: {}
+[2024-11-25 00:07:19,593] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-25 00:07:19,593] obs_specs: {}
+[2024-11-25 00:07:19,593] agent_specs: {'batch_stage': False}
+[2024-11-25 00:07:19,593] skip_land_use: False
+[2024-11-25 00:07:19,593] skip_road: True
+[2024-11-25 00:07:19,593] road_ratio: 0.0
+[2024-11-25 00:07:19,593] gamma: 2.0
+[2024-11-25 00:07:19,593] tau: 0.0
+[2024-11-25 00:07:19,593] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-25 00:07:19,593] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-25 00:07:19,593] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-25 00:07:19,593] lr: 0.004
+[2024-11-25 00:07:19,593] weightdecay: 0.1
+[2024-11-25 00:07:19,593] eps: 0.0001
+[2024-11-25 00:07:19,593] value_pred_coef: 0.1
+[2024-11-25 00:07:19,593] entropy_coef: 0.1
+[2024-11-25 00:07:19,593] clip_epsilon: 0.2
+[2024-11-25 00:07:19,593] max_num_iterations: 1
+[2024-11-25 00:07:19,593] num_episodes_per_iteration: 1
+[2024-11-25 00:07:19,593] max_sequence_length: 30
+[2024-11-25 00:07:19,593] num_optim_epoch: 4
+[2024-11-25 00:07:19,593] mini_batch_size: 256
+[2024-11-25 00:07:19,593] save_model_interval: 1
+[2024-11-28 12:21:03,772] id: hlg
+[2024-11-28 12:21:03,772] seed: 111
+[2024-11-28 12:21:03,772] objectives_plan: objectives_hlg_new
+[2024-11-28 12:21:03,772] init_plan: init_plan_hlg_new1
+[2024-11-28 12:21:03,772] env_specs: {}
+[2024-11-28 12:21:03,772] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2024-11-28 12:21:03,772] obs_specs: {}
+[2024-11-28 12:21:03,772] agent_specs: {'batch_stage': False}
+[2024-11-28 12:21:03,772] skip_land_use: False
+[2024-11-28 12:21:03,772] skip_road: True
+[2024-11-28 12:21:03,772] road_ratio: 0.0
+[2024-11-28 12:21:03,772] gamma: 2.0
+[2024-11-28 12:21:03,772] tau: 0.0
+[2024-11-28 12:21:03,772] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 50000, 'max_num_edges': 50000, 'num_attention_heads': 2}
+[2024-11-28 12:21:03,772] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-11-28 12:21:03,772] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-11-28 12:21:03,772] lr: 0.004
+[2024-11-28 12:21:03,772] weightdecay: 0.1
+[2024-11-28 12:21:03,772] eps: 0.0001
+[2024-11-28 12:21:03,772] value_pred_coef: 0.1
+[2024-11-28 12:21:03,772] entropy_coef: 0.1
+[2024-11-28 12:21:03,773] clip_epsilon: 0.2
+[2024-11-28 12:21:03,773] max_num_iterations: 1
+[2024-11-28 12:21:03,773] num_episodes_per_iteration: 1
+[2024-11-28 12:21:03,773] max_sequence_length: 30
+[2024-11-28 12:21:03,773] num_optim_epoch: 4
+[2024-11-28 12:21:03,773] mini_batch_size: 256
+[2024-11-28 12:21:03,773] save_model_interval: 1
