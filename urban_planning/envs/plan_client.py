@@ -828,10 +828,10 @@ class PlanClient(object):
             
 
 
-            if random.choice([0, 1]) == 1:
-                start_point, end_point = random.sample(midpoints, 2)
-            else:
-                start_point, end_point = random.sample(polygon_coords, 2)
+            # if random.choice([0, 1]) == 1:
+            #     start_point, end_point = random.sample(midpoints, 2)
+            # else:
+            start_point, end_point = random.sample(polygon_coords, 2)
 
             new_line = LineString([start_point, end_point])
 
