@@ -123,6 +123,9 @@ class PlanClient(object):
         self._min_edge_grid = round(self._common_min_edge_length / self._cell_edge_length)
         self._max_edge_grid = round(self._common_max_edge_length / self._cell_edge_length)
 
+        self.max_roads = 15
+        self.current_roads = 0
+
     def get_common_max_area(self) -> float:
         """Returns the required maximum area of all land uses."""
         return self._common_max_area
@@ -580,6 +583,36 @@ class PlanClient(object):
             error_msg += '\nType of new intersections: {}'.format(new_intersections.geom_type)
             raise ValueError(error_msg + '\nThe type of new intersections is not point or multipoint or empty.')
         return polygon, intersections, new_intersections
+    
+    def _update_population_point(self,point:Point):
+        print('hi')
+        points = self._gdf[self._gdf['geometry'].geom_type == 'Point']
+        matching_point = points[points['geometry'] == point]
+        
+        if not matching_point.empty:
+            idx = matching_point.index[0]
+            existing_population = self._gdf.loc[idx, 'population']
+            print("hi1")
+            
+            connected_roads = self._gdf[
+                (self._gdf['type'] == 2) &  # Select roads
+                (self._gdf['geometry'].apply(lambda geom: geom.geom_type == 'LineString' and point in geom.coords))  # Check connection
+            ]
+
+            road_count = len(connected_roads) + 1  # Include the new road
+            
+            # Recalculate average population
+            new_population = (existing_population / road_count)*0.4
+            self._gdf.loc[idx, 'population'] = new_population
+
+        else:
+            print("Point not found, adding new point with population 100.")
+            # new_point_row = {
+            #     'geometry': point,
+            #     'type': 15,  # Define a default type if needed, or leave as None
+            #     'population': 100,
+            #     'existence': True  # Assuming default existence value
+            # }
 
     def _add_new_intersections(self,
                                land_use_polygon: Polygon,
@@ -619,14 +652,14 @@ class PlanClient(object):
                 road_or_boundary_1 = LineString([road_or_boundary_to_split_linestring.coords[0], new_intersection])
                 road_or_boundary_2 = LineString([road_or_boundary_to_split_linestring.coords[1], new_intersection])
                 road_or_boundary_gdf = GeoDataFrame(
-                    [[self._counter(), road_or_boundary_to_split_type, True, road_or_boundary_1],
-                     [self._counter(), road_or_boundary_to_split_type, True, road_or_boundary_2]],
-                    columns=['id', 'type', 'existence', 'geometry']).set_index('id')
+                    [[self._counter(), road_or_boundary_to_split_type, True, road_or_boundary_1,100],
+                     [self._counter(), road_or_boundary_to_split_type, True, road_or_boundary_2,100]],
+                    columns=['id', 'type', 'existence', 'geometry','population']).set_index('id')
                 self._gdf = pd.concat([self._gdf, road_or_boundary_gdf])
                 road_or_boundary_to_split_id = road_or_boundary_to_split.index[0]
                 self._gdf.at[road_or_boundary_to_split_id, 'existence'] = False
             self._gdf['geometry'] = self._gdf['geometry'].apply(lambda x: snap(x, new_intersection, self.EPSILON))
-
+    
     def _add_new_boundaries(self, land_use_polygon: Polygon) -> None:
         """Add new boundaries to gdf.
 
@@ -717,6 +750,54 @@ class PlanClient(object):
 
         self._add_new_intersections(land_use_polygon, intersections, new_intersections)
         self._add_new_boundaries(land_use_polygon)
+        self._add_land_use_polygon(land_use_polygon, land_use_type)
+
+        return land_use_polygon
+    
+    def _add_new_roads(self,land_use_polygon:Polygon):
+        new_boundaries = get_boundary_edges(land_use_polygon, 'MultiLineString')
+        roads_or_boundaries = self._gdf[(self._gdf.geom_type == 'LineString')
+                                        & (self._gdf['existence'] == True)].unary_union
+        new_boundaries = new_boundaries.difference(roads_or_boundaries)
+        if new_boundaries.is_empty:
+            new_boundaries = []
+        elif new_boundaries.geom_type == 'MultiLineString':
+            new_boundaries = list(new_boundaries.geoms)
+        elif new_boundaries.geom_type == 'LineString':
+            new_boundaries = [new_boundaries]
+        else:
+            error_msg = 'New boundaries: {}'.format(new_boundaries)
+            error_msg += '\nType of new boundaries: {}'.format(new_boundaries.geom_type)
+            raise ValueError(error_msg + '\nNew boundaries is not linestring or multilinestring or empty.')
+
+        for new_boundary in new_boundaries:
+            if len(new_boundary.coords) > 2:
+                error_msg = 'New boundary: {}'.format(new_boundary)
+                raise ValueError(error_msg + '\nNumber of coords of new boundary is greater than 2.')
+            boundary_gdf = GeoDataFrame(
+                [[self._counter(), city_config.ROAD, True, new_boundary,5]],
+                columns=['id', 'type', 'existence', 'geometry','population']).set_index('id')
+            self._gdf = pd.concat([self._gdf, boundary_gdf])
+
+    def _update_gdf_road(self,
+                    land_use_polygon: Polygon,
+                    land_use_type: int,
+                    build_road: bool = True,
+                    error_msg: Text = ''):
+        land_use_polygon, intersections, new_intersections = self._simplify_snap_polygon(land_use_polygon)
+        if land_use_polygon is None:
+            error_msg = f'Type {land_use_type}\n'
+            raise ValueError(error_msg + 'Empty after simplify and snap.')
+
+        if not build_road:
+            self._update_gdf_without_building_boundaries(land_use_polygon, land_use_type, new_intersections, error_msg)
+            return land_use_polygon
+        
+        for point in intersections.geoms:
+            self._update_population_point(point)
+
+        self._add_new_intersections(land_use_polygon, intersections, new_intersections)
+        self._add_new_roads(land_use_polygon)
         self._add_land_use_polygon(land_use_polygon, land_use_type)
 
         return land_use_polygon
@@ -812,85 +893,28 @@ class PlanClient(object):
         polygons = gdf[(gdf['geometry'].geom_type == 'Polygon') & (gdf['geometry'].area > min_area_threshold)]
 
         # Count new roads with specific criteria
-        new_road_count = len(gdf[(gdf['type'] == 2) & (gdf['population'] == 5)])
-        print("number of roads built are ", new_road_count)
-        if len(polygons) >= 1 and new_road_count < 15:
+        # new_road_count = len(gdf[(gdf['type'] == 2) & (gdf['population'] == 5)])
+        print("number of roads built are ", self.current_roads)
+        if len(polygons) >= 1 and self.current_roads < self.max_roads:
             random_polygon = polygons.sample(1, random_state=random.randint(0, 10000)).iloc[0]
             polygon_coords = list(random_polygon['geometry'].exterior.coords)
             
-            midpoints = []
-            for i in range(len(polygon_coords) - 1):
-                midpoint = Point(
-                    (polygon_coords[i][0] + polygon_coords[i + 1][0]) / 2,
-                    (polygon_coords[i][1] + polygon_coords[i + 1][1]) / 2
-                )
-                midpoints.append(midpoint)
+            intersection_point = random.sample(polygon_coords, 1)
             
+            land_use_polygon = self._slice_polygon(random_polygon['geometry'], Point(intersection_point[0][0],intersection_point[0][1]), random_polygon['type'])
 
-
-            # if random.choice([0, 1]) == 1:
-            #     start_point, end_point = random.sample(midpoints, 2)
-            # else:
-            start_point, end_point = random.sample(polygon_coords, 2)
-
-            new_line = LineString([start_point, end_point])
-
-            if new_line.length > 10:
-                if not ((gdf['geometry'] == new_line) & (gdf['type'] == 2)).any():
-                    new_row = {
-                        'type': 2,
-                        'existence': True,
-                        'geometry': new_line,
-                        'population': 5
-                    }
-
-                    new_row_gdf = gpd.GeoDataFrame([new_row], geometry='geometry')
-                    self._gdf = pd.concat([gdf, new_row_gdf], ignore_index=True)
-                    print("New road added to gdf.")
-
-                    def update_population(point):
-                        points = self._gdf[self._gdf['geometry'].geom_type == 'Point']
-                        matching_point = points[points['geometry'] == point]
-                        
-                        if not matching_point.empty:
-                            idx = matching_point.index[0]
-                            existing_population = self._gdf.loc[idx, 'population']
-                            print("hi")
-                            
-                            connected_roads = self._gdf[
-                                (self._gdf['type'] == 2) &  # Select roads
-                                (self._gdf['geometry'].apply(lambda geom: geom.geom_type == 'LineString' and point in geom.coords))  # Check connection
-                            ]
-
-                            road_count = len(connected_roads) + 1  # Include the new road
-                            
-                            # Recalculate average population
-                            new_population = (existing_population / road_count)*0.4
-                            self._gdf.loc[idx, 'population'] = new_population
-
-                        else:
-                            print("Point not found, adding new point with population 100.")
-                            new_point_row = {
-                                'geometry': point,
-                                'type': 15,  # Define a default type if needed, or leave as None
-                                'population': 100,
-                                'existence': True  # Assuming default existence value
-                            }
-
-                            # Append the new point to the GeoDataFrame
-                            new_point_gdf = gpd.GeoDataFrame([new_point_row], geometry='geometry')
-                            self._gdf = pd.concat([self._gdf, new_point_gdf], ignore_index=True)
-
-                    # Apply population averaging
-                    update_population(Point(start_point))
-                    update_population(Point(end_point))
+            if land_use_polygon.area < self.EPSILON:
+                error_msg = 'feasible polygon: {}'.format(random_polygon['geometry'])
+                error_msg += '\nintersection: {}'.format(intersection_point)
+                error_msg += '\nland_use polygon: {}'.format(land_use_polygon)
+                raise ValueError(error_msg + '\nThe area of sliced land_use_polygon is near 0.')
+            else:
+                self._update_gdf_road(land_use_polygon,random_polygon['type'])
+                self.current_roads+=1
+                print('Added New Road')
 
 
 
-
-
-                else:
-                    print("The specified road already exists in the gdf.")
         
         # previous_lines = gdf[(gdf['type'] == 16) & (gdf['geometry'].geom_type == 'LineString')]
         # drainage_line_count = len(previous_lines)
@@ -1194,7 +1218,7 @@ class PlanClient(object):
         print("i am in reward funtion")
 
 
-        new_roads = self._gdf[(self._gdf['population'] == 5) & (self._gdf['type'] == 2)]
+        new_roads = self._gdf[(self._gdf['population']==5) & (self._gdf['type'] == 2)]
         high_traffic_points = self._gdf[(self._gdf['geometry'].geom_type == 'Point') & (self._gdf['population'] >= 600)]
         low_traffic_points = self._gdf[(self._gdf['geometry'].geom_type == 'Point') & (self._gdf['population'] < 400)]
         

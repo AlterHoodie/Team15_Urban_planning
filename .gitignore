@@ -1,5 +1,5 @@
 __pycache__/
 tb/
 log/
-data1/dhm/111/log/
-data1/hlg/111/log/
+data1/dhm/111/log/*
+data1/hlg/111/log/*

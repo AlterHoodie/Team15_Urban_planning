@@ -25,8 +25,8 @@ state_encoder_specs:
   gcn_node_dim: 8
   num_gcn_layers: 4
   num_edge_fc_layers: 1
-  max_num_nodes: 3000
-  max_num_edges: 4000
+  max_num_nodes: 1000
+  max_num_edges: 2500
   num_attention_heads: 2
 policy_specs:
   policy_land_use_head_hidden_size: [32, 1]

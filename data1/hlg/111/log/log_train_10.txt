@@ -7109,3 +7109,209 @@ New intersection is located at more than 1 existing roads or boundaries.
 [2024-11-23 21:16:34,086] The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
 [2024-11-23 21:16:34,086] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 917), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 713), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 770), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 365), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 468), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 142), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 471), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 457), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 727), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 918), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1902), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 683), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 2924), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 655), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1859), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 4000.0, 'width': 1000.0, 'height': 1000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 539), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 4000.0, 'width': 1000.0, 'height': 1000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1920), ({'type': 5, 'x': 0.5, 'y': 0.5, 'area': 50000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 35), ({'type': 5, 'x': 0.5, 'y': 0.5, 'area': 50000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4234), ({'type': 5, 'x': 0.5, 'y': 0.5, 'area': 50000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 3188), ({'type': 8, 'x': 0.5, 'y': 0.5, 'area': 35000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 510), ({'type': 8, 'x': 0.5, 'y': 0.5, 'area': 35000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4003), ({'type': 13, 'x': 0.5, 'y': 0.5, 'area': 50000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4495), ({'type': 13, 'x': 0.5, 'y': 0.5, 'area': 50000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4559), ({'type': 13, 'x': 0.5, 'y': 0.5, 'area': 50000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 3115), ({'type': 13, 'x': 0.5, 'y': 0.5, 'area': 50000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 4373)]
 [2024-11-23 21:16:37,211] worker 10 finished episode 1.
+[2025-03-26 20:13:42,950] 'Series' object has no attribute 'normalize'
+[2025-03-26 20:13:42,956] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:13:49,102] 'Series' object has no attribute 'normalize'
+[2025-03-26 20:13:49,119] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:13:54,684] 'Series' object has no attribute 'normalize'
+[2025-03-26 20:13:54,684] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:14:00,527] 'Series' object has no attribute 'normalize'
+[2025-03-26 20:14:00,528] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30)]
+[2025-03-26 20:14:06,462] 'Series' object has no attribute 'normalize'
+[2025-03-26 20:14:06,463] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 917)]
+[2025-03-26 20:14:14,553] 'Series' object has no attribute 'normalize'
+[2025-03-26 20:14:14,579] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 497)]
+[2025-03-26 20:14:24,655] 'Series' object has no attribute 'normalize'
+[2025-03-26 20:14:24,708] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 577)]
+[2025-03-26 20:14:50,015] One of the arguments is of incorrect type. Please provide only Geometry objects.
+[2025-03-26 20:14:50,016] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:15:40,132] list index out of range
+[2025-03-26 20:15:40,173] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:16:14,677] list index out of range
+[2025-03-26 20:16:14,678] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:16:22,877] list index out of range
+[2025-03-26 20:16:22,880] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:16:33,476] list index out of range
+[2025-03-26 20:16:33,483] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:17:36,009] polygon: POLYGON ((1744 694, 1783 554, 1722 548, 1562 518, 1520 509, 1481 722, 1744 694))
+sliced polygon: POINT (1481 722)
+Sliced polygon is not a polygon.
+[2025-03-26 20:17:36,010] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 905), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 851), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1034), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 501)]
+[2025-03-26 20:18:05,873] temp polygon: POLYGON ((1730 1232, 1761.7345440890315 1233.5583927900864, 1730 1066, 1601 1066, 1581 1220, 1730 1232))
+edge: LINESTRING (1730 1232, 1730 1232)
+Left and right side both not within polygon.
+[2025-03-26 20:18:05,873] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 577), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 594), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1867), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 515), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1054), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 506)]
+[2025-03-26 20:18:24,271] polygon: POLYGON ((688 1181, 904 1229, 988 994, 680 921, 520 1069, 688 1181))
+sliced polygon: POINT (520 1069)
+Sliced polygon is not a polygon.
+[2025-03-26 20:18:24,271] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 357), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 810), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 491), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 639)]
+[2025-03-26 20:20:02,544] worker 10 finished episode 1.
+[2025-03-26 20:36:00,995] 
+[2025-03-26 20:36:01,030] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:36:06,520] 
+[2025-03-26 20:36:06,521] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:36:10,516] 
+[2025-03-26 20:36:10,517] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:36:14,713] 
+[2025-03-26 20:36:14,786] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30)]
+[2025-03-26 20:36:19,230] 
+[2025-03-26 20:36:19,257] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 917)]
+[2025-03-26 20:37:05,044] polygon: POLYGON ((758 428, 957 470, 1047 459, 1094 397, 1134 246, 1148 184, 991 148, 851 120, 725 229, 758 428))
+sliced polygon: POINT (725 229)
+Sliced polygon is not a polygon.
+[2025-03-26 20:37:05,045] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:37:11,073] 
+[2025-03-26 20:37:11,101] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:37:16,265] 
+[2025-03-26 20:37:16,297] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:37:34,622] 
+[2025-03-26 20:37:34,623] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:37:40,094] 
+[2025-03-26 20:37:40,100] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:37:44,793] 
+[2025-03-26 20:37:44,794] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:37:49,650] 
+[2025-03-26 20:37:49,650] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30)]
+[2025-03-26 20:37:54,770] 
+[2025-03-26 20:37:54,822] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 917)]
+[2025-03-26 20:38:19,586] 
+[2025-03-26 20:38:19,608] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:38:24,154] 
+[2025-03-26 20:38:24,158] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:38:28,476] 
+[2025-03-26 20:38:28,480] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:38:33,128] 
+[2025-03-26 20:38:33,134] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30)]
+[2025-03-26 20:38:38,950] 
+[2025-03-26 20:38:38,951] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 917)]
+[2025-03-26 20:38:45,672] 
+[2025-03-26 20:38:45,672] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 497)]
+[2025-03-26 20:39:09,742] 
+[2025-03-26 20:39:09,747] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:39:15,443] 
+[2025-03-26 20:39:15,444] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:39:21,073] 
+[2025-03-26 20:39:21,081] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:39:26,556] 
+[2025-03-26 20:39:26,559] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30)]
+[2025-03-26 20:39:32,527] 
+[2025-03-26 20:39:32,564] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 917)]
+[2025-03-26 20:39:47,044] 
+[2025-03-26 20:39:47,045] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:40:26,213] polygon: POLYGON ((372 347, 462 50, 215 0, 134 274, 372 347))
+sliced polygon: POINT (462 50)
+Sliced polygon is not a polygon.
+[2025-03-26 20:40:26,214] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 912)]
+[2025-03-26 20:40:31,960] temp polygon: POLYGON ((758 428, 750 369, 725 229, 434 324, 372 347, 758 428))
+edge: LINESTRING (750 369, 750 369)
+Left and right side both not within polygon.
+[2025-03-26 20:40:31,999] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 20:41:37,422] temp polygon: POLYGON ((456 954, 590 882, 714 725, 865 658, 187 546, 103 515, 0 705, 456 954))
+edge: LINESTRING (187 546, 187 546)
+Left and right side both not within polygon.
+[2025-03-26 20:41:37,429] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 912), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 491), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 605), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 629), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1919), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 509), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 993), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 369)]
+[2025-03-26 20:41:45,278] temp polygon: POLYGON ((680 921, 988 994, 1002 946, 1022 887, 977 882, 940 806, 714 725, 655 800, 590 882, 680 921))
+edge: LINESTRING (655 800, 655 800)
+Left and right side both not within polygon.
+[2025-03-26 20:41:45,293] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 357)]
+[2025-03-26 20:42:25,575] temp polygon: POLYGON ((372 347, 462 50, 215 0, 134 274, 190 291, 372 347))
+edge: LINESTRING (190 291, 190 291)
+Left and right side both not within polygon.
+[2025-03-26 20:42:25,613] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 761), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 501), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 651), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1042), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 556)]
+[2025-03-26 20:42:35,456] temp polygon: POLYGON ((1352 714, 1436 744, 1436 728, 1481 722, 1492 672, 1500 616, 1520 509, 1391 489, 1319.5 704.4166666666666, 1352 714))
+edge: LINESTRING (1500 616, 1500 616)
+Left and right side both not within polygon.
+[2025-03-26 20:42:35,458] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 916)]
+[2025-03-26 20:44:34,700] worker 10 finished episode 1.
+[2025-03-26 20:48:42,083] polygon: POLYGON ((1589.591495823842 1153.8454821564162, 1601 1066, 1638 826, 1506 979, 1405 1131, 1589.591495823842 1153.8454821564162))
+sliced polygon: POINT (1405 1131)
+Sliced polygon is not a polygon.
+[2025-03-26 20:48:42,126] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 913), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 857), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1042), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 507), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 586), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 604), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 2006), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 381), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 934)]
+[2025-03-26 20:50:57,420] worker 10 finished episode 1.
+[2025-03-26 20:52:17,241] polygon: POLYGON ((1589.591495823842 1153.8454821564162, 1601 1066, 1638 826, 1506 979, 1405 1131, 1589.591495823842 1153.8454821564162))
+sliced polygon: POINT (1405 1131)
+Sliced polygon is not a polygon.
+[2025-03-26 20:52:17,260] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 20:52:22,506] temp polygon: POLYGON ((1212 431, 1391 489, 1428 305, 1593 338, 1652 207, 1274 145, 1164 123, 1148 184, 1134 246, 1094 397, 1212 431))
+edge: LINESTRING (1212 431, 1212 431)
+Left and right side both not within polygon.
+[2025-03-26 20:52:22,510] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 20:52:40,782] polygon: POLYGON ((1744 694, 1783 554, 1722 548, 1562 518, 1520 509, 1481 722, 1744 694))
+sliced polygon: POINT (1481 722)
+Sliced polygon is not a polygon.
+[2025-03-26 20:52:40,787] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 31), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 903), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 490), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 595)]
+[2025-03-26 20:53:34,960] polygon: POLYGON ((187 546, 386 579, 372 347, 134 274, 103 515, 187 546))
+sliced polygon: POINT (134 274)
+Sliced polygon is not a polygon.
+[2025-03-26 20:53:34,976] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 911), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 857), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 29), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1050), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 512), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 590), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 605), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1970), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 367)]
+[2025-03-26 20:55:11,452] worker 10 finished episode 1.
+[2025-03-26 21:19:31,010] polygon: POLYGON ((1744 694, 1783 554, 1722 548, 1562 518, 1520 509, 1481 722, 1744 694))
+sliced polygon: POINT (1481 722)
+Sliced polygon is not a polygon.
+[2025-03-26 21:19:31,020] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574)]
+[2025-03-26 21:19:36,460] temp polygon: POLYGON ((758 428, 957 470, 1047 459, 1094 397, 1134 246, 1148 184, 991 148, 851 120, 725 229, 758 428))
+edge: LINESTRING (1094 397, 1094 397)
+Left and right side both not within polygon.
+[2025-03-26 21:19:36,461] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 863)]
+[2025-03-26 21:19:54,210] polygon: POLYGON ((456 954, 590 882, 714 725, 865 658, 187 546, 103 515, 0 705, 456 954))
+sliced polygon: POINT (456 954)
+Sliced polygon is not a polygon.
+[2025-03-26 21:19:54,256] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 912), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 499)]
+[2025-03-26 21:20:30,870] temp polygon: POLYGON ((758 428, 750 369, 725 229, 434 324, 372 347, 758 428))
+edge: LINESTRING (434 324, 434 324)
+Left and right side both not within polygon.
+[2025-03-26 21:20:30,871] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 577), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 598), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1885), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 513), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1058), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 504)]
+[2025-03-26 21:20:36,116] temp polygon: POLYGON ((758 428, 957 470, 1047 459, 1094 397, 1134 246, 1148 184, 991 148, 851 120, 725 229, 758 428))
+edge: LINESTRING (991 148, 991 148)
+Left and right side both not within polygon.
+[2025-03-26 21:20:36,117] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 357)]
+[2025-03-26 21:20:42,926] polygon: POLYGON ((1951 1114, 2360 1206, 2419 1030, 2212 744, 2136 786, 1962 870, 1951 971, 1940 1002, 1951 1114))
+sliced polygon: POINT (2360 1206)
+Sliced polygon is not a polygon.
+[2025-03-26 21:20:42,949] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 761)]
+[2025-03-26 21:21:14,679] polygon: POLYGON ((456 954, 590 882, 714 725, 865 658, 187 546, 103 515, 0 705, 456 954))
+sliced polygon: POINT (865 658)
+Sliced polygon is not a polygon.
+[2025-03-26 21:21:14,692] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 495), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 643), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1011), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 535), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1041)]
+[2025-03-26 21:21:21,856] temp polygon: POLYGON ((1568 1352, 1581 1220, 1601 1066, 1638 826, 1506 979, 1405 1131, 1366 1327, 1568 1352))
+edge: LINESTRING (1405 1131, 1405 1131)
+Left and right side both not within polygon.
+[2025-03-26 21:21:21,858] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 518)]
+[2025-03-26 21:22:21,849] worker 10 finished episode 1.
+[2025-03-26 21:26:48,657] polygon: POLYGON ((456 954, 590 882, 714 725, 865 658, 187 546, 103 515, 0 705, 456 954))
+sliced polygon: POINT (865 658)
+Sliced polygon is not a polygon.
+[2025-03-26 21:26:48,691] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 574), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 908)]
+[2025-03-26 21:26:54,691] polygon: POLYGON ((372 347, 462 50, 215 0, 134 274, 372 347))
+sliced polygon: POINT (134 274)
+Sliced polygon is not a polygon.
+[2025-03-26 21:26:54,698] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 839)]
+[2025-03-26 21:27:20,413] polygon: POLYGON ((1730 1232, 1730 1162, 1954 1162, 1951 1114, 1940 1002, 1862 1041, 1730 1066, 1601 1066, 1581 1220, 1730 1232))
+sliced polygon: POINT (1601 1066)
+Sliced polygon is not a polygon.
+[2025-03-26 21:27:20,433] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 30), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 913), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 493), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 596)]
+[2025-03-26 21:27:28,776] polygon: POLYGON ((758 428, 750 369, 725 229, 434 324, 372 347, 758 428))
+sliced polygon: POINT (725 229)
+Sliced polygon is not a polygon.
+[2025-03-26 21:27:28,778] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 571)]
+[2025-03-26 21:27:50,085] polygon: POLYGON ((1366 1327, 1405 1131, 1506 979, 1638 826, 1436 744, 1352 921, 1341 943, 1240 1302, 1366 1327))
+sliced polygon: POINT (1240 1302)
+Sliced polygon is not a polygon.
+[2025-03-26 21:27:50,119] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1055), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 504), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1068)]
+[2025-03-26 21:28:34,359] polygon: POLYGON ((1568 1352, 1581 1220, 1601 1066, 1638 826, 1506 979, 1405 1131, 1366 1327, 1568 1352))
+sliced polygon: POINT (1366 1327)
+Sliced polygon is not a polygon.
+[2025-03-26 21:28:34,362] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 492), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 366), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 817), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 510), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 664), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1018), ({'type': 4, 'x': 0.5, 'y': 0.5, 'area': 250000.0, 'length': 20000.0, 'width': 5000.0, 'height': 5000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 590)]
+[2025-03-26 21:28:46,027] temp polygon: POLYGON ((1951 1114, 2212 1173, 2360 1206, 2419 1030, 2212 744, 2136 786, 1962 870, 1951 971, 1940 1002, 1951 1114))
+edge: LINESTRING (2212 1173, 2212 1173)
+Left and right side both not within polygon.
+[2025-03-26 21:28:46,059] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 916), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 523)]
+[2025-03-26 21:29:01,060] temp polygon: POLYGON ((1744 694, 1783 554, 1722 548, 1562 518, 1520 509, 1481 722, 1744 694))
+edge: LINESTRING (1562 518, 1562 518)
+Left and right side both not within polygon.
+[2025-03-26 21:29:01,065] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 520), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 15000.0, 'length': 8000.0, 'width': 2000.0, 'height': 2000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 744)]
+[2025-03-26 21:29:08,088] temp polygon: POLYGON ((758 428, 750 369, 725 229, 434 324, 372 347, 758 428))
+edge: LINESTRING (434 324, 434 324)
+Left and right side both not within polygon.
+[2025-03-26 21:29:08,089] Actions took before failing to place land use: [({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 12000.0, 'width': 3000.0, 'height': 3000.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 752)]
+[2025-03-26 21:30:06,564] worker 10 finished episode 1.
