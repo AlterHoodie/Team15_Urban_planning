@@ -2886,3 +2886,31 @@ New intersection is located at more than 1 existing roads or boundaries.
 [2024-11-28 12:21:03,773] num_optim_epoch: 4
 [2024-11-28 12:21:03,773] mini_batch_size: 256
 [2024-11-28 12:21:03,773] save_model_interval: 1
+[2025-03-26 13:04:42,733] id: hlg
+[2025-03-26 13:04:42,736] seed: 111
+[2025-03-26 13:04:42,736] objectives_plan: objectives_hlg_new
+[2025-03-26 13:04:42,736] init_plan: init_plan_hlg_new1
+[2025-03-26 13:04:42,736] env_specs: {}
+[2025-03-26 13:04:42,737] reward_specs: {'road_network_weight': 1.0, 'life_circle_weight': 8.0, 'greenness_weight': 1.0, 'wastemgmt_weight': 1.0, 'drainage_weight': 1.0}
+[2025-03-26 13:04:42,737] obs_specs: {}
+[2025-03-26 13:04:42,738] agent_specs: {'batch_stage': False}
+[2025-03-26 13:04:42,738] skip_land_use: False
+[2025-03-26 13:04:42,738] skip_road: True
+[2025-03-26 13:04:42,739] road_ratio: 0.0
+[2025-03-26 13:04:42,739] gamma: 2.0
+[2025-03-26 13:04:42,739] tau: 0.0
+[2025-03-26 13:04:42,739] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 8, 'num_gcn_layers': 4, 'num_edge_fc_layers': 1, 'max_num_nodes': 3000, 'max_num_edges': 4000, 'num_attention_heads': 2}
+[2025-03-26 13:04:42,740] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2025-03-26 13:04:42,740] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2025-03-26 13:04:42,740] lr: 0.004
+[2025-03-26 13:04:42,741] weightdecay: 0.1
+[2025-03-26 13:04:42,741] eps: 0.0001
+[2025-03-26 13:04:42,741] value_pred_coef: 0.1
+[2025-03-26 13:04:42,742] entropy_coef: 0.1
+[2025-03-26 13:04:42,742] clip_epsilon: 0.2
+[2025-03-26 13:04:42,742] max_num_iterations: 1
+[2025-03-26 13:04:42,742] num_episodes_per_iteration: 1
+[2025-03-26 13:04:42,742] max_sequence_length: 30
+[2025-03-26 13:04:42,742] num_optim_epoch: 4
+[2025-03-26 13:04:42,743] mini_batch_size: 256
+[2025-03-26 13:04:42,743] save_model_interval: 1
