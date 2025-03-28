@@ -594,7 +594,7 @@ class CityEnv:
             self._current_land_use, self._current_land_use_mask = self._get_land_use_and_mask()
             if not self._land_use_done and not np.any(self._current_land_use_mask):
                 return self.failure_step('Actions took before becoming infeasible', logger)
-            
+            self._current_road_mask = self._get_road_mask()
             if self._stage !="land_use":
                 self._cached_land_use_reward = reward
                 self._cached_life_circle_reward = info['life_circle']
