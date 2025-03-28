@@ -194,7 +194,7 @@ class CityEnv:
         """
         if self._stage == 'road' and self._road_steps == 0:
             # self._total_road_steps = math.floor(np.count_nonzero(self._current_road_mask)*self.cfg.road_ratio)
-            self._total_road_steps = 15
+            self._total_road_steps = 8
         else:
             raise ValueError('Invalid stage.')
 
