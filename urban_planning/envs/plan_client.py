@@ -426,9 +426,10 @@ class PlanClient(object):
         """
         gdf, graph = self._get_current_gdf_and_graph()
         self._current_graph_nodes_id = current_graph_nodes_id = gdf.index.to_numpy()
-        boundary_id = gdf[gdf['type'] == city_config.BOUNDARY].index.to_numpy()
+        points_to_remove = gdf[gdf['type'] == 14].geometry  # Get polygon geometries
+        gdf = gdf[~gdf.geometry.within(points_to_remove.unary_union)]
+        boundary_id = gdf[(gdf['type'] == city_config.INTERSECTION) & (gdf['existence']==True)].index.to_numpy()
         mask = np.isin(current_graph_nodes_id, boundary_id)
-
         return mask
 
     def _simplify_polygon(self,
@@ -953,28 +954,28 @@ class PlanClient(object):
 
         # Count new roads with specific criteria
         # new_road_count = len(gdf[(gdf['type'] == 2) & (gdf['population'] == 5)])
-        print("number of roads built are ", self.current_roads)
-        if len(polygons) >= 1 and self.current_roads < self.max_roads:
-            random_polygon = polygons.sample(1, random_state=random.randint(0, 10000)).iloc[0]
-            polygon_coords = list(random_polygon['geometry'].exterior.coords)
+        # print("number of roads built are ", self.current_roads)
+        # if len(polygons) >= 1 and self.current_roads < self.max_roads:
+        #     random_polygon = polygons.sample(1, random_state=random.randint(0, 10000)).iloc[0]
+        #     polygon_coords = list(random_polygon['geometry'].exterior.coords)
             
-            intersection_point = random.sample(polygon_coords, 1)
-            try:
-                land_use_polygon = self._slice_polygon(random_polygon['geometry'], Point(intersection_point[0][0],intersection_point[0][1]), random_polygon['type'])
+        #     intersection_point = random.sample(polygon_coords, 1)
+        #     try:
+        #         land_use_polygon = self._slice_polygon(random_polygon['geometry'], Point(intersection_point[0][0],intersection_point[0][1]), random_polygon['type'])
 
-                if land_use_polygon.area < self.EPSILON:
-                    error_msg = 'feasible polygon: {}'.format(random_polygon['geometry'])
-                    error_msg += '\nintersection: {}'.format(intersection_point)
-                    error_msg += '\nland_use polygon: {}'.format(land_use_polygon)
-                    raise ValueError(error_msg + '\nThe area of sliced land_use_polygon is near 0.')
-                else:
-                    self._update_gdf_road(land_use_polygon,random_polygon['type'])
-                    self.current_roads = len(self.ids)
-                    self._update_population_point(Point(intersection_point[0][1],intersection_point[0][1]))
+        #         if land_use_polygon.area < self.EPSILON:
+        #             error_msg = 'feasible polygon: {}'.format(random_polygon['geometry'])
+        #             error_msg += '\nintersection: {}'.format(intersection_point)
+        #             error_msg += '\nland_use polygon: {}'.format(land_use_polygon)
+        #             raise ValueError(error_msg + '\nThe area of sliced land_use_polygon is near 0.')
+        #         else:
+        #             self._update_gdf_road(land_use_polygon,random_polygon['type'])
+        #             self.current_roads = len(self.ids)
+        #             self._update_population_point(Point(intersection_point[0][1],intersection_point[0][1]))
 
-            except Exception as e:
-                print(e)
-                print("Could Not Build Road")
+        #     except Exception as e:
+        #         print(e)
+        #         print("Could Not Build Road")
 
 
 
@@ -1058,6 +1059,22 @@ class PlanClient(object):
         if self._gdf.loc[chosen_boundary, 'type'] != city_config.BOUNDARY:
             raise ValueError('The build road action is not boundary node.')
         return chosen_boundary
+    
+    def _get_polygon_highest(self,action):
+        chosen_point = self._current_graph_nodes_id[action]
+
+        if self._gdf.loc[chosen_point, 'type'] != city_config.INTERSECTION:
+            raise ValueError('The build road action is not boundary node.')
+        gdf = self._gdf.copy(deep=True)
+        polygons = gdf[(gdf['geometry'].geom_type=="Polygon") & gdf['existence']==True]
+
+        point_geometry = gdf.loc[chosen_point, 'geometry']
+        nearby_polygons = polygons[polygons.geometry.contains(point_geometry) | 
+                                polygons.geometry.intersects(point_geometry)]
+        sorted_polygons = nearby_polygons.sort_values('population', ascending=False)
+        # self._gdf.at[chosen_point,'existence'] = False
+        # self._gdf.at[sorted_polygons.index[0],'existence'] = False
+        return sorted_polygons.iloc[0] if not sorted_polygons.empty else None, sorted_polygons.index[0],gdf.iloc[chosen_point],chosen_point
 
     def build_road(self, action: int) -> None:
         """Build the road at the given action position.
@@ -1068,8 +1085,27 @@ class PlanClient(object):
         Returns:
             True if the road is successfully built, False otherwise.
         """
-        chosen_boundary = self._get_chosen_boundary(action)
-        self._gdf.loc[chosen_boundary, 'type'] = city_config.ROAD
+        # chosen_boundary = self._get_chosen_boundary(action)
+        random_polygon,_,intersection_point,point_id = self._get_polygon_highest(action)
+        try:
+                land_use_polygon = self._slice_polygon(random_polygon['geometry'], intersection_point['geometry'], random_polygon['type'])
+
+                if land_use_polygon.area < self.EPSILON:
+                    error_msg = 'feasible polygon: {}'.format(random_polygon['geometry'])
+                    error_msg += '\nintersection: {}'.format(intersection_point['geometry'])
+                    error_msg += '\nland_use polygon: {}'.format(land_use_polygon)
+                    raise ValueError(error_msg + '\nThe area of sliced land_use_polygon is near 0.')
+                else:
+                    self._update_gdf_road(land_use_polygon,random_polygon['type'])
+                    self.current_roads = len(self.ids)
+                    self._update_population_point(intersection_point['geometry'])
+
+        except Exception as e:
+                print(e)
+                print("Could Not Build Road")
+        print(intersection_point[0])
+        self._gdf.at[point_id,'existence'] = False
+        # self._gdf.loc[chosen_boundary, 'type'] = city_config.ROAD
 
     def get_requirements(self) -> Tuple[np.ndarray, np.ndarray]:
         """Get the planning requirements.
@@ -1142,69 +1178,69 @@ class PlanClient(object):
 
         #adding my own code to add roads to reduce traffic
 
-        max_roads_per_polygon=5
-        gdf = self._gdf[self._gdf['existence'] == True]
-        polygons_with_population = gdf[gdf['population'].notna()]
+        # max_roads_per_polygon=5
+        # gdf = self._gdf[self._gdf['existence'] == True]
+        # polygons_with_population = gdf[gdf['population'].notna()]
         
-        if polygons_with_population.empty:
-            print("No populated polygons found, no roads to add.")
-            return
+        # if polygons_with_population.empty:
+        #     print("No populated polygons found, no roads to add.")
+        #     return
         
 
-        existing_roads = gdf[gdf['type'] == 2]['geometry'].tolist()  # All existing roads
-        new_roads = []
-        for _, polygon in polygons_with_population.iterrows():
-            population = polygon['population']
+        # existing_roads = gdf[gdf['type'] == 2]['geometry'].tolist()  # All existing roads
+        # new_roads = []
+        # for _, polygon in polygons_with_population.iterrows():
+        #     population = polygon['population']
             
-            # Find candidate target polygons (lower population)
-            less_populated_polygons = gdf[(gdf['population'].notna()) & 
-                                        (gdf['population'] < population)]
+        #     # Find candidate target polygons (lower population)
+        #     less_populated_polygons = gdf[(gdf['population'].notna()) & 
+        #                                 (gdf['population'] < population)]
             
-            if less_populated_polygons.empty:
-                continue  # No lower population areas to connect to
+        #     if less_populated_polygons.empty:
+        #         continue  # No lower population areas to connect to
 
-            # Calculate distances to potential target polygons
-            polygon_centroid = polygon['geometry'].centroid
-            less_populated_polygons['distance'] = less_populated_polygons['geometry'].centroid.distance(polygon_centroid)
+        #     # Calculate distances to potential target polygons
+        #     polygon_centroid = polygon['geometry'].centroid
+        #     less_populated_polygons['distance'] = less_populated_polygons['geometry'].centroid.distance(polygon_centroid)
 
-            # Sort by proximity (closer polygons first)
-            less_populated_polygons = less_populated_polygons.sort_values(by='distance')
+        #     # Sort by proximity (closer polygons first)
+        #     less_populated_polygons = less_populated_polygons.sort_values(by='distance')
 
-            roads_created = 0
-            for _, target_polygon in less_populated_polygons.iterrows():
-                if roads_created >= max_roads_per_polygon:
-                    break  # Limit the number of roads per polygon
+        #     roads_created = 0
+        #     for _, target_polygon in less_populated_polygons.iterrows():
+        #         if roads_created >= max_roads_per_polygon:
+        #             break  # Limit the number of roads per polygon
                 
-                # Extract the vertices or midpoints of polygon edges (randomly)
-                poly_coords = list(polygon['geometry'].exterior.coords)
-                target_coords = list(target_polygon['geometry'].exterior.coords)
+        #         # Extract the vertices or midpoints of polygon edges (randomly)
+        #         poly_coords = list(polygon['geometry'].exterior.coords)
+        #         target_coords = list(target_polygon['geometry'].exterior.coords)
                 
-                start_point = random.choice(poly_coords)  # Choose random vertex from the polygon
-                end_point = random.choice(target_coords)  # Choose random vertex from the target polygon
+        #         start_point = random.choice(poly_coords)  # Choose random vertex from the polygon
+        #         end_point = random.choice(target_coords)  # Choose random vertex from the target polygon
                 
-                # Create a new LineString representing the road
-                new_road_geometry = LineString([start_point, end_point])
+        #         # Create a new LineString representing the road
+        #         new_road_geometry = LineString([start_point, end_point])
                 
-                # Check if road already exists (either in the same or reverse direction)
-                if any(new_road_geometry.equals(road) or new_road_geometry.equals(LineString([end_point, start_point]))
-                    for road in existing_roads):
-                    continue  # Skip if this road already exists
+        #         # Check if road already exists (either in the same or reverse direction)
+        #         if any(new_road_geometry.equals(road) or new_road_geometry.equals(LineString([end_point, start_point]))
+        #             for road in existing_roads):
+        #             continue  # Skip if this road already exists
                 
-                # Add the new road to the gdf with NaN population
-                new_roads.append({
-                    'type': 2,  # Assuming 2 is the type for roads
-                    'existence': True,
-                    'geometry': new_road_geometry,
-                    'population': float('nan')  # Set population for roads to NaN
-                })
+        #         # Add the new road to the gdf with NaN population
+        #         new_roads.append({
+        #             'type': 2,  # Assuming 2 is the type for roads
+        #             'existence': True,
+        #             'geometry': new_road_geometry,
+        #             'population': float('nan')  # Set population for roads to NaN
+        #         })
                 
-                existing_roads.append(new_road_geometry)  # Add the new road to the existing roads list
-                roads_created += 1
+        #         existing_roads.append(new_road_geometry)  # Add the new road to the existing roads list
+        #         roads_created += 1
         
-        # Append new roads to the gdf
-        if new_roads:
-            new_roads_gdf = gpd.GeoDataFrame(new_roads, geometry='geometry')
-            self._gdf = pd.concat([self._gdf, new_roads_gdf], ignore_index=True)
+        # # Append new roads to the gdf
+        # if new_roads:
+        #     new_roads_gdf = gpd.GeoDataFrame(new_roads, geometry='geometry')
+        #     self._gdf = pd.concat([self._gdf, new_roads_gdf], ignore_index=True)
 
 
 
@@ -1218,7 +1254,8 @@ class PlanClient(object):
         Returns:
             The road network reward.
         """
-        gdf = self._gdf[self._gdf['existence'] == True]
+        gdf = self._gdf[self._gdf['existence'] == True].copy(deep=True)
+        gdf['population'] = gdf['population'].astype(float)
         road_graph = self._get_road_graph()
 
         # connectivity of road network 
@@ -1256,15 +1293,65 @@ class PlanClient(object):
                 block_width_height[:, 1]*self._cell_edge_length > 800))
         road_distance_penalty = 1.0/(num_large_blocks + 1)
 
+        # Traffic reward
+        new_roads = gdf[ (gdf['type'] == 2) & gdf['existence']==True]
+        high_traffic_points = gdf[(gdf['geometry'].geom_type == 'Point') & (gdf['population'].astype(float) >= 600)]
+        low_traffic_points = gdf[(gdf['geometry'].geom_type == 'Point') & (gdf['population'].astype(float) < 400)]
+        
+        # print("hight_traffic points are : ",high_traffic_points)
+
+        total_proximity_score = 0
+        total_balance_score = 0
+
+
+        for _, road in new_roads.iterrows():
+            road_geometry = road['geometry']
+
+            # Proximity to High-Traffic Points: Sum of proximity scores based on inverse distances
+            proximity_scores = []
+            for _, point in high_traffic_points.iterrows():
+                distance = road_geometry.distance(point['geometry'])
+                # print("distance btw ",road_geometry," and ",point,"is : ",distance)
+                if distance > 10:
+                    proximity_scores.append(100 / distance)  # Inverse distance reward
+                
+            road_proximity_score = np.mean(proximity_scores) if proximity_scores else 0
+            total_proximity_score += road_proximity_score
+
+            # Load Balancing Efficiency: Check distances to low-traffic points to ensure efficient traffic diversion
+            load_balance_scores = []
+            for _, low_traffic_point in low_traffic_points.iterrows():
+                low_traffic_distance = road_geometry.distance(low_traffic_point['geometry'])
+                if low_traffic_distance > 10:
+                    load_balance_scores.append(100 / low_traffic_distance) 
+
+            road_balance_score = np.mean(load_balance_scores) if load_balance_scores else 0
+            total_balance_score += road_balance_score
+
+
+        avg_proximity_reward = total_proximity_score / len(new_roads) if len(new_roads) > 0 else 0
+        avg_balance_reward = total_balance_score / len(new_roads) if len(new_roads) > 0 else 0
+
+
+        print(f"Proximity Reward for new roads set: {avg_proximity_reward}")
+        print(f"Load Balancing Reward for new roads set: {avg_balance_reward}")
+
+
+        traffic_reward = avg_proximity_reward + avg_balance_reward
+
+
         road_network_reward = 1.0 * connectivity_reward + 1.0 * density_reward + 1.0 * dead_end_penalty + \
-            1.0 * short_road_penalty + 1.0 * long_road_penalty + 1.0 * road_distance_penalty
-        road_network_reward = road_network_reward/6.0
+            1.0 * short_road_penalty + 1.0 * long_road_penalty + 1.0 * road_distance_penalty + 1.0 * traffic_reward
+        road_network_reward = road_network_reward/7.0
+
+
         info = {'connectivity_reward': connectivity_reward,
                 'density_reward': density_reward,
                 'dead_end_penalty': dead_end_penalty,
                 'short_road_penalty': short_road_penalty,
                 'long_road_penalty': long_road_penalty,
-                'road_distance_penalty': road_distance_penalty}
+                'road_distance_penalty': road_distance_penalty,
+                'traffic_reward': traffic_reward}
 
         return road_network_reward, info
     
@@ -1283,53 +1370,7 @@ class PlanClient(object):
         gdf['population'] = gdf['population'].astype(float)
 
 
-        new_roads = gdf[ (gdf['type'] == 2)]
-        high_traffic_points = gdf[(gdf['geometry'].geom_type == 'Point') & (gdf['population'].astype(float) >= 600)]
-        low_traffic_points = gdf[(gdf['geometry'].geom_type == 'Point') & (gdf['population'].astype(float) < 400)]
         
-        # print("hight_traffic points are : ",high_traffic_points)
-
-        total_proximity_score = 0
-        total_balance_score = 0
-
-
-        for _, road in new_roads.iterrows():
-            road_geometry = road['geometry']
-
-            # Proximity to High-Traffic Points: Sum of proximity scores based on inverse distances
-            proximity_scores = []
-            for _, point in high_traffic_points.iterrows():
-                distance = road_geometry.distance(point['geometry'])
-                # print("distance btw ",road_geometry," and ",point,"is : ",distance)
-                if distance > 0:
-                    proximity_scores.append(100 / distance)  # Inverse distance reward
-                
-            road_proximity_score = np.mean(proximity_scores) if proximity_scores else 0
-            total_proximity_score += road_proximity_score
-
-            # Load Balancing Efficiency: Check distances to low-traffic points to ensure efficient traffic diversion
-            load_balance_scores = []
-            for _, low_traffic_point in low_traffic_points.iterrows():
-                low_traffic_distance = road_geometry.distance(low_traffic_point['geometry'])
-                if low_traffic_distance > 0:
-                    load_balance_scores.append(100 / low_traffic_distance) 
-
-            road_balance_score = np.mean(load_balance_scores) if load_balance_scores else 0
-            total_balance_score += road_balance_score
-
-
-        avg_proximity_reward = total_proximity_score / len(new_roads) if len(new_roads) > 0 else 0
-        avg_balance_reward = total_balance_score / len(new_roads) if len(new_roads) > 0 else 0
-
-
-        print(f"Proximity Reward for new roads set: {avg_proximity_reward}")
-        print(f"Load Balancing Reward for new roads set: {avg_balance_reward}")
-
-
-        final_reward = avg_proximity_reward + avg_balance_reward
-
-
-
 
         # population_density_mapping = {
         # city_config.RESIDENTIAL: 100,  # Example: 100 people per unit area
@@ -1419,7 +1460,7 @@ class PlanClient(object):
             reference_distance = math.sqrt(self._grid_cols**2 + self._grid_rows**2)
             decentralization_reward = np.array(public_service_pairwise_distances).mean()/reference_distance
             utility_reward = public_service_area/self._community_area
-            reward = efficiency_reward + 0.05 * decentralization_reward + 0.75 * even_distribution_reward + final_reward
+            reward = efficiency_reward + 0.05 * decentralization_reward + 0.75 * even_distribution_reward 
             info = {'life_circle_15min': life_circle_15min.mean(),
                     'life_circle_10min': life_circle_10min.mean(),
                     'life_circle_5min': life_circle_5min.mean(),
@@ -1427,7 +1468,6 @@ class PlanClient(object):
                     'decentralization_reward': decentralization_reward,
                     'utility': utility_reward,
                     'even_population_distribution_reward': even_distribution_reward ,
-                    'traffic_reward': final_reward # Add to info dictionary
                     }
             
             life_circle_10min_all = np.count_nonzero(

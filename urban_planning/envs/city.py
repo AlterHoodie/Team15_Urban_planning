@@ -193,7 +193,8 @@ class CityEnv:
         Compute the total number of road steps.
         """
         if self._stage == 'road' and self._road_steps == 0:
-            self._total_road_steps = math.floor(np.count_nonzero(self._current_road_mask)*self.cfg.road_ratio)
+            # self._total_road_steps = math.floor(np.count_nonzero(self._current_road_mask)*self.cfg.road_ratio)
+            self._total_road_steps = 15
         else:
             raise ValueError('Invalid stage.')
 
@@ -596,15 +597,20 @@ class CityEnv:
                 return self.failure_step('Actions took before becoming infeasible', logger)
             self._current_road_mask = self._get_road_mask()
             if self._stage !="land_use":
-                self._cached_land_use_reward = reward
-                self._cached_life_circle_reward = info['life_circle']
-                self._cached_greenness_reward = info['greenness']
-                self._cached_wastemgmt_reward = info['wastemgmt']
-                self._cached_drainage_reward = info['drainage']
-                self._cached_concept_reward = info['concept']
-                self._cached_life_circle_info = info['life_circle_info']
-                self._cached_concept_info = info['concept_info']
-        
+                if self._stage == 'road':
+                    if not np.any(self._current_road_mask):
+                        return self.failure_step('Actions took before becoming infeasible', logger)
+                    self._cached_land_use_reward = reward
+                    self._cached_life_circle_reward = info['life_circle']
+                    self._cached_greenness_reward = info['greenness']
+                    self._cached_wastemgmt_reward = info['wastemgmt']
+                    self._cached_drainage_reward = info['drainage']
+                    self._cached_concept_reward = info['concept']
+                    self._cached_life_circle_info = info['life_circle_info']
+                    self._cached_concept_info = info['concept_info']
+
+                    self._compute_total_road_steps()
+
         elif self._stage == 'road':
             print('roadddddddd')
             action = int(action[1])

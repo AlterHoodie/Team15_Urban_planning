@@ -189,7 +189,7 @@ class UrbanPlanningAgent(Agent):
         """update networks"""
         print("Finished Sampling")
         t1 = time.time()
-        # self.update_params(batch, iteration)
+        self.update_params(batch, iteration)
         t2 = time.time()
 
         """evaluate policy"""
