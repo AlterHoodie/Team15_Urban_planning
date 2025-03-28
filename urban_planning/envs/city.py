@@ -477,6 +477,7 @@ class CityEnv:
             self._land_use_done = True
             self._stage = 'done'
             self._done = True
+            self._plc.current_roads = 0
             # drainage_point = self.find_drainage_point()
             # updated_gdf = self.create_drainage(drainage_point)
             # self._plc._gdf = updated_gdf

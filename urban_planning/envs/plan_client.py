@@ -896,22 +896,25 @@ class PlanClient(object):
         # new_road_count = len(gdf[(gdf['type'] == 2) & (gdf['population'] == 5)])
         print("number of roads built are ", self.current_roads)
         if len(polygons) >= 1 and self.current_roads < self.max_roads:
-            random_polygon = polygons.sample(1, random_state=random.randint(0, 10000)).iloc[0]
-            polygon_coords = list(random_polygon['geometry'].exterior.coords)
-            
-            intersection_point = random.sample(polygon_coords, 1)
-            
-            land_use_polygon = self._slice_polygon(random_polygon['geometry'], Point(intersection_point[0][0],intersection_point[0][1]), random_polygon['type'])
+            try:
+                random_polygon = polygons.sample(1, random_state=random.randint(0, 10000)).iloc[0]
+                polygon_coords = list(random_polygon['geometry'].exterior.coords)
 
-            if land_use_polygon.area < self.EPSILON:
-                error_msg = 'feasible polygon: {}'.format(random_polygon['geometry'])
-                error_msg += '\nintersection: {}'.format(intersection_point)
-                error_msg += '\nland_use polygon: {}'.format(land_use_polygon)
-                raise ValueError(error_msg + '\nThe area of sliced land_use_polygon is near 0.')
-            else:
-                self._update_gdf_road(land_use_polygon,random_polygon['type'])
-                self.current_roads+=1
-                print('Added New Road')
+                intersection_point = random.sample(polygon_coords, 1)
+
+                land_use_polygon = self._slice_polygon(random_polygon['geometry'], Point(intersection_point[0][0],intersection_point[0][1]), random_polygon['type'])
+
+                if land_use_polygon.area < self.EPSILON:
+                    error_msg = 'feasible polygon: {}'.format(random_polygon['geometry'])
+                    error_msg += '\nintersection: {}'.format(intersection_point)
+                    error_msg += '\nland_use polygon: {}'.format(land_use_polygon)
+                    raise ValueError(error_msg + '\nThe area of sliced land_use_polygon is near 0.')
+                else:
+                    self._update_gdf_road(land_use_polygon,random_polygon['type'])
+                    self.current_roads+=1
+                    print('Added New Road')
+            except Exception:
+                print("Could Not Build Road")
 
 
 
