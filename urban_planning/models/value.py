@@ -34,6 +34,6 @@ class UrbanPlanningValue(nn.Module):
         return value_head
 
     def forward(self, x):
-        _, state_value, _, _= self.shared_net(x)
+        _, _, state_value, _, _, _ = self.shared_net(x)
         value = self.value_head(state_value)
         return value
