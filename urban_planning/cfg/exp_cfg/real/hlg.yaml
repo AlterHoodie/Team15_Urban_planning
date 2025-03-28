@@ -16,7 +16,7 @@ agent_specs:
 
 # training parameters
 skip_land_use: false
-skip_road: true
+skip_road: false
 road_ratio: 0.00
 gamma: 2.0
 tau: 0.0

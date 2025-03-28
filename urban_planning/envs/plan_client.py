@@ -603,8 +603,8 @@ class PlanClient(object):
             new_population = (existing_population / road_count)*0.4
             self._gdf.loc[idx, 'population'] = new_population
 
-        else:
-            print("Point not found, adding new point with population 100.")
+        # else:
+            # print("Point not found, adding new point with population 100.")
             # new_point_row = {
             #     'geometry': point,
             #     'type': 15,  # Define a default type if needed, or leave as None
@@ -970,9 +970,10 @@ class PlanClient(object):
                 else:
                     self._update_gdf_road(land_use_polygon,random_polygon['type'])
                     self.current_roads = len(self.ids)
-                    self._update_population_point(intersection_point)
+                    self._update_population_point(Point(intersection_point[0][1],intersection_point[0][1]))
 
-            except Exception:
+            except Exception as e:
+                print(e)
                 print("Could Not Build Road")
 
 

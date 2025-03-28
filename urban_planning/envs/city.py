@@ -161,7 +161,7 @@ class CityEnv:
                                        concept_weight=cfg.reward_specs.get('concept_weight', 0.0),
                                        weight_by_area=cfg.reward_specs.get('weight_by_area', False))
 
-        self._all_stages = ['land_use', 'done']
+        self._all_stages = ['land_use','road', 'done']
         self._set_stage()
         self._done = False
         self._set_cached_reward_info()
@@ -175,8 +175,17 @@ class CityEnv:
         Set the stage.
         """
         self._land_use_steps = 0
-        self._stage = "land_use"
-        self._land_use_done = False 
+        self._road_steps = 0
+        if not self.cfg.skip_land_use:
+            self._stage = 'land_use'
+            self._land_use_done = False
+            self._road_done = False
+        elif not self.cfg.skip_road:
+            self._stage = 'road'
+            self._land_use_done = True
+            self._road_done = False
+        else:
+            raise ValueError('Invalid stage. Land_use step and road step both reached max steps.')
 
 
     def _compute_total_road_steps(self) -> None: ## Remove
@@ -230,12 +239,29 @@ class CityEnv:
             The RL reward.
             Info dictionary.
         """
-        if self._stage == 'land_use':
-            return self._reward_info_fn(self._plc, 'intermediate')
-        elif self._stage == 'done':
-            return self._reward_info_fn(self._plc, 'land_use')
+        if self.cfg.skip_road:
+            if self._stage == 'land_use':
+                return self._reward_info_fn(self._plc, 'intermediate')
+            elif self._stage == 'done':
+                return self._reward_info_fn(self._plc, 'land_use')
+            else:
+                raise ValueError('Invalid stage.')
+        elif self.cfg.skip_land_use:
+            if self._stage == 'road':
+                return self._reward_info_fn(self._plc, 'intermediate')
+            elif self._stage == 'done':
+                return self._reward_info_fn(self._plc, 'road')
+            else:
+                raise ValueError('Invalid stage.')
         else:
-            raise ValueError('Invalid stage.')
+            if (self._stage == 'land_use') or (self._stage == 'road' and self._road_steps > 0):
+                return self._reward_info_fn(self._plc, 'intermediate')
+            elif self._stage == 'road' and self._road_steps == 0:
+                return self._reward_info_fn(self._plc, 'land_use')
+            elif self._stage == 'done':
+                return self._reward_info_fn(self._plc, 'road')
+            else:
+                raise ValueError('Invalid stage.')
         
 
     def _get_all_reward_info(self) -> Tuple[float, Dict]:
@@ -356,6 +382,7 @@ class CityEnv:
         """
         return self._observation_extractor.get_obs(self._current_land_use,
                                                    self._current_land_use_mask,
+                                                   self._current_road_mask,
                                                    self._get_stage_obs())
 
     def place_land_use(self, land_use: Dict, action: int):
@@ -471,18 +498,28 @@ class CityEnv:
             return random.choice(points)
 
         raise ValueError("Selected geometry is not a LineString.")
-    def end_stage(self):
+    def transition_stage(self):
         """
         Transition to the next stage.
         """
         if self._stage == 'land_use':
             self._land_use_done = True
-            self._stage = 'done'
-            self._done = True
+            # self._stage = 'done'
+            # self._done = True
+            if not self.cfg.skip_road:
+                self._stage = 'road'
+            else:
+                self._road_done = True
+                self._done = True
+                self._stage = 'done'
             # drainage_point = self.find_drainage_point()
             # updated_gdf = self.create_drainage(drainage_point)
             # self._plc._gdf = updated_gdf
-            print("yoyoyoyo")
+        elif self._stage == 'road':
+            self._road_done = True
+            self._done = True
+            self._stage = 'done'
+
         else:
             raise ValueError('Unknown stage: {}'.format(self._stage))
 
@@ -550,7 +587,8 @@ class CityEnv:
             if land_use_done:
                 self.fill_leftover()
                 self._cached_land_use_gdf = self.snapshot_land_use()
-                self.end_stage()
+                self.transition_stage()
+                print("LAND USE DONE:",self._stage,self._done)
             reward, info = self.get_reward_info()
             
             self._current_land_use, self._current_land_use_mask = self._get_land_use_and_mask()
@@ -566,6 +604,31 @@ class CityEnv:
                 self._cached_concept_reward = info['concept']
                 self._cached_life_circle_info = info['life_circle_info']
                 self._cached_concept_info = info['concept_info']
+        
+        elif self._stage == 'road':
+            print('roadddddddd')
+            action = int(action[1])
+            self._action_history.append(('road', action))
+            if self._current_road_mask[action] == 0:
+                raise InfeasibleActionError(action, self._current_road_mask)
+
+            try:
+                self.build_road(action)
+            except ValueError as err:
+                logger.error(err)
+                return self.failure_step('Actions took before failing to place land use', logger)
+            except Exception as err:
+                logger.error(err)
+                return self.failure_step('Actions took before failing to place land use', logger)
+
+            self._road_steps += 1
+            if self._road_steps >= self._total_road_steps:
+                self.transition_stage()
+            reward, info = self.get_reward_info()
+            self._current_land_use, self._current_land_use_mask = self._get_land_use_and_mask()
+            self._current_road_mask = self._get_road_mask()
+        else:
+            raise ValueError('Cannot step in stage: {}.'.format(self._stage))
 
         if self._done:
             info['land_use_reward'] = self._cached_land_use_reward
@@ -596,7 +659,9 @@ class CityEnv:
         self._done = False
         self._set_cached_reward_info()
         self._current_land_use, self._current_land_use_mask = self._get_land_use_and_mask()
-
+        self._current_road_mask = self._get_road_mask()
+        if self.cfg.skip_land_use:
+            self._compute_total_road_steps()
         return self._get_obs()
 
     @staticmethod

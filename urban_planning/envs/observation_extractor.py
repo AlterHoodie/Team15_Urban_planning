@@ -173,7 +173,7 @@ class ObservationExtractor:
     def _get_obs_stage(self, stage: int) -> np.ndarray:
         """
         Returns the stage observation.
-        One Hot encoding of the stage value
+
         Args:
             stage (int): the current stage.
 
@@ -204,7 +204,7 @@ class ObservationExtractor:
         """
         return self._get_obs_current_node(land_use).size
 
-    def get_obs(self, land_use: Dict, land_use_mask: np.ndarray, stage: int) -> List:
+    def get_obs(self, land_use: Dict, land_use_mask: np.ndarray, road_mask: np.ndarray, stage: int) -> List:
         """
         Returns the observation.
 
@@ -221,7 +221,8 @@ class ObservationExtractor:
         obs_nodes, obs_edges, obs_node_mask, obs_edge_mask = self._get_obs_graph()
         obs_current_node = self._get_obs_current_node(land_use)
         obs_land_use_mask = self._get_obs_mask(land_use_mask, self._max_num_edges, 'edges')
+        obs_road_mask = self._get_obs_mask(road_mask, self._max_num_nodes, 'nodes')
         stage = self._get_obs_stage(stage)
         obs = [obs_numerical, obs_nodes, obs_edges, obs_current_node, obs_node_mask, obs_edge_mask,
-               obs_land_use_mask, stage]
+               obs_land_use_mask, obs_road_mask, stage]
         return obs
