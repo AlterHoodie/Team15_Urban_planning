@@ -232,7 +232,7 @@ class MLPStateEncoder(nn.Module):
 
         self.output_policy_land_use_size = cfg['gcn_node_dim']*4
         self.output_policy_road_size = cfg['gcn_node_dim']
-        self.output_value_size = cfg['gcn_node_dim']*2 + cfg['state_encoder_hidden_size'][-1] + 3
+        self.output_value_size = cfg['gcn_node_dim']*2 + cfg['state_encoder_hidden_size'][-1] + 2
 
     def create_numerical_feature_encoder(self, cfg):
         """Create the numerical feature encoder."""
