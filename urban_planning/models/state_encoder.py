@@ -282,7 +282,7 @@ class MLPStateEncoder(nn.Module):
 
     def forward(self, x):
         numerical_features, node_features, edge_index, current_node_features, node_mask, edge_mask, \
-            land_use_mask, road_mask, stage = SGNNStateEncoder.batch_data(x)
+            land_use_mask, stage = SGNNStateEncoder.batch_data(x)
         h_numerical_features = self.numerical_feature_encoder(numerical_features)
 
         edge_features = self.compute_edge_features(node_features, edge_index, edge_mask)
@@ -303,6 +303,6 @@ class MLPStateEncoder(nn.Module):
             [h_edges, h_current_node_repeated, h_edges*h_current_node_repeated, h_edges - h_current_node_repeated],
             dim=-1)
 
-        state_policy_road = torch.cat([h_nodes], dim=-1)
+        # state_policy_road = torch.cat([h_nodes], dim=-1)
 
-        return state_policy_land_use, state_policy_road, state_value, land_use_mask, road_mask, stage
+        return state_policy_land_use, state_value, land_use_mask, stage

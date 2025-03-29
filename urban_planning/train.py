@@ -15,7 +15,7 @@ flags.DEFINE_string('root_dir', './data1/', 'Root directory for writing '
                                                                           'logs/summaries/checkpoints.')
 flags.DEFINE_string('cfg', None, 'Configuration file of rl training.')
 flags.DEFINE_bool('tmp', False, 'Whether to use temporary storage.')
-flags.DEFINE_enum('agent', 'rl-sgnn', ['rl-sgnn', 'rl-mlp'], 'Agent type.')
+flags.DEFINE_enum('agent', 'rl-mlp', ['rl-sgnn', 'rl-mlp'], 'Agent type.')
 flags.DEFINE_bool('separate_train', True, 'Whether to separate the training process of land use and road planning.')
 flags.DEFINE_integer('num_threads', 20, 'The number of threads for sampling trajectories.')
 flags.DEFINE_bool('use_nvidia_gpu', True, 'Whether to use Nvidia GPU for acceleration.')
