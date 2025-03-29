@@ -585,14 +585,12 @@ class PlanClient(object):
         return polygon, intersections, new_intersections
     
     def _update_population_point(self,point:Point):
-        print('hi')
         points = self._gdf[self._gdf['geometry'].geom_type == 'Point']
         matching_point = points[points['geometry'] == point]
         
         if not matching_point.empty:
             idx = matching_point.index[0]
             existing_population = self._gdf.loc[idx, 'population']
-            print("hi1")
             
             connected_roads = self._gdf[
                 (self._gdf['type'] == 2) &  # Select roads
@@ -894,7 +892,6 @@ class PlanClient(object):
 
         # Count new roads with specific criteria
         # new_road_count = len(gdf[(gdf['type'] == 2) & (gdf['population'] == 5)])
-        print("number of roads built are ", self.current_roads)
         if len(polygons) >= 1 and self.current_roads < self.max_roads:
             try:
                 random_polygon = polygons.sample(1, random_state=random.randint(0, 10000)).iloc[0]
@@ -912,7 +909,6 @@ class PlanClient(object):
                 else:
                     self._update_gdf_road(land_use_polygon,random_polygon['type'])
                     self.current_roads+=1
-                    print('Added New Road')
             except Exception:
                 print("Could Not Build Road")
 
