@@ -424,13 +424,36 @@ class PlanClient(object):
         Returns:
             mask: current road mask.
         """
+        # gdf, graph = self._get_current_gdf_and_graph()
+        # self._current_graph_nodes_id = current_graph_nodes_id = gdf.index.to_numpy()
+        # points_to_remove = gdf[gdf['type'] == 14].geometry  # Get polygon geometries
+        # gdf = gdf[~gdf.geometry.within(points_to_remove.unary_union)]
+        # boundary_id = gdf[(gdf['type'] == city_config.INTERSECTION) & (gdf['existence']==True)].index.to_numpy()
+        # mask = np.isin(current_graph_nodes_id, boundary_id)
+
         gdf, graph = self._get_current_gdf_and_graph()
-        self._current_graph_nodes_id = current_graph_nodes_id = gdf.index.to_numpy()
-        points_to_remove = gdf[gdf['type'] == 14].geometry  # Get polygon geometries
-        gdf = gdf[~gdf.geometry.within(points_to_remove.unary_union)]
-        boundary_id = gdf[(gdf['type'] == city_config.INTERSECTION) & (gdf['existence']==True)].index.to_numpy()
-        mask = np.isin(current_graph_nodes_id, boundary_id)
-        return mask
+        current_graph_edges = np.array(graph.edges)
+        current_graph_nodes_id = gdf.index.to_numpy()
+        self._current_graph_edges_with_id = current_graph_nodes_id[current_graph_edges]
+        gdf['population'] = gdf['population'].astype(float)
+        
+        feasible_blocks_id = gdf[
+            (gdf['existence'] == True) & (gdf['geometry'].geom_type=="Polygon") &
+            (gdf.area >= 750) & (gdf['population']>2500)].index.to_numpy()
+        intersections_id = gdf[gdf.geom_type == 'Point'].index.to_numpy()
+
+        edge_mask = np.logical_or(
+            np.logical_and(
+                np.isin(self._current_graph_edges_with_id[:, 0], feasible_blocks_id),
+                np.isin(self._current_graph_edges_with_id[:, 1], intersections_id)
+            ),
+            np.logical_and(
+                np.isin(self._current_graph_edges_with_id[:, 1], feasible_blocks_id),
+                np.isin(self._current_graph_edges_with_id[:, 0], intersections_id)
+            )
+        )
+
+        return edge_mask
 
     def _simplify_polygon(self,
                           polygon: Polygon,
@@ -1076,6 +1099,21 @@ class PlanClient(object):
         # self._gdf.at[sorted_polygons.index[0],'existence'] = False
         return sorted_polygons.iloc[0] if not sorted_polygons.empty else None, sorted_polygons.index[0],gdf.iloc[chosen_point],chosen_point
 
+    def _get_chosen_feasible_block_and_intersection_road(self, action: int) -> Tuple[int, int]:
+        """Get the chosen feasible block and intersection
+
+        Args:
+            action: the chosen graph edge.
+
+        Returns:
+            Tuple of the chosen (feasible_block_id, intersection_id).
+        """
+        chosen_pair = self._current_graph_edges_with_id[action]
+        if self._gdf.loc[chosen_pair[0],"geometry"].geom_type == "Polygon":
+            return chosen_pair[0], chosen_pair[1]
+        else:
+            return chosen_pair[1], chosen_pair[0]
+
     def build_road(self, action: int) -> None:
         """Build the road at the given action position.
 
@@ -1086,7 +1124,10 @@ class PlanClient(object):
             True if the road is successfully built, False otherwise.
         """
         # chosen_boundary = self._get_chosen_boundary(action)
-        random_polygon,_,intersection_point,point_id = self._get_polygon_highest(action)
+        # random_polygon,_,intersection_point,point_id = self._get_chosen_feasible_block_and_intersection_road(action)
+        polygon_id,point_id = self._get_chosen_feasible_block_and_intersection_road(action)
+        random_polygon = self._gdf.iloc[polygon_id]
+        intersection_point  = self._gdf.iloc[point_id]
         try:
                 land_use_polygon = self._slice_polygon(random_polygon['geometry'], intersection_point['geometry'], random_polygon['type'])
 
@@ -1101,9 +1142,8 @@ class PlanClient(object):
                     self._update_population_point(intersection_point['geometry'])
 
         except Exception as e:
-                print(e)
+                # print(e)
                 print("Could Not Build Road")
-        print(intersection_point[0])
         self._gdf.at[point_id,'existence'] = False
         # self._gdf.loc[chosen_boundary, 'type'] = city_config.ROAD
 
