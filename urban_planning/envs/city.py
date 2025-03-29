@@ -562,7 +562,6 @@ class CityEnv:
         if self._done:
             raise RuntimeError('Action taken after episode is done.')
         
-        print("self.stagee",self._stage)
         if self._stage == 'land_use':
             land_use = self._current_land_use
             action = int(action[0])
@@ -572,7 +571,6 @@ class CityEnv:
                 raise InfeasibleActionError(action, self._current_land_use_mask)
 
             try:
-                print("place_land_use is running")
                 self.place_land_use(land_use, action)
             except ValueError as err:
                 logger.error(err)
@@ -589,7 +587,6 @@ class CityEnv:
                 self.fill_leftover()
                 self._cached_land_use_gdf = self.snapshot_land_use()
                 self.transition_stage()
-                print("LAND USE DONE:",self._stage,self._done)
             reward, info = self.get_reward_info()
             
             self._current_land_use, self._current_land_use_mask = self._get_land_use_and_mask()
@@ -612,7 +609,6 @@ class CityEnv:
                     self._compute_total_road_steps()
 
         elif self._stage == 'road':
-            print('roadddddddd')
             action = int(action[1])
             self._action_history.append(('road', action))
             if self._current_road_mask[action] == 0:
