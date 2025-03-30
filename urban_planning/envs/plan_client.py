@@ -1131,7 +1131,7 @@ class PlanClient(object):
         try:
                 land_use_polygon = self._slice_polygon(random_polygon['geometry'], intersection_point['geometry'], random_polygon['type'])
 
-                if land_use_polygon.area < self.EPSILON:
+                if land_use_polygon.area < 8000:
                     error_msg = 'feasible polygon: {}'.format(random_polygon['geometry'])
                     error_msg += '\nintersection: {}'.format(intersection_point['geometry'])
                     error_msg += '\nland_use polygon: {}'.format(land_use_polygon)
@@ -1140,6 +1140,7 @@ class PlanClient(object):
                     self._update_gdf_road(land_use_polygon,random_polygon['type'])
                     self.current_roads = len(self.ids)
                     self._update_population_point(intersection_point['geometry'])
+                    self._gdf.at[polygon_id, 'existence'] = False
 
         except Exception as e:
                 # print(e)
